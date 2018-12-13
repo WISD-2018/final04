@@ -39,10 +39,10 @@
               <font face="微軟正黑體"><a class="nav-link" href="#">聯絡我們</a></font>
             </li>
             <li class="nav-item">
-              <font face="微軟正黑體"><a class="nav-link" href="#">登入</a></font>
+              <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/login">登入</a></font>
             </li>
             <li class="nav-item">
-              <font face="微軟正黑體"><a class="nav-link" href="#">註冊</a></font>
+              <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/register">註冊</a></font>
             </li>
           </ul>
         </div>
