@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class C1Controller extends Controller
+{
+    //
+
+    public function View1()
+    {
+        return view('/product.c1');
+    }
+
+    public function View2()
+    {
+        return view('/product.c2');
+    }
+
+    public function View3()
+    {
+        return view('/product.c3');
+    }
+}
