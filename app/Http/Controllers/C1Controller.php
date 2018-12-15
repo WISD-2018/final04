@@ -22,4 +22,19 @@ class C1Controller extends Controller
     {
         return view('/product.c3');
     }
+
+    public function View4()
+    {
+        return view('/product.c4');
+    }
+
+    public function View5()
+    {
+        return view('/product.c5');
+    }
+
+    public function View6()
+    {
+        return view('/product.c6');
+    }
 }
