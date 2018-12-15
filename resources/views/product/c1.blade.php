@@ -89,6 +89,9 @@
             <a href="http://localhost:8000/c1" class="list-group-item"><font face="微軟正黑體">傳動軸</font></a>
             <a href="http://localhost:8000/c2" class="list-group-item"><font face="微軟正黑體">引擎</font></a>
             <a href="http://localhost:8000/c3" class="list-group-item"><font face="微軟正黑體">冷氣壓縮機</font></a>
+            <a href="http://localhost:8000/c4" class="list-group-item"><font face="微軟正黑體">煞車</font></a>
+            <a href="http://localhost:8000/c5" class="list-group-item"><font face="微軟正黑體">音響</font></a>
+            <a href="http://localhost:8000/c6" class="list-group-item"><font face="微軟正黑體">大燈</font></a>
           </div>
 
         </div>
