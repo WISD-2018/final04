@@ -84,7 +84,7 @@
 
         <div class="col-lg-3">
 
-          <h1 class="my-4"><font face="微軟正黑體">C1</font></h1>
+          <h1 class="my-4"><font face="微軟正黑體">傳動軸</font></h1>
           <div class="list-group">
             <a href="http://localhost:8000/c1" class="list-group-item"><font face="微軟正黑體">傳動軸</font></a>
             <a href="http://localhost:8000/c2" class="list-group-item"><font face="微軟正黑體">引擎</font></a>
@@ -117,11 +117,11 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/ci4sUjd.jpg/" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item One</a>
-                  </h4>
+                  <h6 class="card-title">
+                    <a href="#"><font face="微軟正黑體">TOYOTA EXSIOR 1.6 2.0 傳動軸</font></a>
+                  </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
@@ -133,11 +133,11 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/tzbc9mx.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Two</a>
-                  </h4>
+                  <h6 class="card-title">
+                    <a href="#"><font face="微軟正黑體">TOYOTA 台製 新頭 傳動軸</font></a>
+                  </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
                 </div>
@@ -149,11 +149,11 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/VcU5er0.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Three</a>
-                  </h4>
+                  <h6 class="card-title">
+                    <a href="#"><font face="微軟正黑體">TOYOTA_ALTIS 1.6 傳動軸</font></a>
+                  </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
@@ -165,11 +165,11 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/5T4t1ka.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Four</a>
-                  </h4>
+                  <h6 class="card-title">
+                    <a href="#"><font face="微軟正黑體">BENZ W245 B170 傳動軸</font></a>
+                  </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
@@ -181,11 +181,11 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/xBVUim2.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Five</a>
-                  </h4>
+                  <h6 class="card-title">
+                    <a href="#"><font face="微軟正黑體">BENZ w124 w140 後地軸傳動軸</font></a>
+                  </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
                 </div>
@@ -197,11 +197,43 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/UEDNHtx.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Six</a>
-                  </h4>
+                  <h6 class="card-title">
+                    <a href="#"><font face="微軟正黑體">BENZ VIANO 中間傳動軸</font></a>
+                  </h6>
+                  <h5>$24.99</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/hOWqCRI.jpg" alt=""></a>
+                <div class="card-body">
+                  <h6 class="card-title">
+                    <a href="#"><font face="微軟正黑體">HONDA TEANA X-TRAIL 傳動軸</font></a>
+                  </h6>
+                  <h5>$24.99</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/1eMoWpd.jpg" alt=""></a>
+                <div class="card-body">
+                  <h6 class="card-title">
+                    <a href="#"><font face="微軟正黑體">HONDA crv 二代 4WD 傳動軸</font></a>
+                  </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
