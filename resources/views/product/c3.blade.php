@@ -84,7 +84,7 @@
 
         <div class="col-lg-3">
 
-          <h1 class="my-4"><font face="微軟正黑體">C3</font></h1>
+          <h1 class="my-4"><font face="微軟正黑體">冷氣壓縮機</font></h1>
           <div class="list-group">
             <div class="list-group">
               <a href="http://localhost:8000/c1" class="list-group-item"><font face="微軟正黑體">傳動軸</font></a>
@@ -122,11 +122,11 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/f7q2Z3r.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item One</a>
-                  </h4>
+                    <h6 class="card-title">
+                        <a href="#"><font face="微軟正黑體">HONDA K10 FERIO 冷氣壓縮機</font></a>
+                    </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
@@ -138,11 +138,11 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/sYX6VQI.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Two</a>
-                  </h4>
+                    <h6 class="card-title">
+                        <a href="#"><font face="微軟正黑體">HONDA CRV 冷氣壓縮機</font></a>
+                    </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
                 </div>
@@ -154,11 +154,11 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/K7yKANF.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Three</a>
-                  </h4>
+                    <h6 class="card-title">
+                        <a href="#"><font face="微軟正黑體">HONDA CIVIC 8代 K12 冷氣壓縮機</font></a>
+                    </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
@@ -170,11 +170,11 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/yyaO3BY.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Four</a>
-                  </h4>
+                    <h6 class="card-title">
+                        <a href="#"><font face="微軟正黑體">TOYOTO 海力士2.7 冷氣壓縮機</font></a>
+                    </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
@@ -186,11 +186,11 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/2GzKPEG.jpg" alt=""></a>
                 <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Five</a>
-                  </h4>
+                    <h6 class="card-title">
+                        <a href="#"><font face="微軟正黑體">TOYOTA Yaris 1.5 冷氣壓縮機</font></a>
+                    </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
                 </div>
@@ -201,20 +201,68 @@
             </div>
 
             <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="#">Item Six</a>
-                  </h4>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
+                  <div class="card h-100">
+                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/VXebDVS.jpg" alt=""></a>
+                      <div class="card-body">
+                          <h6 class="card-title">
+                              <a href="#"><font face="微軟正黑體">TOYOTA 86-GT ZN-6 冷氣壓縮機</font></a>
+                          </h6>
+                          <h5>$24.99</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                      </div>
+                  </div>
               </div>
-            </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100">
+                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/QXrpf0v.jpg" alt=""></a>
+                      <div class="card-body">
+                          <h6 class="card-title">
+                              <a href="#"><font face="微軟正黑體">BENZ W203 3.2 冷氣壓縮機</font></a>
+                          </h6>
+                          <h5>$24.99</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100">
+                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/ZNWcNU9.jpg" alt=""></a>
+                      <div class="card-body">
+                          <h6 class="card-title">
+                              <a href="#"><font face="微軟正黑體">BENZ W202 冷氣壓縮機</font></a>
+                          </h6>
+                          <h5>$24.99</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="card h-100">
+                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/QJ8D0hA.jpg" alt=""></a>
+                      <div class="card-body">
+                          <h6 class="card-title">
+                              <a href="#"><font face="微軟正黑體">BENZ w203 C200 冷氣壓縮機</font></a>
+                          </h6>
+                          <h5>$24.99</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                      </div>
+                      <div class="card-footer">
+                          <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                      </div>
+                  </div>
+              </div>
 
           </div>
           <!-- /.row -->
