@@ -4,7 +4,7 @@
 <html lang="en">
 
   <head>
-    <title>中古車體零件 - 冷氣壓縮機</title>
+    <title>中古車體零件 - 音響主機</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -85,17 +85,33 @@
 
         <div class="col-lg-3">
 
-          <h1 class="my-4"><font face="微軟正黑體">冷氣壓縮機</font></h1>
-          <div class="list-group">
-            <div class="list-group">
-              <a href="http://localhost:8000/c1" class="list-group-item"><font face="微軟正黑體">傳動軸</font></a>
-              <a href="http://localhost:8000/c2" class="list-group-item"><font face="微軟正黑體">引擎</font></a>
-              <a href="http://localhost:8000/c3" class="list-group-item"><font face="微軟正黑體">冷氣壓縮機</font></a>
-              <a href="http://localhost:8000/c4" class="list-group-item"><font face="微軟正黑體">煞車</font></a>
-              <a href="http://localhost:8000/c5" class="list-group-item"><font face="微軟正黑體">音響</font></a>
-              <a href="http://localhost:8000/c6" class="list-group-item"><font face="微軟正黑體">大燈</font></a>
+            <h1 class="my-4"><font face="微軟正黑體">中古車體零件</font></h1>
+            <h3 class="my-4"><font face="微軟正黑體">音響主機</font></h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-19">
+                        <font face="微軟正黑體">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="請輸入關鍵字">
+                                <span class="input-group-btn">
+                                <button class="btn btn-primary">搜尋</button>
+                            </span>
+                            </div>
+                        </font>
+                    </div>
+                </div>
             </div>
-          </div>
+            <br>
+
+
+            <div class="list-group">
+                <a href="http://localhost:8000/c1" class="list-group-item"><font face="微軟正黑體">傳動系統</font></a>
+                <a href="http://localhost:8000/c2" class="list-group-item"><font face="微軟正黑體">引擎系統</font></a>
+                <a href="http://localhost:8000/c3" class="list-group-item"><font face="微軟正黑體">冷卻系統</font></a>
+                <a href="http://localhost:8000/c4" class="list-group-item"><font face="微軟正黑體">煞車裝置</font></a>
+                <a href="http://localhost:8000/c5" class="list-group-item"><font face="微軟正黑體">音響主機</font></a>
+                <a href="http://localhost:8000/c6" class="list-group-item"><font face="微軟正黑體">車體、外觀</font></a>
+            </div>
 
         </div>
         <!-- /.col-lg-3 -->
@@ -123,10 +139,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/f7q2Z3r.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/U7mKsXS.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">HONDA K10 FERIO 冷氣壓縮機</font></a>
+                        <a href="#"><font face="微軟正黑體">HONDA 原廠音響主機</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -139,10 +155,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/sYX6VQI.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/1d7W7sc.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">HONDA CRV 冷氣壓縮機</font></a>
+                        <a href="#"><font face="微軟正黑體">HONDA FIT音響主機 A款</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
@@ -155,10 +171,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/K7yKANF.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/bsD4UdE.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">HONDA CIVIC 8代 K12 冷氣壓縮機</font></a>
+                        <a href="#"><font face="微軟正黑體">HONDA FIT 音響主機</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -171,10 +187,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/yyaO3BY.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/LcRfcH9.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">TOYOTO 海力士2.7 冷氣壓縮機</font></a>
+                        <a href="#"><font face="微軟正黑體">TOYOTA CAMRY 國際牌 6.5吋螢幕 音響主機</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -187,10 +203,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/2GzKPEG.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="https://i.imgur.com/BkK7MtX.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">TOYOTA Yaris 1.5 冷氣壓縮機</font></a>
+                        <a href="#"><font face="微軟正黑體">TOYOTA ALTIS 前置6片CD音響主機</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
@@ -203,10 +219,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/VXebDVS.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/qRm3o1X.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
-                              <a href="#"><font face="微軟正黑體">TOYOTA 86-GT ZN-6 冷氣壓縮機</font></a>
+                              <a href="#"><font face="微軟正黑體">TOYOTA  原廠音響主機</font></a>
                           </h6>
                           <h5>$24.99</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -219,10 +235,10 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/QXrpf0v.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/TymJ3Lj.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
-                              <a href="#"><font face="微軟正黑體">BENZ W203 3.2 冷氣壓縮機</font></a>
+                              <a href="#"><font face="微軟正黑體">BENZ 原廠音響主機</font></a>
                           </h6>
                           <h5>$24.99</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -235,10 +251,10 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/ZNWcNU9.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/J9cYpTX.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
-                              <a href="#"><font face="微軟正黑體">BENZ W202 冷氣壓縮機</font></a>
+                              <a href="#"><font face="微軟正黑體">BENZ W211音響主機</font></a>
                           </h6>
                           <h5>$24.99</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -251,10 +267,10 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/QJ8D0hA.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/MLKdz9t.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
-                              <a href="#"><font face="微軟正黑體">BENZ w203 C200 冷氣壓縮機</font></a>
+                              <a href="#"><font face="微軟正黑體">BENZ R350 原廠音響主機</font></a>
                           </h6>
                           <h5>$24.99</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>

@@ -4,7 +4,7 @@
 <html lang="en">
 
   <head>
-    <title>中古車體零件 - 傳動軸</title>
+    <title>中古車體零件 - 傳動系統</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -85,14 +85,32 @@
 
         <div class="col-lg-3">
 
-          <h1 class="my-4"><font face="微軟正黑體">傳動軸</font></h1>
+          <h1 class="my-4"><font face="微軟正黑體">中古車體零件</font></h1>
+          <h3 class="my-4"><font face="微軟正黑體">傳動系統</font></h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-19">
+                <font face="微軟正黑體">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="請輸入關鍵字">
+                    <span class="input-group-btn">
+                                <button class="btn btn-primary">搜尋</button>
+                            </span>
+                  </div>
+                </font>
+              </div>
+            </div>
+          </div>
+          <br>
+
+
           <div class="list-group">
-            <a href="http://localhost:8000/c1" class="list-group-item"><font face="微軟正黑體">傳動軸</font></a>
-            <a href="http://localhost:8000/c2" class="list-group-item"><font face="微軟正黑體">引擎</font></a>
-            <a href="http://localhost:8000/c3" class="list-group-item"><font face="微軟正黑體">冷氣壓縮機</font></a>
-            <a href="http://localhost:8000/c4" class="list-group-item"><font face="微軟正黑體">煞車</font></a>
-            <a href="http://localhost:8000/c5" class="list-group-item"><font face="微軟正黑體">音響</font></a>
-            <a href="http://localhost:8000/c6" class="list-group-item"><font face="微軟正黑體">大燈</font></a>
+            <a href="http://localhost:8000/c1" class="list-group-item"><font face="微軟正黑體">傳動系統</font></a>
+            <a href="http://localhost:8000/c2" class="list-group-item"><font face="微軟正黑體">引擎系統</font></a>
+            <a href="http://localhost:8000/c3" class="list-group-item"><font face="微軟正黑體">冷卻系統</font></a>
+            <a href="http://localhost:8000/c4" class="list-group-item"><font face="微軟正黑體">煞車裝置</font></a>
+            <a href="http://localhost:8000/c5" class="list-group-item"><font face="微軟正黑體">音響主機</font></a>
+            <a href="http://localhost:8000/c6" class="list-group-item"><font face="微軟正黑體">車體、外觀</font></a>
           </div>
 
         </div>
