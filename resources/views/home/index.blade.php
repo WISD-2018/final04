@@ -122,13 +122,13 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+                <img class="d-block img-fluid" src="https://i.imgur.com/AXrw9j2.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+                <img class="d-block img-fluid" src="https://i.imgur.com/EkYxX15.png" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+                <img class="d-block img-fluid" src="https://i.imgur.com/ADHyeRM.png" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -204,7 +204,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    
+
 
     <!-- Bootstrap core JavaScript -->
     <!--<script src="SecondHand/public/js/jquery.min.js"></script> -->
