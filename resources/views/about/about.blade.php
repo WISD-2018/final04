@@ -118,7 +118,7 @@
           <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
         </div>
         <div class="col-lg-3 col-sm-5 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="https://i.imgur.com/s2jgtBJ.png" alt="">
           <font face="微軟正黑體"><h4>顏以晴
             <small>Job Title</small>
           </h4></font>
