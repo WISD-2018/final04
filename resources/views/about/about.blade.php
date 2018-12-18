@@ -4,6 +4,7 @@
 <html lang="en">
 
   <head>
+    <title>聯絡我們</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -82,57 +83,55 @@
     <div class="container">
 
       <!-- Introduction Row -->
-      <h1 class="my-4">About Us
-        <small>It's Nice to Meet You!</small>
-      </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+      <font face="微軟正黑體"><h1 class="my-4">聯絡我們
+        <small></small>
+      </h1></font>
+      <font face="微軟正黑體"><p>如果對於商品有任何的問題，歡迎各位使用E-mail來信、撥打客服電話向我們反映！</p></font>
 
       <!-- Team Members Row -->
+
       <div class="row">
+        <div class="col-lg-12">
+          <h2 class="my-4">Contact Us</h2>
+          <font face="微軟正黑體">
+          <p>客服信箱：secondhand2000@gmail.com</p>
+          <p>客服電話：0905182222 / 04-7633520</p>
+          </font>
+        </div>
+
+
         <div class="col-lg-12">
           <h2 class="my-4">Our Team</h2>
         </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
+        <div class="col-lg-3 col-sm-5 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="https://i.imgur.com/Ejd9rFv.png" alt="">
+          <font face="微軟正黑體"><h4>萬宜旻
+            <small>Yi-Min Wan</small>
+          </h4></font>
+          <p></p>
+        </div>
+        <div class="col-lg-3 col-sm-5 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>John Smith
+          <font face="微軟正黑體"><h4>黃宣毓
             <small>Job Title</small>
-          </h3>
+          </h4></font>
           <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
         </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
+        <div class="col-lg-3 col-sm-5 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>John Smith
+          <font face="微軟正黑體"><h4>顏以晴
             <small>Job Title</small>
-          </h3>
+          </h4></font>
           <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
         </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
+        <div class="col-lg-3 col-sm-5 text-center mb-4">
           <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>John Smith
+          <font face="微軟正黑體"><h4>黃子嘉
             <small>Job Title</small>
-          </h3>
+          </h4></font>
           <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
         </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>John Smith
-            <small>Job Title</small>
-          </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>John Smith
-            <small>Job Title</small>
-          </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>John Smith
-            <small>Job Title</small>
-          </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+
         </div>
       </div>
 
@@ -140,12 +139,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+
 
   <!-- Bootstrap core JavaScript -->
   <!--<script src="SecondHand/public/js/jquery.min.js"></script> -->
