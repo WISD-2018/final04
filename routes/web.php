@@ -31,3 +31,5 @@ Route::get('/c3', 'C1Controller@View3')->name('c3');
 Route::get('/c4', 'C1Controller@View4')->name('c4');
 Route::get('/c5', 'C1Controller@View5')->name('c5');
 Route::get('/c6', 'C1Controller@View6')->name('c6');
+
+Route::get('/about', 'AboutController@about')->name('about');

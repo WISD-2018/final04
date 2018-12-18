@@ -36,7 +36,7 @@
               </a></font>
             </li>
             <li class="nav-item">
-              <font face="微軟正黑體"><a class="nav-link" href="#">聯絡我們</a></font>
+              <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/about">聯絡我們</a></font>
             </li>
 
             <!-- Right Side Of Navbar -->
