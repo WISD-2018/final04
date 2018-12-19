@@ -34,3 +34,7 @@ Route::get('/c5', 'C1Controller@View5')->name('c5');
 Route::get('/c6', 'C1Controller@View6')->name('c6');
 
 Route::get('/about', 'AboutController@about')->name('about');
+
+Route::get('shoppingcart', function() {
+    return view('shoppingcart');
+});

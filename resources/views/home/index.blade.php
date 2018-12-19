@@ -71,6 +71,11 @@
                   </div>
                 </li>
               @endguest
+
+              <li class="nav-item active">
+                <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/shoppingcart">購物車
+                  </a></font>
+              </li>
             </ul>
           </ul>
         </div>

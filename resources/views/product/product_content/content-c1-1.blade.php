@@ -155,7 +155,9 @@
                   <li>Consectetur</li>
                   <li>Adipiscing Elit</li>
                 </ul>
-              </div>
+                <font face="微軟正黑體">
+                  <button class="btn btn-primary">加入購物車</button>
+                </font>
 
             </div>
             <!-- /.row -->
