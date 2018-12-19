@@ -139,7 +139,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/f7q2Z3r.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Honda/Honda K10 FERIO 冷氣壓縮機.JPG" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">HONDA K10 FERIO 冷氣壓縮機</font></a>
@@ -155,7 +155,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/sYX6VQI.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Honda/Honda CRV 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">HONDA CRV 冷氣壓縮機</font></a>
@@ -171,7 +171,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/K7yKANF.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Honda/Honda CIVIC 8代 K12 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">HONDA CIVIC 8代 K12 冷氣壓縮機</font></a>
@@ -187,7 +187,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/yyaO3BY.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTO海力士2.7 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">TOYOTO 海力士2.7 冷氣壓縮機</font></a>
@@ -203,7 +203,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/2GzKPEG.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTA Yaris 1.5 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">TOYOTA Yaris 1.5 冷氣壓縮機</font></a>
@@ -219,7 +219,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/VXebDVS.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTA 86-GT ZN-6 冷氣壓縮機.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">TOYOTA 86-GT ZN-6 冷氣壓縮機</font></a>
@@ -235,7 +235,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/QXrpf0v.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/Benz/BENZ W203 3.2 冷氣壓縮機.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">BENZ W203 3.2 冷氣壓縮機</font></a>
@@ -251,7 +251,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/ZNWcNU9.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/Benz/BENZ W202冷氣壓縮機.JPG" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">BENZ W202 冷氣壓縮機</font></a>
@@ -267,7 +267,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/QJ8D0hA.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/Benz/Benz w203 C200 冷氣壓縮機.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">BENZ w203 C200 冷氣壓縮機</font></a>
@@ -294,12 +294,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+
 
     <!-- Bootstrap core JavaScript -->
     <!--<script src="SecondHand/public/js/jquery.min.js"></script> -->

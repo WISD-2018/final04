@@ -139,7 +139,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="http://localhost:8000/c1-1"><img class="card-img-top" src="https://i.imgur.com/ci4sUjd.jpg/" alt=""></a>
+                <a href="http://localhost:8000/c1-1"><img class="card-img-top" src="img/TOYOTA/TOYOTA A秀 EXSIOR 1.6 2.0 傳動軸.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="http://localhost:8000/c1-1"><font face="微軟正黑體">TOYOTA EXSIOR 1.6 2.0 傳動軸</font></a>
@@ -155,7 +155,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/tzbc9mx.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTA 台製 新頭 傳動軸.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="#"><font face="微軟正黑體">TOYOTA 台製 新頭 傳動軸</font></a>
@@ -171,7 +171,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/VcU5er0.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTA傳動軸_ALTIS 1.6 傳動軸.JPG" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="#"><font face="微軟正黑體">TOYOTA_ALTIS 1.6 傳動軸</font></a>
@@ -187,7 +187,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/5T4t1ka.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Benz/BENZ W245 B170 傳動軸.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="#"><font face="微軟正黑體">BENZ W245 B170 傳動軸</font></a>
@@ -203,7 +203,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/xBVUim2.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Benz/Benz w124 w140 後地軸傳動軸.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="#"><font face="微軟正黑體">BENZ w124 w140 後地軸傳動軸</font></a>
@@ -219,7 +219,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/UEDNHtx.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Benz/Benz  VIANO 中間傳動軸.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="#"><font face="微軟正黑體">BENZ VIANO 中間傳動軸</font></a>
@@ -235,7 +235,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/hOWqCRI.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Honda/Honda TEANA  X-TRAIL 傳動軸.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="#"><font face="微軟正黑體">HONDA TEANA X-TRAIL 傳動軸</font></a>
@@ -251,7 +251,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/1eMoWpd.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Honda/Honda crv 二代 4WD 傳動軸.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="#"><font face="微軟正黑體">HONDA crv 二代 4WD 傳動軸</font></a>

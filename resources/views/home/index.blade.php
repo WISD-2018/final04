@@ -122,13 +122,13 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img class="d-block img-fluid" src="https://i.imgur.com/AXrw9j2.png" alt="First slide">
+                <img class="d-block img-fluid" src="img/index_threefaces/2.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="https://i.imgur.com/EkYxX15.png" alt="Second slide">
+                <img class="d-block img-fluid" src="img/index_threefaces/1.png" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="https://i.imgur.com/ADHyeRM.png" alt="Third slide">
+                <img class="d-block img-fluid" src="img/index_threefaces/3.png" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -145,7 +145,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/5T4t1ka.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Benz/BENZ W245 B170 傳動軸.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="#"><font face="微軟正黑體">BENZ W245 B170 傳動軸</font></a>
@@ -161,7 +161,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/WUkdYJp.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Benz/Benz W211 320 112949 3.2L 引擎 自排 變速箱.JPG" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="#"><font face="微軟正黑體">BENZ W211 320 112949 3.2L 引擎</font></a>
@@ -177,7 +177,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/yyaO3BY.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/Air/TOYOTO海力士2.7 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
                     <a href="#"><font face="微軟正黑體">TOYOTO 海力士2.7 冷氣壓縮機</font></a>
