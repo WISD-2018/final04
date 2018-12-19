@@ -13,6 +13,11 @@ class C1Controller extends Controller
         return view('/product.c1');
     }
 
+    public function content_c1_1()
+    {
+        return view('/product/product_content.content-c1-1');
+    }
+
     public function View2()
     {
         return view('/product.c2');
