@@ -26,7 +26,17 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('index');
 
 Route::get('/c1', 'C1Controller@View1')->name('c1');
+//C1商品內頁
 Route::get('/c1-1', 'C1Controller@content_c1_1')->name('content-c1-1');
+Route::get('/c1-2', 'C1Controller@content_c1_2')->name('content-c1-2');
+Route::get('/c1-3', 'C1Controller@content_c1_3')->name('content-c1-3');
+Route::get('/c1-4', 'C1Controller@content_c1_4')->name('content-c1-4');
+Route::get('/c1-5', 'C1Controller@content_c1_5')->name('content-c1-5');
+Route::get('/c1-6', 'C1Controller@content_c1_6')->name('content-c1-6');
+Route::get('/c1-7', 'C1Controller@content_c1_7')->name('content-c1-7');
+Route::get('/c1-8', 'C1Controller@content_c1_8')->name('content-c1-8');
+//C1商品內頁
+
 Route::get('/c2', 'C1Controller@View2')->name('c2');
 Route::get('/c3', 'C1Controller@View3')->name('c3');
 Route::get('/c4', 'C1Controller@View4')->name('c4');
