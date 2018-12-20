@@ -143,7 +143,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/U7mKsXS.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/sound/本田 原廠音響主機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">HONDA 原廠音響主機</font></a>
@@ -159,7 +159,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/1d7W7sc.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/sound/本田 FIT音響主機 A款.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">HONDA FIT音響主機 A款</font></a>
@@ -175,7 +175,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/bsD4UdE.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/sound/本田 FIT 音響主機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">HONDA FIT 音響主機</font></a>
@@ -191,7 +191,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/LcRfcH9.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/sound/TOYOTA CAMRY 國際牌 6.5吋螢幕 音響主機.JPG" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">TOYOTA CAMRY 國際牌 6.5吋螢幕 音響主機</font></a>
@@ -207,7 +207,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/BkK7MtX.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/sound/TOYOTA ALTIS 前置6片CD音響主機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">TOYOTA ALTIS 前置6片CD音響主機</font></a>
@@ -223,7 +223,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/qRm3o1X.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/sound/TOYOTA  原廠音響主機.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">TOYOTA  原廠音響主機</font></a>
@@ -239,7 +239,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/TymJ3Lj.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/sound/BENZ原廠音響主機.JPG" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">BENZ 原廠音響主機</font></a>
@@ -255,7 +255,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/J9cYpTX.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/sound/BENZ W211音響主機.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">BENZ W211音響主機</font></a>
@@ -271,7 +271,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/MLKdz9t.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/sound/BENZ R350 原廠音響主機.jpeg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">BENZ R350 原廠音響主機</font></a>
