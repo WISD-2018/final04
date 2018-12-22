@@ -95,6 +95,7 @@
         <div class="card h-auto">
             <?php
                 $con=mysqli_connect("localhost:33060","root","root","secondhand");
+                mysqli_set_charset($con,"utf8");
                 $row=mysqli_query($con,"select * from products");
                 $ret=mysqli_fetch_array($row);
             ?>
