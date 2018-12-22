@@ -154,7 +154,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
                 <h3 class="my-3">Project Details</h3>
                 <ul>
-                  <!-- 商品描述 -->
+                  <li>Lorem Ipsum</li>
+                  <li>Dolor Sit Amet</li>
+                  <li>Consectetur</li>
+                  <li>Adipiscing Elit</li>
                 </ul>
                 <font face="微軟正黑體">
                   <button class="btn btn-primary">加入購物車</button>
@@ -164,37 +167,36 @@
             <!-- /.row -->
 
             <!-- Related Projects Row -->
-            <div class="col-md-8">
             <h5 class="my-4">Related Projects</h5>
 
             <div class="row">
 
-              <div class="co2-md-3 col-sm-4 mb-4">
+              <div class="col-md-3 col-sm-6 mb-4">
                 <a href="#">
                   <img class="img-fluid" src="http://placehold.it/500x300" alt="">
                 </a>
               </div>
 
-              <div class="co2-md-3 col-sm-4 mb-4">
+              <div class="col-md-3 col-sm-6 mb-4">
                 <a href="#">
                   <img class="img-fluid" src="http://placehold.it/500x300" alt="">
                 </a>
               </div>
 
-              <div class="co2-md-3 col-sm-4 mb-4">
+              <div class="col-md-3 col-sm-6 mb-4">
                 <a href="#">
                   <img class="img-fluid" src="http://placehold.it/500x300" alt="">
                 </a>
               </div>
 
-              <div class="co2-md-3 col-sm-4 mb-4">
+              <div class="col-md-3 col-sm-6 mb-4">
                 <a href="#">
                   <img class="img-fluid" src="http://placehold.it/500x300" alt="">
                 </a>
               </div>
 
             </div>
-            </div>
+
           </div>
           <!-- /.row -->
 

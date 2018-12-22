@@ -142,10 +142,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/R556pbm.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/light/HONDA CRV 左大燈.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">HONDA CRV</font></a>
+                        <a href="#"><font face="微軟正黑體">HONDA CRV 左大燈</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -158,7 +158,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/RiZ0bVm.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/light/honda CRV 4代4.5代 大燈.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">HONDA CRV4代、4.5代 大燈</font></a>
@@ -174,7 +174,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/9q6R6e2.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/light/HONDA CIVIC 右大燈.JPG" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">HONDA CIVI 右大燈</font></a>
@@ -190,7 +190,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/aXFGuLN.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/light/TOYOTA Wish 06年 原廠車頭大燈.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">TOYOTA Wish 06年 原廠車頭大燈</font></a>
@@ -206,7 +206,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/QbeVApD.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/light/TOYOTA WISH 左大燈.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">TOYOTA Wish 左大燈</font></a>
@@ -222,7 +222,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/setkUZp.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/light/TOYOTA  CAMRY原廠二手大燈.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">TOYOTA Camry 原廠二手大燈</font></a>
@@ -238,7 +238,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/udYUZrK.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/light/BENZ W221 S350 左大燈.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">BENZ W221 S350 左大燈</font></a>
@@ -254,7 +254,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/6cYcjYV.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/light/Benz c w204 頭燈.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">BENZ cw204 頭燈</font></a>
@@ -270,7 +270,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="https://i.imgur.com/2GeENyR.jpg" alt=""></a>
+                      <a href="#"><img class="card-img-top" src="img/light/賓士 BENZ W207 C207 W212 大燈.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="#"><font face="微軟正黑體">BENZ w207 C207 W212 大燈</font></a>
@@ -297,12 +297,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+
 
     <!-- Bootstrap core JavaScript -->
     <!--<script src="SecondHand/public/js/jquery.min.js"></script> -->

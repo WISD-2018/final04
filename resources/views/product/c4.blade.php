@@ -143,7 +143,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/7a3rktW.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/brakes/benz w220-s320煞車組.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">BENZ w220-s320煞車組</font></a>
@@ -159,7 +159,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/FkxM7qv.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/brakes/TOYOTA TERCEL 前煞車盤.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">TOYOTA TERCEL 前煞車盤</font></a>
@@ -175,7 +175,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/XV6rLyp.jpg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/brakes/TOYOTA PREVIA 03後 煞車盤.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">TOYOTA PREVIA 03後煞車盤</font></a>
@@ -191,7 +191,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="https://i.imgur.com/v3yOsdk.jpgg" alt=""></a>
+                <a href="#"><img class="card-img-top" src="img/brakes/TOYOTA ALTIS 原廠前卡鉗+碟盤+煞車皮.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="#"><font face="微軟正黑體">TOYOTA ALTIS 原廠前卡鉗+碟盤+煞車皮</font></a>
@@ -218,12 +218,7 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+
 
     <!-- Bootstrap core JavaScript -->
     <!--<script src="SecondHand/public/js/jquery.min.js"></script> -->
