@@ -19,11 +19,6 @@
 
   </head>
 
-  <?php
-  //$con=mysqli_connect("localhost:33060","root","root","secondhand");
-  //$row=mysqli_query($con,"select * from products");
-  ?>
-
   <body>
 
     <!-- Navigation -->
@@ -91,29 +86,28 @@
     <div class="container">
 
       <!-- Page Heading -->
+        <?php
+        $con=mysqli_connect("localhost:33060","root","root","secondhand");
+        mysqli_set_charset($con,"utf8");
+        $row=mysqli_query($con,"select * from products");
+        $ret=mysqli_fetch_array($row);
+        ?>
       <h1 class="my-4"><font face="微軟正黑體">購物車清單</font></h1>
         <div class="card h-auto">
-            <?php
-                $con=mysqli_connect("localhost:33060","root","root","secondhand");
-                mysqli_set_charset($con,"utf8");
-                $row=mysqli_query($con,"select * from products");
-                $ret=mysqli_fetch_array($row);
-            ?>
           <table>
-
             <tr>
-              <td><h4><font face="微軟正黑體" color="#6495ed" >編號</font></h4></td>
-              <td><h4><font face="微軟正黑體" color="#6495ed" >名稱</font></h4></td>
-              <td><h4><font face="微軟正黑體" color="#6495ed" >價格</font></h4></td>
-              <td><h4><font face="微軟正黑體" color="#6495ed" >數量</font></h4></td>
-              <td><h4><font face="微軟正黑體" color="#6495ed" >修改</font></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>編號</center></font></div></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>名稱</center></font></div></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>價格</center></font></div></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>數量</center></font></div></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>修改</center></font></div></h4></td>
             </tr>
             <tr>
-                <td><h5><font face="微軟正黑體" ><?=$ret["id"]?></font></h5></td>
-              <td><h5><font face="微軟正黑體" ><?=$ret["name"]?></font></h5></td>
-              <td><h5><font face="微軟正黑體" ><?=$ret["price"]?></font></h5></td>
-              <td><h5><font face="微軟正黑體" >10</font></h5></td>
-              <td><h5><font face="微軟正黑體" >增加 減少</font></h5></td>
+              <td><h5><font face="微軟正黑體" ><center><?=$ret["id"]?></center></font></h5></td>
+              <td><h5><font face="微軟正黑體" ><center><?=$ret["name"]?></center></font></h5></td>
+              <td><h5><font face="微軟正黑體" ><center><?=$ret["price"]?></center></font></h5></td>
+              <td><h5><font face="微軟正黑體" ><center>測試</center></font></h5></td>
+              <td><h5><font face="微軟正黑體" ><center>測試</center></font></h5></td>
             </tr>
           </table>
         </div>

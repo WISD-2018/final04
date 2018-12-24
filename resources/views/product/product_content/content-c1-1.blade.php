@@ -157,7 +157,7 @@
                   <!-- 商品描述 -->
                 </ul>
                 <font face="微軟正黑體">
-                  <button class="btn btn-primary">加入購物車</button>
+                  <button class="btn btn-primary" onclick="alert('成功加入購物車！')" >加入購物車</button>
                 </font>
 
             </div>
