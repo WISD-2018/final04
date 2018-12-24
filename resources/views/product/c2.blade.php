@@ -143,10 +143,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTA引擎_3SGE VVT-I 紅頭.jpg" alt=""></a>
+                <a href="http://localhost:8000/c2-1"><img class="card-img-top" src="img/TOYOTA/TOYOTA引擎_3SGE VVT-I 紅頭.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
-                    <a href="#"><font face="微軟正黑體">TOYOTA 3SGE VVT-I 紅頭引擎</font></a>
+                    <a href="http://localhost:8000/c2-1"><font face="微軟正黑體">TOYOTA 3SGE VVT-I 紅頭引擎</font></a>
                   </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -159,10 +159,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTA引擎_3SGTE_$15000.jpg" alt=""></a>
+                <a href="http://localhost:8000/c2-2"><img class="card-img-top" src="img/TOYOTA/TOYOTA引擎_3SGTE_$15000.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
-                    <a href="#"><font face="微軟正黑體">TOYOTA 3SGTE 引擎</font></a>
+                    <a href="http://localhost:8000/c2-2"><font face="微軟正黑體">TOYOTA 3SGTE 引擎</font></a>
                   </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
@@ -175,10 +175,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTA引擎_3sgte260.jpg" alt=""></a>
+                <a href="http://localhost:8000/c2-3"><img class="card-img-top" src="img/TOYOTA/TOYOTA引擎_3sgte260.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
-                    <a href="#"><font face="微軟正黑體">TOYOTA 3sgte260 引擎</font></a>
+                    <a href="http://localhost:8000/c2-3"><font face="微軟正黑體">TOYOTA 3sgte260 引擎</font></a>
                   </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -191,10 +191,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/Benz/Benz R172 SLK350  V6 引擎組.jpg" alt=""></a>
+                <a href="http://localhost:8000/c2-4"><img class="card-img-top" src="img/Benz/Benz R172 SLK350  V6 引擎組.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
-                    <a href="#"><font face="微軟正黑體">BENZ R172 SLK350 V6 引擎組</font></a>
+                    <a href="http://localhost:8000/c2-4"><font face="微軟正黑體">BENZ R172 SLK350 V6 引擎組</font></a>
                   </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -207,10 +207,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/Benz/Benz W140 直6 引擎.jpg" alt=""></a>
+                <a href="http://localhost:8000/c2-5"><img class="card-img-top" src="img/Benz/Benz W140 直6 引擎.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
-                    <a href="#"><font face="微軟正黑體">BENZ W140 直6 引擎</font></a>
+                    <a href="http://localhost:8000/c2-5"><font face="微軟正黑體">BENZ W140 直6 引擎</font></a>
                   </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
@@ -223,10 +223,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/Benz/Benz W211 320 112949 3.2L 引擎 自排 變速箱.JPG" alt=""></a>
+                <a href="http://localhost:8000/c2-6"><img class="card-img-top" src="img/Benz/Benz W211 320 112949 3.2L 引擎 自排 變速箱.JPG" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
-                    <a href="#"><font face="微軟正黑體">BENZ W211 320 112949 3.2L 引擎</font></a>
+                    <a href="http://localhost:8000/c2-6"><font face="微軟正黑體">BENZ W211 320 112949 3.2L 引擎</font></a>
                   </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -239,10 +239,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/Honda/Honda K6 K8引擎.jpg" alt=""></a>
+                <a href="http://localhost:8000/c2-7"><img class="card-img-top" src="img/Honda/Honda K6 K8引擎.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
-                    <a href="#"><font face="微軟正黑體">HONDA K6 K8引擎</font></a>
+                    <a href="http://localhost:8000/c2-7"><font face="微軟正黑體">HONDA K6 K8引擎</font></a>
                   </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -255,10 +255,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/Honda/Honda K20A 雙凸引擎.jpg" alt=""></a>
+                <a href="http://localhost:8000/c2-8"><img class="card-img-top" src="img/Honda/Honda K20A 雙凸引擎.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
-                    <a href="#"><font face="微軟正黑體">HONDA K20A 雙凸引擎</font></a>
+                    <a href="http://localhost:8000/c2-8"><font face="微軟正黑體">HONDA K20A 雙凸引擎</font></a>
                   </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>

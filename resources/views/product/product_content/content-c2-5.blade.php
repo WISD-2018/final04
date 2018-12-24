@@ -145,7 +145,7 @@
             <!-- Portfolio Item Row -->
             <div class="row">
               <div class="col-md-8">
-                <img class="img-fluid" src="img/Benz/Benz w124 w140 後地軸傳動軸.jpg" width="110%" height="30px">
+                <img class="img-fluid" src="img/Benz/Benz W140 直6 引擎.jpg" >
               </div>
 
               <div class="col-md-4">
@@ -169,20 +169,20 @@
                 <div class="row">
 
                   <div class="co2-md-3 col-sm-4 mb-4">
-                    <a href="http://localhost:8000/c1-6">
-                      <img class="img-fluid" src="img/Benz/Benz  VIANO 中間傳動軸.jpg" alt="">
+                    <a href="http://localhost:8000/c2-6">
+                      <img class="img-fluid" src="img/Benz/Benz W211 320 112949 3.2L 引擎 自排 變速箱.JPG" alt="">
                     </a>
                   </div>
 
                   <div class="co2-md-3 col-sm-4 mb-4">
-                    <a href="http://localhost:8000/c1-7">
-                      <img class="img-fluid" src="img/Honda/Honda TEANA  X-TRAIL 傳動軸.jpg" alt="">
+                    <a href="http://localhost:8000/c2-7">
+                      <img class="img-fluid" src="img/Honda/Honda K6 K8引擎.jpg" alt="">
                     </a>
                   </div>
 
                   <div class="co2-md-3 col-sm-4 mb-4">
-                    <a href="http://localhost:8000/c1-8">
-                      <img class="img-fluid" src="img/Honda/Honda crv 二代 4WD 傳動軸.jpg" alt="">
+                    <a href="http://localhost:8000/c2-8">
+                      <img class="img-fluid" src="img/Honda/Honda K20A 雙凸引擎.jpg" alt="">
                     </a>
                   </div>
 
