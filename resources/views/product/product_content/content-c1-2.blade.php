@@ -146,7 +146,7 @@
             <div class="row">
 
               <div class="col-md-8">
-                <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+                <img class="img-fluid" src="img/TOYOTA/TOYOTA 台製 新頭 傳動軸.jpg" alt="">
               </div>
 
               <div class="col-md-4">
@@ -154,10 +154,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
                 <h3 class="my-3">Project Details</h3>
                 <ul>
-                  <li>Lorem Ipsum</li>
-                  <li>Dolor Sit Amet</li>
-                  <li>Consectetur</li>
-                  <li>Adipiscing Elit</li>
+                  <!-- 商品描述 -->
                 </ul>
                 <font face="微軟正黑體">
                   <button class="btn btn-primary">加入購物車</button>
@@ -167,29 +164,31 @@
             <!-- /.row -->
 
             <!-- Related Projects Row -->
-            <h5 class="my-4">Related Projects</h5>
+              <div class="col-md-8">
+                <h5 class="my-4">Related Projects</h5>
 
-            <div class="row">
+                <div class="row">
 
-              <div class="col-md-3 col-sm-6 mb-4">
-                <a href="#">
-                  <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-                </a>
+                  <div class="co2-md-3 col-sm-4 mb-4">
+                    <a href="http://localhost:8000/c1-3">
+                      <img class="img-fluid" src="img/TOYOTA/TOYOTA傳動軸_ALTIS 1.6 傳動軸.JPG" alt="">
+                    </a>
+                  </div>
+
+                  <div class="co2-md-3 col-sm-4 mb-4">
+                    <a href="http://localhost:8000/c1-4">
+                      <img class="img-fluid" src="img/Benz/BENZ W245 B170 傳動軸.jpg" alt="">
+                    </a>
+                  </div>
+
+                  <div class="co2-md-3 col-sm-4 mb-4">
+                    <a href="http://localhost:8000/c1-5">
+                      <img class="img-fluid" src="img/Benz/Benz w124 w140 後地軸傳動軸.jpg" alt="">
+                    </a>
+                  </div>
+
+                </div>
               </div>
-
-              <div class="col-md-3 col-sm-6 mb-4">
-                <a href="#">
-                  <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-                </a>
-              </div>
-
-              <div class="col-md-3 col-sm-6 mb-4">
-                <a href="#">
-                  <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-                </a>
-              </div>
-
-            </div>
 
           </div>
           <!-- /.row -->
