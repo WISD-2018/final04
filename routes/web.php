@@ -38,6 +38,17 @@ Route::get('/c1-8', 'C1Controller@content_c1_8')->name('content-c1-8');
 //C1商品內頁
 
 Route::get('/c2', 'C1Controller@View2')->name('c2');
+//C2商品內頁
+Route::get('/c2-1', 'C1Controller@content_c2_1')->name('content-c2-1');
+Route::get('/c2-2', 'C1Controller@content_c2_2')->name('content-c2-2');
+Route::get('/c2-3', 'C1Controller@content_c2_3')->name('content-c2-3');
+Route::get('/c2-4', 'C1Controller@content_c2_4')->name('content-c2-4');
+Route::get('/c2-5', 'C1Controller@content_c2_5')->name('content-c2-5');
+Route::get('/c2-6', 'C1Controller@content_c2_6')->name('content-c2-6');
+Route::get('/c2-7', 'C1Controller@content_c2_7')->name('content-c2-7');
+Route::get('/c2-8', 'C1Controller@content_c2_8')->name('content-c2-8');
+//C2商品內頁
+
 Route::get('/c3', 'C1Controller@View3')->name('c3');
 Route::get('/c4', 'C1Controller@View4')->name('c4');
 Route::get('/c5', 'C1Controller@View5')->name('c5');

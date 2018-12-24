@@ -58,6 +58,47 @@ class C1Controller extends Controller
     {
         return view('/product.c2');
     }
+//C2 商品內容
+    public function content_c2_1()
+    {
+        return view('/product/product_content.content-c2-1');
+    }
+
+    public function content_c2_2()
+    {
+        return view('/product/product_content.content-c2-2');
+    }
+
+    public function content_c2_3()
+    {
+        return view('/product/product_content.content-c2-3');
+    }
+
+    public function content_c2_4()
+    {
+        return view('/product/product_content.content-c2-4');
+    }
+
+    public function content_c2_5()
+    {
+        return view('/product/product_content.content-c2-5');
+    }
+
+    public function content_c2_6()
+    {
+        return view('/product/product_content.content-c2-6');
+    }
+
+    public function content_c2_7()
+    {
+        return view('/product/product_content.content-c2-7');
+    }
+
+    public function content_c2_8()
+    {
+        return view('/product/product_content.content-c2-8');
+    }
+//C2 商品內容
 
     public function View3()
     {
