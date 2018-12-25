@@ -39,6 +39,10 @@
               <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/about">聯絡我們</a></font>
             </li>
 
+            <li class="nav-item">
+              <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/admin">管理員</a></font>
+            </li>
+
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
               <!-- Authentication Links -->
@@ -94,7 +98,7 @@
                     <div class="col-md-19">
                         <font face="微軟正黑體">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="請輸入關鍵字">
+                            <input id="search" type="text" class="form-control" placeholder="請輸入關鍵字">
                             <span class="input-group-btn">
                                 <button class="btn btn-primary">搜尋</button>
                             </span>
