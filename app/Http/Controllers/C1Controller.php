@@ -104,19 +104,178 @@ class C1Controller extends Controller
     {
         return view('/product.c3');
     }
+//C3 商品內容
+    public function content_c3_1()
+    {
+        return view('/product/product_content.content-c3-1');
+    }
+
+    public function content_c3_2()
+    {
+        return view('/product/product_content.content-c3-2');
+    }
+
+    public function content_c3_3()
+    {
+        return view('/product/product_content.content-c3-3');
+    }
+
+    public function content_c3_4()
+    {
+        return view('/product/product_content.content-c3-4');
+    }
+
+    public function content_c3_5()
+    {
+        return view('/product/product_content.content-c3-5');
+    }
+
+    public function content_c3_6()
+    {
+        return view('/product/product_content.content-c3-6');
+    }
+
+    public function content_c3_7()
+    {
+        return view('/product/product_content.content-c3-7');
+    }
+
+    public function content_c3_8()
+    {
+        return view('/product/product_content.content-c3-8');
+    }
+
+    public function content_c3_9()
+    {
+        return view('/product/product_content.content-c3-9');
+    }
+//C3 商品內容
 
     public function View4()
     {
         return view('/product.c4');
     }
+//C4 商品內容
+    public function content_c4_1()
+    {
+        return view('/product/product_content.content-c4-1');
+    }
+
+    public function content_c4_2()
+    {
+        return view('/product/product_content.content-c4-2');
+    }
+
+    public function content_c4_3()
+    {
+        return view('/product/product_content.content-c4-3');
+    }
+
+    public function content_c4_4()
+    {
+        return view('/product/product_content.content-c4-4');
+    }
+//C4 商品內容
 
     public function View5()
     {
         return view('/product.c5');
     }
+//C5 商品內容
+    public function content_c5_1()
+    {
+        return view('/product/product_content.content-c5-1');
+    }
+
+    public function content_c5_2()
+    {
+        return view('/product/product_content.content-c5-2');
+    }
+
+    public function content_c5_3()
+    {
+        return view('/product/product_content.content-c5-3');
+    }
+
+    public function content_c5_4()
+    {
+        return view('/product/product_content.content-c5-4');
+    }
+
+    public function content_c5_5()
+    {
+        return view('/product/product_content.content-c5-5');
+    }
+
+    public function content_c5_6()
+    {
+        return view('/product/product_content.content-c5-6');
+    }
+
+    public function content_c5_7()
+    {
+        return view('/product/product_content.content-c5-7');
+    }
+
+    public function content_c5_8()
+    {
+        return view('/product/product_content.content-c5-8');
+    }
+
+    public function content_c5_9()
+    {
+        return view('/product/product_content.content-c5-9');
+    }
+//C5 商品內容
 
     public function View6()
     {
         return view('/product.c6');
     }
+//C6 商品內容
+    public function content_c6_1()
+    {
+        return view('/product/product_content.content-c6-1');
+    }
+
+    public function content_c6_2()
+    {
+        return view('/product/product_content.content-c6-2');
+    }
+
+    public function content_c6_3()
+    {
+        return view('/product/product_content.content-c6-3');
+    }
+
+    public function content_c6_4()
+    {
+        return view('/product/product_content.content-c6-4');
+    }
+
+    public function content_c6_5()
+    {
+        return view('/product/product_content.content-c6-5');
+    }
+
+    public function content_c6_6()
+    {
+        return view('/product/product_content.content-c6-6');
+    }
+
+    public function content_c6_7()
+    {
+        return view('/product/product_content.content-c6-7');
+    }
+
+    public function content_c6_8()
+    {
+        return view('/product/product_content.content-c6-8');
+    }
+
+    public function content_c6_9()
+    {
+        return view('/product/product_content.content-c6-9');
+    }
+//C6 商品內容
 }
