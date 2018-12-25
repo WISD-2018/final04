@@ -143,10 +143,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/Honda/Honda K10 FERIO 冷氣壓縮機.JPG" alt=""></a>
+                <a href="http://localhost:8000/c3-1"><img class="card-img-top" src="img/Honda/Honda K10 FERIO 冷氣壓縮機.JPG" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">HONDA K10 FERIO 冷氣壓縮機</font></a>
+                        <a href="http://localhost:8000/c3-1"><font face="微軟正黑體">HONDA K10 FERIO 冷氣壓縮機</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -159,10 +159,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/Honda/Honda CRV 冷氣壓縮機.jpg" alt=""></a>
+                <a href="http://localhost:8000/c3-2"><img class="card-img-top" src="img/Honda/Honda CRV 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">HONDA CRV 冷氣壓縮機</font></a>
+                        <a href="http://localhost:8000/c3-2"><font face="微軟正黑體">HONDA CRV 冷氣壓縮機</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
@@ -175,10 +175,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/Honda/Honda CIVIC 8代 K12 冷氣壓縮機.jpg" alt=""></a>
+                <a href="http://localhost:8000/c3-3"><img class="card-img-top" src="img/Honda/Honda CIVIC 8代 K12 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">HONDA CIVIC 8代 K12 冷氣壓縮機</font></a>
+                        <a href="http://localhost:8000/c3-3"><font face="微軟正黑體">HONDA CIVIC 8代 K12 冷氣壓縮機</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -191,10 +191,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTO海力士2.7 冷氣壓縮機.jpg" alt=""></a>
+                <a href="http://localhost:8000/c3-4"><img class="card-img-top" src="img/TOYOTA/TOYOTO海力士2.7 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">TOYOTO 海力士2.7 冷氣壓縮機</font></a>
+                        <a href="http://localhost:8000/c3-4"><font face="微軟正黑體">TOYOTO 海力士2.7 冷氣壓縮機</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -207,10 +207,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTA Yaris 1.5 冷氣壓縮機.jpg" alt=""></a>
+                <a href="http://localhost:8000/c3-5"><img class="card-img-top" src="img/TOYOTA/TOYOTA Yaris 1.5 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">TOYOTA Yaris 1.5 冷氣壓縮機</font></a>
+                        <a href="http://localhost:8000/c3-5"><font face="微軟正黑體">TOYOTA Yaris 1.5 冷氣壓縮機</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
@@ -223,10 +223,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="img/TOYOTA/TOYOTA 86-GT ZN-6 冷氣壓縮機.jpg" alt=""></a>
+                      <a href="http://localhost:8000/c3-6"><img class="card-img-top" src="img/TOYOTA/TOYOTA 86-GT ZN-6 冷氣壓縮機.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
-                              <a href="#"><font face="微軟正黑體">TOYOTA 86-GT ZN-6 冷氣壓縮機</font></a>
+                              <a href="http://localhost:8000/c3-6"><font face="微軟正黑體">TOYOTA 86-GT ZN-6 冷氣壓縮機</font></a>
                           </h6>
                           <h5>$24.99</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -239,10 +239,10 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="img/Benz/BENZ W203 3.2 冷氣壓縮機.jpg" alt=""></a>
+                      <a href="http://localhost:8000/c3-7"><img class="card-img-top" src="img/Benz/BENZ W203 3.2 冷氣壓縮機.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
-                              <a href="#"><font face="微軟正黑體">BENZ W203 3.2 冷氣壓縮機</font></a>
+                              <a href="http://localhost:8000/c3-7"><font face="微軟正黑體">BENZ W203 3.2 冷氣壓縮機</font></a>
                           </h6>
                           <h5>$24.99</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -255,10 +255,10 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="img/Benz/BENZ W202冷氣壓縮機.JPG" alt=""></a>
+                      <a href="http://localhost:8000/c3-8"><img class="card-img-top" src="img/Benz/BENZ W202冷氣壓縮機.JPG" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
-                              <a href="#"><font face="微軟正黑體">BENZ W202 冷氣壓縮機</font></a>
+                              <a href="http://localhost:8000/c3-8"><font face="微軟正黑體">BENZ W202 冷氣壓縮機</font></a>
                           </h6>
                           <h5>$24.99</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -271,10 +271,10 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="#"><img class="card-img-top" src="img/Benz/Benz w203 C200 冷氣壓縮機.jpg" alt=""></a>
+                      <a href="http://localhost:8000/c3-9"><img class="card-img-top" src="img/Benz/Benz w203 C200 冷氣壓縮機.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
-                              <a href="#"><font face="微軟正黑體">BENZ w203 C200 冷氣壓縮機</font></a>
+                              <a href="http://localhost:8000/c3-9"><font face="微軟正黑體">BENZ w203 C200 冷氣壓縮機</font></a>
                           </h6>
                           <h5>$24.99</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>

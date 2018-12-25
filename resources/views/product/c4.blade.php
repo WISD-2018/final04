@@ -143,10 +143,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/brakes/benz w220-s320煞車組.jpg" alt=""></a>
+                <a href="http://localhost:8000/c4-1"><img class="card-img-top" src="img/brakes/benz w220-s320煞車組.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">BENZ w220-s320煞車組</font></a>
+                        <a href="http://localhost:8000/c4-1"><font face="微軟正黑體">BENZ w220-s320煞車組</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -159,10 +159,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/brakes/TOYOTA TERCEL 前煞車盤.jpg" alt=""></a>
+                <a href="http://localhost:8000/c4-2"><img class="card-img-top" src="img/brakes/TOYOTA TERCEL 前煞車盤.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">TOYOTA TERCEL 前煞車盤</font></a>
+                        <a href="http://localhost:8000/c4-2"><font face="微軟正黑體">TOYOTA TERCEL 前煞車盤</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
@@ -175,10 +175,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/brakes/TOYOTA PREVIA 03後 煞車盤.jpg" alt=""></a>
+                <a href="http://localhost:8000/c4-3"><img class="card-img-top" src="img/brakes/TOYOTA PREVIA 03後 煞車盤.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">TOYOTA PREVIA 03後煞車盤</font></a>
+                        <a href="http://localhost:8000/c4-3"><font face="微軟正黑體">TOYOTA PREVIA 03後煞車盤</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
@@ -191,10 +191,10 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/brakes/TOYOTA ALTIS 原廠前卡鉗+碟盤+煞車皮.jpg" alt=""></a>
+                <a href="http://localhost:8000/c4-4"><img class="card-img-top" src="img/brakes/TOYOTA ALTIS 原廠前卡鉗+碟盤+煞車皮.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="#"><font face="微軟正黑體">TOYOTA ALTIS 原廠前卡鉗+碟盤+煞車皮</font></a>
+                        <a href="http://localhost:8000/c4-4"><font face="微軟正黑體">TOYOTA ALTIS 原廠前卡鉗+碟盤+煞車皮</font></a>
                     </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
