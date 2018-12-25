@@ -97,7 +97,6 @@ Route::get('/c6-9', 'C1Controller@content_c6_9')->name('content-c6-9');
 //C6商品內頁
 
 Route::get('/admin', 'AdminController@admin')->name('admin');
-
 Route::get('/about', 'AboutController@about')->name('about');
 
 Route::get('shoppingcart', function() {

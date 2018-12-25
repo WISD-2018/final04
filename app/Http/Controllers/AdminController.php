@@ -10,6 +10,7 @@ class AdminController extends Controller
 {
     use AuthenticatesUsers;
 
+
     public function admin()
     {
         return view('/auth/admin');
@@ -22,8 +23,6 @@ class AdminController extends Controller
      */
 
     protected $redirectTo = '/home';
-
-
 
     /**
      * Create a new controller instance.

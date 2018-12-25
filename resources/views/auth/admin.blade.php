@@ -1,6 +1,6 @@
 @extends('layouts.app')
 <head>
-    <title>登入</title>
+    <title>管理員登入</title>
 </head>
 @section('content')
 <div class="container">
@@ -17,11 +17,11 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('信箱') }}</font></label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('admins_email') ? ' is-invalid' : '' }}" name="email" value="{{ old('admins_email') }}" required autofocus>
+                                <input id="email" type="email" class="form-control{{ $errors->has('admin_email') ? ' is-invalid' : '' }}" name="email" value="{{ old('admin_email') }}" required autofocus>
 
-                                @if ($errors->has('admins_email'))
+                                @if ($errors->has('admin_email'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('admins_email') }}</strong>
+                                        <strong>{{ $errors->first('admin_email') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -31,11 +31,11 @@
                             <label for="password" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('密碼') }}</font></label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('admins_password') ? ' is-invalid' : '' }}" name="password" required>
+                                <input id="password" type="password" class="form-control{{ $errors->has('admin_password') ? ' is-invalid' : '' }}" name="password" required>
 
-                                @if ($errors->has('admins_password'))
+                                @if ($errors->has('admin_password'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('admins_password') }}</strong>
+                                        <strong>{{ $errors->first('admin_password') }}</strong>
                                     </span>
                                 @endif
                             </div>
