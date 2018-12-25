@@ -207,7 +207,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="http://localhost:8000/c3-5"><img class="card-img-top" src="img/TOYOTA/TOYOTA Yaris 1.5 冷氣壓縮機.jpg" alt=""></a>
+                <a href="http://localhost:8000/c3-5"><img class="card-img-top" src="img/TOYOTA/TOYOTA Yaris 1.5 冷氣壓縮機2.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="http://localhost:8000/c3-5"><font face="微軟正黑體">TOYOTA Yaris 1.5 冷氣壓縮機</font></a>
@@ -223,7 +223,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                   <div class="card h-100">
-                      <a href="http://localhost:8000/c3-6"><img class="card-img-top" src="img/TOYOTA/TOYOTA 86-GT ZN-6 冷氣壓縮機.jpg" alt=""></a>
+                      <a href="http://localhost:8000/c3-6"><img class="card-img-top" src="img/TOYOTA/TOYOTA 86-GT ZN-6 冷氣壓縮機2.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
                               <a href="http://localhost:8000/c3-6"><font face="微軟正黑體">TOYOTA 86-GT ZN-6 冷氣壓縮機</font></a>
