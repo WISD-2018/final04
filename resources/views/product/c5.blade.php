@@ -143,7 +143,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="http://localhost:8000/c5-1"><img class="card-img-top" src="img/sound/本田 原廠音響主機.jpg" alt=""></a>
+                <a href="http://localhost:8000/c5-1"><img class="card-img-top" src="img/sound/本田 原廠音響主機2.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="http://localhost:8000/c5-1"><font face="微軟正黑體">HONDA 原廠音響主機</font></a>
@@ -159,7 +159,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="http://localhost:8000/c5-2"><img class="card-img-top" src="img/sound/本田 FIT音響主機 A款.jpg" alt=""></a>
+                <a href="http://localhost:8000/c5-2"><img class="card-img-top" src="img/sound/本田 FIT音響主機 A款2.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
                         <a href="http://localhost:8000/c5-2"><font face="微軟正黑體">HONDA FIT音響主機 A款</font></a>

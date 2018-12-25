@@ -146,7 +146,7 @@
             <div class="row">
 
               <div class="col-md-8">
-                <img class="img-fluid" src="img/Benz/Benz W211 320 112949 3.2L 引擎 自排 變速箱.JPG" alt="">
+                <img class="img-fluid" src="img/sound/TOYOTA  原廠音響主機.jpg" alt="">
               </div>
 
               <div class="col-md-4">
@@ -170,20 +170,20 @@
                 <div class="row">
 
                   <div class="co2-md-3 col-sm-4 mb-4">
-                    <a href="http://localhost:8000/c2-7">
-                      <img class="img-fluid" src="img/Honda/Honda K6 K8引擎.jpg" alt="">
+                    <a href="http://localhost:8000/c5-7">
+                      <img class="img-fluid" src="img/sound/BENZ原廠音響主機.JPG" alt="">
                     </a>
                   </div>
 
                   <div class="co2-md-3 col-sm-4 mb-4">
-                    <a href="http://localhost:8000/c2-8">
-                      <img class="img-fluid" src="img/Honda/Honda K20A 雙凸引擎.jpg" alt="">
+                    <a href="http://localhost:8000/c5-8">
+                      <img class="img-fluid" src="img/sound/BENZ W211音響主機.jpg" alt="">
                     </a>
                   </div>
 
                   <div class="co2-md-3 col-sm-4 mb-4">
-                    <a href="http://localhost:8000/c2-1">
-                      <img class="img-fluid" src="img/TOYOTA/TOYOTA引擎_3SGE VVT-I 紅頭.jpg" alt="">
+                    <a href="http://localhost:8000/c5-9">
+                      <img class="img-fluid" src="img/sound/BENZ R350 原廠音響主機.jpeg" alt="">
                     </a>
                   </div>
 

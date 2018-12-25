@@ -146,7 +146,7 @@
             <div class="row">
 
               <div class="col-md-8">
-                <img class="img-fluid" src="img/TOYOTA/TOYOTA引擎_3sgte260.jpg" alt="">
+                <img class="img-fluid" src="img/sound/本田 FIT 音響主機.jpg" width="110%" height="30px">
               </div>
 
               <div class="col-md-4">
@@ -170,20 +170,20 @@
                 <div class="row">
 
                   <div class="co2-md-3 col-sm-4 mb-4">
-                    <a href="http://localhost:8000/c2-4">
-                      <img class="img-fluid" src="img/Benz/Benz R172 SLK350  V6 引擎組.jpg" alt="">
+                    <a href="http://localhost:8000/c5-4">
+                      <img class="img-fluid" src="img/sound/TOYOTA CAMRY 國際牌 6.5吋螢幕 音響主機.JPG" alt="">
                     </a>
                   </div>
 
                   <div class="co2-md-3 col-sm-4 mb-4">
-                    <a href="http://localhost:8000/c2-5">
-                      <img class="img-fluid" src="img/Benz/Benz W140 直6 引擎.jpg" alt="">
+                    <a href="http://localhost:8000/c5-5">
+                      <img class="img-fluid" src="img/sound/TOYOTA ALTIS 前置6片CD音響主機.jpg" alt="">
                     </a>
                   </div>
 
                   <div class="co2-md-3 col-sm-4 mb-4">
-                    <a href="http://localhost:8000/c2-6">
-                      <img class="img-fluid" src="img/Benz/Benz W211 320 112949 3.2L 引擎 自排 變速箱.JPG" alt="">
+                    <a href="http://localhost:8000/c5-6">
+                      <img class="img-fluid" src="img/sound/TOYOTA  原廠音響主機.jpg" alt="">
                     </a>
                   </div>
 
