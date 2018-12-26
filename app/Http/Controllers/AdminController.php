@@ -33,6 +33,23 @@ class AdminController extends Controller
     public function __construct()
     {
 
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest:admin')->except('logout');
+    }
+
+    public function username()
+    {
+        return 'admin_email';
+    }
+
+    protected function guard()
+    {
+        return \Auth::guard('admin');
+    }
+
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+        $request->session()->invalidate();
+        return redirect(route('admin::loginForm'));
     }
 }
