@@ -19,8 +19,8 @@ class CreateOrdersTable extends Migration
             $table->integer('product_price')->index();
             $table->integer('product_quantity')->index();
             $table->string('freight')->nullable();
-            $table->date('deliverydate')->nullable();;
-            $table->string('way')->nullable();;
+            $table->date('deliverydate')->nullable();
+            $table->string('way')->nullable();
             $table->timestamps();
         });
     }
