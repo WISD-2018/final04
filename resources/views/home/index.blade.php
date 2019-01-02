@@ -31,50 +31,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
 
-            <!-- 需隱藏 -->
-
-            <ul class="navbar-nav ml-auto">
-              <!-- Authentication Links
-              @guest
-                <li class="nav-item">
-                  <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/admin">管理員</a></font>
-                </li>
-
-                @if (Route::has('register'))
-                  <li class="nav-item">
-                    <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/admin_register">管理員註冊</a></font>
-                  </li>
-                @endif
-              @else
-                <li class="nav-item dropdown">
-                  <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><font face="微軟正黑體">
-                      {{ Auth::user()->name }} </font><span class="caret"></span>
-                  </a>
-
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <font face="微軟正黑體"><a class="dropdown-item" href="{{ route('logout') }}"
-                                          onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                        {{ __('登出') }}
-                      </a></font>
-
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                      @csrf
-                    </form>
-                  </div>
-                </li>
-                <li class="nav-item active">
-                  <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/shoppingcart">購物車
-                    </a></font>
-                </li>
-              @endguest
-            </ul>
-
-            <!-- 需隱藏 -->
 
 
             <li class="nav-item active">
-              <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000">首頁
+              <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/home">首頁
                 <span class="sr-only">(current)</span>
               </a></font>
             </li>

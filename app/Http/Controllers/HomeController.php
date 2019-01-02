@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //if(Auth::user()->type==null)
+        //if(Auth::users()->type==null)
         return view('/home.index');
         //else
         //    return view('/home.index');
