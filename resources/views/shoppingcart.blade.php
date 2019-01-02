@@ -89,23 +89,23 @@
         <?php
         $con=mysqli_connect("localhost:33060","root","root","secondhand");
         mysqli_set_charset($con,"utf8");
-        $row=mysqli_query($con,"select * from products");
+        $row=mysqli_query($con,"select * from orders");
         $ret=mysqli_fetch_array($row);
         ?>
       <h1 class="my-4"><font face="微軟正黑體">購物車清單</font></h1>
         <div class="card h-auto">
           <table>
             <tr>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>編號</center></font></div></h4></td>
               <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>名稱</center></font></div></h4></td>
               <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>價格</center></font></div></h4></td>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>數量</center></font></div></h4></td>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>修改</center></font></div></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>單價</center></font></div></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>測試</center></font></div></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>測試</center></font></div></h4></td>
             </tr>
             <tr>
-              <td><h5><font face="微軟正黑體" ><center><?=$ret["id"]?></center></font></h5></td>
-              <td><h5><font face="微軟正黑體" ><center><?=$ret["name"]?></center></font></h5></td>
-              <td><h5><font face="微軟正黑體" ><center><?=$ret["price"]?></center></font></h5></td>
+              <td><h5><font face="微軟正黑體" ><center><?=$ret["product_name"]?></center></font></h5></td>
+              <td><h5><font face="微軟正黑體" ><center><?=$ret["product_price"]?></center></font></h5></td>
+              <td><h5><font face="微軟正黑體" ><center><?=$ret["product_quantity"]?></center></font></h5></td>
               <td><h5><font face="微軟正黑體" ><center>測試</center></font></h5></td>
               <td><h5><font face="微軟正黑體" ><center>測試</center></font></h5></td>
             </tr>

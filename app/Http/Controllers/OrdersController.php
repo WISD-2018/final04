@@ -35,7 +35,21 @@ class OrdersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        /*
+        $request->create([
+            orders::creat($request->all())
+        ]);
+        */
+        //orders::creat($request->all());
+        //return redirect()->route('orders.store');
+        $orders = new orders();
+        $orders->product_name = $request->input('product_name');
+        $orders->product_price = $request->input('product_price');
+        $orders->product_quantity = $request->input('product_quantity');
+        $orders->save();
+        return redirect()->route('shoppingcart');
+
+
     }
 
     /**
