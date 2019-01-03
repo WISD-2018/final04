@@ -23,6 +23,11 @@ Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('/home');
 
+//搜尋
+Route::get('/product.c1',['as'=>'index.show','uses'=>'SearchController@getindex']);
+Route::post('products/search','SearchController@search');
+
+
 Route::get('/home', 'HomeController@index')->name('index');
 
 Route::get('/c1', 'C1Controller@View1')->name('c1');
