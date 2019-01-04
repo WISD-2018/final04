@@ -95,18 +95,22 @@
             <div class="row">
               <div class="col-md-19">
                 <font face="微軟正黑體">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="請輸入關鍵字">
-                    <span class="input-group-btn">
-                                <button class="btn btn-primary">搜尋</button>
-                            </span>
+                  <div class="card-body">
+                    <form method="POST" action='/products/search'>
+                      {{csrf_field()}}
+
+                      <div class="form-group row">
+                        <input name='searchword' type='string' class="form-control" placeholder="請輸入關鍵字">
+
+                        <input type='submit' class="btn btn-primary">
+
+                      </div>
+                    </form>
                   </div>
                 </font>
               </div>
             </div>
           </div>
-          <br>
-
 
           <div class="list-group">
             <a href="http://localhost:8000/c1" class="list-group-item"><font face="微軟正黑體">傳動系統</font></a>

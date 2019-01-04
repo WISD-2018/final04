@@ -152,7 +152,7 @@
                   <img class="card-img-top" src="{{$product->picture}}" alt="">
                   <div class="card-body">
                     <h6 class="card-title">
-                      <a href="#"><font face="微軟正黑體">{{$product->name}}</font></a>
+                      <a href="http://localhost:8000/c{{$product->id_sequence}}"><font face="微軟正黑體">{{$product->name}}</font></a>
                     </h6>
                     <h5>
                       <p class="card-text"><font face="微軟正黑體">價格：{{$product->price}}元</font></p>
