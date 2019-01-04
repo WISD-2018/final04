@@ -160,9 +160,6 @@
                     <p class="card-text"><font face="微軟正黑體">{{$product->source}}</font></p>
 
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                  </div>
                 </div>
               </div>
 
