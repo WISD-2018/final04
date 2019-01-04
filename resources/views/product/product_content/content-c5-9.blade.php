@@ -150,20 +150,95 @@
             <!-- Portfolio Item Row -->
             <div class="row">
 
+                <?php
+                $connection = mysqli_connect("localhost:33060","root","root","secondhand");
+                mysqli_set_charset($connection,"utf8");
+                $sql = "SELECT * FROM products where id=38";
+                $res = mysqli_query($connection, $sql);
+                $r = mysqli_fetch_array($res);
+                ?>
+
+
               <div class="col-md-8">
                 <img class="img-fluid" src="img/sound/BENZ R350 原廠音響主機.jpeg" alt="">
               </div>
 
-              <div class="col-md-4">
-                <h3 class="my-3">Project Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <h3 class="my-3">Project Details</h3>
-                <ul>
-                  <!-- 商品描述 -->
-                </ul>
-                <font face="微軟正黑體">
-                  <button class="btn btn-primary">加入購物車</button>
-                </font>
+                  <div class="col-md-4">
+                    <font face="微軟正黑體">
+                      <h3 class="my-3"><?php echo $r['name']?></h3>
+                      <p class="my-3"><?php echo $r['source']?></p>
+                      <p class="my-3"><?php echo $r['time']?></p>
+                      <p class="my-3"><?php echo $r['where']?></p>
+                      <p class="my-3">庫存：<?php echo $r['stock']?></p>
+                      <h4 class="my-3">價格：<?php echo $r['price']?></h4>
+
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">加入購物車</button>
+
+                      <!-- Modal -->
+                      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+
+                            <div class="modal-header">
+                              <h4 class="modal-title" id="exampleModalLabel">商品確認</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                            <div class="modal-body">
+                              <form accept-charset="UTF-8" action="{{ route('orders.store') }}" method="post" role="form">
+                                {{ csrf_field()  }}
+                                <ul class="list-group mb-3">
+                                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+
+                                    <div class="col-6">
+                                      <h6 class="my-0">名稱</h6>
+                                    </div>
+
+                                    <div class="col-3">
+                                      <h6 class="my-0">單價</h6>
+                                    </div>
+
+                                    <div class="col-3">
+                                      <h6 class="my-0">數量</h6>
+                                    </div>
+                                  </li>
+
+                                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div class="col-6">
+                                      <input type="text" class="form-control" name="product_name" value="<?php echo $r['name']?>" readonly>
+                                    </div>
+
+                                    <div class="col-3">
+                                      <input type="text" class="form-control" name="product_price" value="<?php echo $r['price']?>" readonly>
+                                    </div>
+
+                                    <div class="col-3">
+                                      <select class="form-control" name="product_quantity">
+                                        @foreach(range(1, $r['stock']) as $r['stock'])
+                                          <option>{{ $r['stock'] }}</option>
+                                        @endforeach
+                                      </select>
+                                    </div>
+
+                                  </li>
+
+                                </ul>
+
+                                <div class="modal-footer">
+
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                  <button type="submit" class="btn btn-primary">確認購買</button>
+
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                    </font>
+                  </div>
 
             </div>
             <!-- /.row -->

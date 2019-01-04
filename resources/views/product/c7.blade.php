@@ -157,9 +157,8 @@
                     <h5>
                       <p class="card-text"><font face="微軟正黑體">價格：{{$product->price}}元</font></p>
                     </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：{{$product->source}}</font></p>
-                    <p class="card-text"><font face="微軟正黑體">{{$product->time}}</font></p>
-                    <p class="card-text"><font face="微軟正黑體">{{$product->where}}</font></p>
+                    <p class="card-text"><font face="微軟正黑體">{{$product->source}}</font></p>
+
                   </div>
                   <div class="card-footer">
                     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
