@@ -145,7 +145,6 @@
             <!-- Portfolio Item Row -->
             <div class="row">
 
-              <div class="col-6">
                   <?php
                   $connection = mysqli_connect("localhost:33060","root","root","secondhand");
                   mysqli_set_charset($connection,"utf8");
@@ -162,9 +161,6 @@
                   <font face="微軟正黑體">
                     <h3 class="my-3"><?php echo $r['name']?></h3>
                     <h4 class="my-3"><?php echo $r['source']?></h4>
-                    <ul>
-                      <!-- 商品描述 -->
-                    </ul>
 
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">加入購物車</button>
@@ -186,6 +182,7 @@
                               {{ csrf_field()  }}
                               <ul class="list-group mb-3">
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
+
                                   <div class="col-6">
                                     <h6 class="my-0">名稱</h6>
                                   </div>
@@ -222,22 +219,17 @@
 
                               <div class="modal-footer">
 
-
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-                                <button type="submit" class="btn btn-primary">確定購買</button>
+                                <button type="submit" class="btn btn-primary">確認購買</button>
 
                               </div>
                             </form>
                           </div>
-
-
-
                         </div>
                       </div>
-                    </div>
-
                   </font>
                 </div>
+            </div>
             <!-- /.row -->
 
             <!-- Related Projects Row -->

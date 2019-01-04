@@ -34,7 +34,7 @@
 
 
             <li class="nav-item active">
-              <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/home">首頁
+              <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000">首頁
                 <span class="sr-only">(current)</span>
               </a></font>
             </li>

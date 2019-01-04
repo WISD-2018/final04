@@ -97,8 +97,8 @@
           <table>
             <tr>
               <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>名稱</center></font></div></h4></td>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>價格</center></font></div></h4></td>
               <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>單價</center></font></div></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>數量</center></font></div></h4></td>
               <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>測試</center></font></div></h4></td>
               <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>測試</center></font></div></h4></td>
             </tr>
