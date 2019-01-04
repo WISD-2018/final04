@@ -90,22 +90,26 @@
         <div class="col-lg-3">
 
           <h1 class="my-4"><font face="微軟正黑體">中古車體零件</font></h1>
-          <h3 class="my-4"><font face="微軟正黑體">傳動系統</font></h3>
           <div class="container">
             <div class="row">
               <div class="col-md-19">
                 <font face="微軟正黑體">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="請輸入關鍵字">
-                    <span class="input-group-btn">
-                                <button class="btn btn-primary">搜尋</button>
-                            </span>
+                  <div class="card-body">
+                    <form method="POST" action='/products/search'>
+                      {{csrf_field()}}
+
+                      <div class="form-group row">
+                        <input name='searchword' type='string' class="form-control" placeholder="請輸入關鍵字">
+
+                        <input type='submit' class="btn btn-primary">
+
+                      </div>
+                    </form>
                   </div>
                 </font>
               </div>
             </div>
           </div>
-          <br>
 
 
           <div class="list-group">
@@ -145,15 +149,15 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="" alt=""></a>
+                  <a href="#"><img class="card-img-top" src="{{$product->picture}}" alt=""></a>
                   <div class="card-body">
                     <h6 class="card-title">
                       <a href="#"><font face="微軟正黑體">{{$product->name}}</font></a>
                     </h6>
                     <h5>
-                      <p class="card-text">價格：{{$product->price}}元</p>
+                      <p class="card-text"><font face="微軟正黑體">價格：{{$product->price}}元</font></p>
                     </h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                    <p class="card-text"><font face="微軟正黑體">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</font></p>
                   </div>
                   <div class="card-footer">
                     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
