@@ -51,7 +51,7 @@ class OrdersController extends Controller
         $orders->product_quantity = $request->input('product_quantity');
         $orders->save();
 
-
+        return redirect()->route('shoppingcart');
 
     }
 

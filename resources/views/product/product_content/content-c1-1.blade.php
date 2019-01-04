@@ -151,6 +151,7 @@
                   $sql = "SELECT * FROM products where id=1";
                   $res = mysqli_query($connection, $sql);
                   $r = mysqli_fetch_array($res);
+                  $user = Auth::user();
                   ?>
 
                 <div class="col-md-8">
@@ -202,13 +203,11 @@
 
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
 
-                                  <div class="col-6">
-                                    <input type="hidden" class="form-control" name="user_id" value="">
-                                  </div>
+                                    <input type="hidden" class="form-control" name="user_name" value="<?php echo $user['name']?>">
 
-                                  <div class="col-6">
-                                    <input type="hidden" class="form-control" name="user_name" value="">
-                                  </div>
+                                    <input type="hidden" class="form-control" name="user_id" value="<?php echo $user['id']?>">
+
+                                    <input type="hidden" class="form-control" name="product_id" value="<?php echo $r['id']?>">
 
                                   <div class="col-6">
                                     <input type="text" class="form-control" name="product_name" value="<?php echo $r['name']?>" readonly>
