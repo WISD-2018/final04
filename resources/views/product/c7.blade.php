@@ -149,7 +149,7 @@
 
               <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="{{$product->picture}}" alt=""></a>
+                  <img class="card-img-top" src="{{$product->picture}}" alt="">
                   <div class="card-body">
                     <h6 class="card-title">
                       <a href="#"><font face="微軟正黑體">{{$product->name}}</font></a>
@@ -157,7 +157,9 @@
                     <h5>
                       <p class="card-text"><font face="微軟正黑體">價格：{{$product->price}}元</font></p>
                     </h5>
-                    <p class="card-text"><font face="微軟正黑體">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</font></p>
+                    <p class="card-text"><font face="微軟正黑體">型號：{{$product->source}}</font></p>
+                    <p class="card-text"><font face="微軟正黑體">{{$product->time}}</font></p>
+                    <p class="card-text"><font face="微軟正黑體">{{$product->where}}</font></p>
                   </div>
                   <div class="card-footer">
                     <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
