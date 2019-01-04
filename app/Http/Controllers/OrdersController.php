@@ -44,12 +44,13 @@ class OrdersController extends Controller
         //return redirect()->route('orders.store');
         $orders = new orders();
         $orders->user_id = $request->input('user_id');
+        $orders->user_name = $request->input('user_name');
         $orders->product_id = $request->input('product_id');
         $orders->product_name = $request->input('product_name');
         $orders->product_price = $request->input('product_price');
         $orders->product_quantity = $request->input('product_quantity');
         $orders->save();
-        return redirect()->route('shoppingcart');
+
 
 
     }

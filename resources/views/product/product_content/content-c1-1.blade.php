@@ -163,7 +163,11 @@
                     <h4 class="my-3"><?php echo $r['source']?></h4>
 
                     <!-- Button trigger modal -->
+                    @if (Auth::check())
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">加入購物車</button>
+
+
+
 
                     <!-- Modal -->
                     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -197,6 +201,15 @@
                                 </li>
 
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
+
+                                  <div class="col-6">
+                                    <input type="hidden" class="form-control" name="user_id" value="">
+                                  </div>
+
+                                  <div class="col-6">
+                                    <input type="hidden" class="form-control" name="user_name" value="">
+                                  </div>
+
                                   <div class="col-6">
                                     <input type="text" class="form-control" name="product_name" value="<?php echo $r['name']?>" readonly>
                                   </div>
@@ -227,6 +240,14 @@
                           </div>
                         </div>
                       </div>
+                    </div>
+
+                    @else
+
+                      <a href="http://localhost:8000/login"><button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" >加入購物車</button></a>
+
+                    @endif
+
                   </font>
                 </div>
             </div>
