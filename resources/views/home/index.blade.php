@@ -177,40 +177,31 @@
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="http://localhost:8000/c2-6"><img class="card-img-top" src="img/Benz/Benz W211 320 112949 3.2L 引擎 自排 變速箱.JPG" alt=""></a>
+                <div class="card-body">
+                  <h6 class="card-title">
+                    <a href="http://localhost:8000/c2-6"><font face="微軟正黑體">BENZ W211 320 112949 3.2L 引擎</font></a>
+                  </h6>
+                  <h5>$24.99</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/Benz/Benz W211 320 112949 3.2L 引擎 自排 變速箱.JPG" alt=""></a>
+                <a href="http://localhost:8000/c3-4"><img class="card-img-top" src="img/Air/TOYOTO海力士2.7 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                   <h6 class="card-title">
-                    <a href="#"><font face="微軟正黑體">BENZ W211 320 112949 3.2L 引擎</font></a>
+                    <a href="http://localhost:8000/c3-4"><font face="微軟正黑體">TOYOTO 海力士2.7 冷氣壓縮機</font></a>
                   </h6>
                   <h5>$24.99</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="img/Air/TOYOTO海力士2.7 冷氣壓縮機.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="#"><font face="微軟正黑體">TOYOTO 海力士2.7 冷氣壓縮機</font></a>
-                  </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                 </div>
               </div>
             </div>
