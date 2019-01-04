@@ -95,18 +95,22 @@
             <div class="row">
               <div class="col-md-19">
                 <font face="微軟正黑體">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="請輸入關鍵字">
-                    <span class="input-group-btn">
-                                <button class="btn btn-primary">搜尋</button>
-                            </span>
+                  <div class="card-body">
+                    <form method="POST" action='/products/search'>
+                      {{csrf_field()}}
+
+                      <div class="form-group row">
+                        <input name='searchword' type='string' class="form-control" placeholder="請輸入關鍵字">
+
+                        <input type='submit' class="btn btn-primary">
+
+                      </div>
+                    </form>
                   </div>
                 </font>
               </div>
             </div>
           </div>
-          <br>
-
 
           <div class="list-group">
             <a href="http://localhost:8000/c1" class="list-group-item"><font face="微軟正黑體">傳動系統</font></a>
@@ -145,20 +149,93 @@
             <!-- Portfolio Item Row -->
             <div class="row">
 
+                <?php
+                $connection = mysqli_connect("localhost:33060","root","root","secondhand");
+                mysqli_set_charset($connection,"utf8");
+                $sql = "SELECT * FROM products where id=17";
+                $res = mysqli_query($connection, $sql);
+                $r = mysqli_fetch_array($res);
+                ?>
+
               <div class="col-md-8">
                 <img class="img-fluid" src="img/Honda/Honda K10 FERIO 冷氣壓縮機.JPG" alt="">
               </div>
-              <font face="微軟正黑體">
-              <div class="col-md-4">
-                <h4 class="my-3">TOYOTA EXSIOR 傳動軸</h4>
-                <p>型號：TOYOTA A秀 EXSIOR 1.6 2.0 </p>
-                <h3 class="my-3">Project Details</h3>
-                <ul>
-                  <!-- 商品描述 -->
-                </ul>
+                  <div class="col-md-4">
+                    <font face="微軟正黑體">
+                      <h3 class="my-3"><?php echo $r['name']?></h3>
+                      <p class="my-3"><?php echo $r['source']?></p>
+                      <p class="my-3"><?php echo $r['time']?></p>
+                      <p class="my-3"><?php echo $r['where']?></p>
+                      <p class="my-3">庫存：<?php echo $r['stock']?></p>
+                      <h4 class="my-3">價格：<?php echo $r['price']?></h4>
 
-                  <button class="btn btn-primary" onclick="alert('成功加入購物車！')" >加入購物車</button>
-                </font>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">加入購物車</button>
+
+                      <!-- Modal -->
+                      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+
+                            <div class="modal-header">
+                              <h4 class="modal-title" id="exampleModalLabel">商品確認</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                            <div class="modal-body">
+                              <form accept-charset="UTF-8" action="{{ route('orders.store') }}" method="post" role="form">
+                                {{ csrf_field()  }}
+                                <ul class="list-group mb-3">
+                                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+
+                                    <div class="col-6">
+                                      <h6 class="my-0">名稱</h6>
+                                    </div>
+
+                                    <div class="col-3">
+                                      <h6 class="my-0">單價</h6>
+                                    </div>
+
+                                    <div class="col-3">
+                                      <h6 class="my-0">數量</h6>
+                                    </div>
+                                  </li>
+
+                                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div class="col-6">
+                                      <input type="text" class="form-control" name="product_name" value="<?php echo $r['name']?>" readonly>
+                                    </div>
+
+                                    <div class="col-3">
+                                      <input type="text" class="form-control" name="product_price" value="<?php echo $r['price']?>" readonly>
+                                    </div>
+
+                                    <div class="col-3">
+                                      <select class="form-control" name="product_quantity">
+                                        @foreach(range(1, $r['stock']) as $r['stock'])
+                                          <option>{{ $r['stock'] }}</option>
+                                        @endforeach
+                                      </select>
+                                    </div>
+
+                                  </li>
+
+                                </ul>
+
+                                <div class="modal-footer">
+
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                  <button type="submit" class="btn btn-primary">確認購買</button>
+
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                    </font>
+                  </div>
 
             </div>
             <!-- /.row -->

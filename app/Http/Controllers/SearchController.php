@@ -14,9 +14,7 @@ class SearchController extends Controller
     }
     public function search(Request $request){
         $searchword=$request->input('searchword');
-        //顯卡搜尋 變數要雙引號包住
         $product=products::where('name','like',"%$searchword%")
-            ->orWhere('price','<=',$searchword)
             ->get();
 
 
