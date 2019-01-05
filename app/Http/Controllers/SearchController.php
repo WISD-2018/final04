@@ -15,6 +15,7 @@ class SearchController extends Controller
     public function search(Request $request){
         $searchword=$request->input('searchword');
         $product=products::where('name','like',"%$searchword%")
+            ->orWhere('price','<=',$searchword)
             ->get();
 
 
