@@ -150,10 +150,12 @@
                 <a href="http://localhost:8000/c6-1"><img class="card-img-top" src="img/light/HONDA CRV 左大燈.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="http://localhost:8000/c6-1"><font face="微軟正黑體">HONDA CRV 左大燈</font></a>
+                        <a href="http://localhost:8000/c6-1"><font face="微軟正黑體">HONDA CRV 大燈</font></a>
                     </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                    <h5>
+                        <p class="card-text"><font face="微軟正黑體">價格：1000元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">型號：HONDA CRV</font></p>
                 </div>
               </div>
             </div>
@@ -163,10 +165,12 @@
                 <a href="http://localhost:8000/c6-2"><img class="card-img-top" src="img/light/honda CRV 4代4.5代 大燈.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="http://localhost:8000/c6-2"><font face="微軟正黑體">HONDA CRV4代、4.5代 大燈</font></a>
+                        <a href="http://localhost:8000/c6-2"><font face="微軟正黑體">HONDA CRV4代 4.5代 大燈</font></a>
                     </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                    <h5>
+                        <p class="card-text"><font face="微軟正黑體">價格：1250元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">型號：HONDA CRV4  4.5代</font></p>
                 </div>
               </div>
             </div>
@@ -178,8 +182,10 @@
                     <h6 class="card-title">
                         <a href="http://localhost:8000/c6-3"><font face="微軟正黑體">HONDA CIVI 右大燈</font></a>
                     </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                    <h5>
+                        <p class="card-text"><font face="微軟正黑體">價格：1400元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">型號：HONDA CIVI</font></p>
                 </div>
               </div>
             </div>
@@ -189,10 +195,12 @@
                 <a href="http://localhost:8000/c6-4"><img class="card-img-top" src="img/light/TOYOTA Wish 06年 原廠車頭大燈.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="http://localhost:8000/c6-4"><font face="微軟正黑體">TOYOTA Wish 06年 原廠車頭大燈</font></a>
+                        <a href="http://localhost:8000/c6-4"><font face="微軟正黑體">TOYOTA WISH 06年 原廠車頭大燈</font></a>
                     </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                    <h5>
+                        <p class="card-text"><font face="微軟正黑體">價格：1350元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">型號：TOYOTA WISH</font></p>
                 </div>
               </div>
             </div>
@@ -202,10 +210,12 @@
                 <a href="http://localhost:8000/c6-5"><img class="card-img-top" src="img/light/TOYOTA WISH 左大燈.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="http://localhost:8000/c6-5"><font face="微軟正黑體">TOYOTA Wish 左大燈</font></a>
+                        <a href="http://localhost:8000/c6-5"><font face="微軟正黑體">TOYOTA WISH 左大燈</font></a>
                     </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                    <h5>
+                        <p class="card-text"><font face="微軟正黑體">價格：750元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">型號：TOYOTA WISH</font></p>
                 </div>
               </div>
             </div>
@@ -215,10 +225,12 @@
                       <a href="http://localhost:8000/c6-6"><img class="card-img-top" src="img/light/TOYOTA  CAMRY原廠二手大燈.jpg" alt=""></a>
                       <div class="card-body">
                           <h6 class="card-title">
-                              <a href="http://localhost:8000/c6-6"><font face="微軟正黑體">TOYOTA Camry 原廠二手大燈</font></a>
+                              <a href="http://localhost:8000/c6-6"><font face="微軟正黑體">TOYOTA CAMRY原廠二手大燈</font></a>
                           </h6>
-                          <h5>$24.99</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                          <h5>
+                              <p class="card-text"><font face="微軟正黑體">價格：1850元</font></p>
+                          </h5>
+                          <p class="card-text"><font face="微軟正黑體">型號：TOYOTA CAMRY</font></p>
                       </div>
                   </div>
               </div>
@@ -230,8 +242,10 @@
                           <h6 class="card-title">
                               <a href="http://localhost:8000/c6-7"><font face="微軟正黑體">BENZ W221 S350 左大燈</font></a>
                           </h6>
-                          <h5>$24.99</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                          <h5>
+                              <p class="card-text"><font face="微軟正黑體">價格：800元</font></p>
+                          </h5>
+                          <p class="card-text"><font face="微軟正黑體">型號：BENZ W211 S350 </font></p>
                       </div>
                   </div>
               </div>
@@ -243,8 +257,10 @@
                           <h6 class="card-title">
                               <a href="http://localhost:8000/c6-8"><font face="微軟正黑體">BENZ cw204 頭燈</font></a>
                           </h6>
-                          <h5>$24.99</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                          <h5>
+                              <p class="card-text"><font face="微軟正黑體">價格：1400元</font></p>
+                          </h5>
+                          <p class="card-text"><font face="微軟正黑體">型號：BENZ cw204</font></p>
                       </div>
                   </div>
               </div>
@@ -256,8 +272,10 @@
                           <h6 class="card-title">
                               <a href="http://localhost:8000/c6-9"><font face="微軟正黑體">BENZ w207 C207 W212 大燈</font></a>
                           </h6>
-                          <h5>$24.99</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                          <h5>
+                              <p class="card-text"><font face="微軟正黑體">價格：1500元</font></p>
+                          </h5>
+                          <p class="card-text"><font face="微軟正黑體">型號：BENZ w207 207 w212</font></p>
                       </div>
                   </div>
               </div>

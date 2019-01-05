@@ -152,8 +152,10 @@
                     <h6 class="card-title">
                         <a href="http://localhost:8000/c3-1"><font face="微軟正黑體">HONDA K10 FERIO 冷氣壓縮機</font></a>
                     </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                    <h5>
+                        <p class="card-text"><font face="微軟正黑體">價格：1500元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">型號：K10 FERIO</font></p>
                 </div>
               </div>
             </div>
@@ -165,8 +167,10 @@
                     <h6 class="card-title">
                         <a href="http://localhost:8000/c3-2"><font face="微軟正黑體">HONDA CRV 冷氣壓縮機</font></a>
                     </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                    <h5>
+                        <p class="card-text"><font face="微軟正黑體">價格：2500元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">型號：CRV</font></p>
                 </div>
               </div>
             </div>
@@ -178,8 +182,10 @@
                     <h6 class="card-title">
                         <a href="http://localhost:8000/c3-3"><font face="微軟正黑體">HONDA CIVIC 8代 K12 冷氣壓縮機</font></a>
                     </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                    <h5>
+                        <p class="card-text"><font face="微軟正黑體">價格：4000元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">型號：CIVIC 8代 K12</font></p>
                 </div>
               </div>
             </div>
@@ -189,10 +195,12 @@
                 <a href="http://localhost:8000/c3-4"><img class="card-img-top" src="img/TOYOTA/TOYOTO海力士2.7 冷氣壓縮機.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="http://localhost:8000/c3-4"><font face="微軟正黑體">TOYOTO 海力士2.7 冷氣壓縮機</font></a>
+                        <a href="http://localhost:8000/c3-4"><font face="微軟正黑體">TOYOTA 海力士2.7 冷氣壓縮機</font></a>
                     </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                    <h5>
+                        <p class="card-text"><font face="微軟正黑體">價格：2300元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">型號：海力士2.7</font></p>
                 </div>
               </div>
             </div>
@@ -202,10 +210,12 @@
                 <a href="http://localhost:8000/c3-5"><img class="card-img-top" src="img/TOYOTA/TOYOTA Yaris 1.5 冷氣壓縮機2.jpg" alt=""></a>
                 <div class="card-body">
                     <h6 class="card-title">
-                        <a href="http://localhost:8000/c3-5"><font face="微軟正黑體">TOYOTA Yaris 1.5 冷氣壓縮機</font></a>
+                        <a href="http://localhost:8000/c3-5"><font face="微軟正黑體">TOYOTA Yaris 1.5 冷氣壓縮機(插頭)</font></a>
                     </h6>
-                  <h5>$24.99</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                    <h5>
+                        <p class="card-text"><font face="微軟正黑體">價格：350元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">型號：Yaris 1.5 </font></p>
                 </div>
               </div>
             </div>
@@ -217,8 +227,10 @@
                           <h6 class="card-title">
                               <a href="http://localhost:8000/c3-6"><font face="微軟正黑體">TOYOTA 86-GT ZN-6 冷氣壓縮機</font></a>
                           </h6>
-                          <h5>$24.99</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                          <h5>
+                              <p class="card-text"><font face="微軟正黑體">價格：3000元</font></p>
+                          </h5>
+                          <p class="card-text"><font face="微軟正黑體">型號：86-GT ZN-6  </font></p>
                       </div>
                   </div>
               </div>
@@ -230,8 +242,10 @@
                           <h6 class="card-title">
                               <a href="http://localhost:8000/c3-7"><font face="微軟正黑體">BENZ W203 3.2 冷氣壓縮機</font></a>
                           </h6>
-                          <h5>$24.99</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                          <h5>
+                              <p class="card-text"><font face="微軟正黑體">價格：3500元</font></p>
+                          </h5>
+                          <p class="card-text"><font face="微軟正黑體">型號：W203 W204 W209 W207 W210 W211 W212 C200K C240</font></p>
                       </div>
                   </div>
               </div>
@@ -243,8 +257,10 @@
                           <h6 class="card-title">
                               <a href="http://localhost:8000/c3-8"><font face="微軟正黑體">BENZ W202 冷氣壓縮機</font></a>
                           </h6>
-                          <h5>$24.99</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                          <h5>
+                              <p class="card-text"><font face="微軟正黑體">價格：3500元</font></p>
+                          </h5>
+                          <p class="card-text"><font face="微軟正黑體">型號：W124 W210 W140 W202</font></p>
                       </div>
                   </div>
               </div>
@@ -256,8 +272,10 @@
                           <h6 class="card-title">
                               <a href="http://localhost:8000/c3-9"><font face="微軟正黑體">BENZ w203 C200 冷氣壓縮機</font></a>
                           </h6>
-                          <h5>$24.99</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                          <h5>
+                              <p class="card-text"><font face="微軟正黑體">價格：4500元</font></p>
+                          </h5>
+                          <p class="card-text"><font face="微軟正黑體">型號：w203 C200</font></p>
                       </div>
                   </div>
               </div>

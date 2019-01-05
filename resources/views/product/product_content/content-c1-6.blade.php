@@ -149,6 +149,14 @@
             <!-- Portfolio Item Row -->
             <div class="row">
 
+                <?php
+                $connection = mysqli_connect("localhost:33060","root","root","secondhand");
+                mysqli_set_charset($connection,"utf8");
+                $sql = "SELECT * FROM products where id=7";
+                $res = mysqli_query($connection, $sql);
+                $r = mysqli_fetch_array($res);
+                ?>
+
               <div class="col-md-8">
                 <img class="img-fluid" src="img/Benz/Benz  VIANO 中間傳動軸.jpg" alt="">
               </div>
