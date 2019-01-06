@@ -93,7 +93,8 @@
               <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>名稱</center></font></div></h4></td>
               <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>單價</center></font></div></h4></td>
               <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>數量</center></font></div></h4></td>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>增減</center></font></div></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>增加</center></font></div></h4></td>
+              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>減少</center></font></div></h4></td>
               <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>刪除</center></font></div></h4></td>
 
             </tr>
@@ -101,15 +102,24 @@
             @foreach($orders as $order)
 
             <tr>
-              <td><h5><font face="微軟正黑體" ><center>{{$order->id}}</center></font></h5></td>
+              <td><h5><font face="微軟正黑體" ><center>{{$order->product_name}}</center></font></h5></td>
               <td><h5><font face="微軟正黑體" ><center>{{$order->product_price}}</center></font></h5></td>
               <td><h5><font face="微軟正黑體" ><center>{{$order->product_quantity}}</center></font></h5></td>
               <td><h5><font face="微軟正黑體" ><center>
-                      <form accept-charset="UTF-8" action="{{ route('orders.update') }}" method="post" role="form">
+                      <form accept-charset="UTF-8" action="{{ route('orders.update1') }}" method="post" role="form">
                         {{ csrf_field()  }}
                         <input type="hidden" class="form-control" name="id" value="{{$order->id}}">
                         <input type="hidden" class="form-control" name="product_quantity" value="{{$order->product_quantity}}">
                       <button type="submit" class="btn btn-primary">＋</button>
+                      </form>
+                    </center></font></h5></td>
+
+              <td><h5><font face="微軟正黑體" ><center>
+                      <form accept-charset="UTF-8" action="{{ route('orders.update2') }}" method="post" role="form">
+                        {{ csrf_field()  }}
+                        <input type="hidden" class="form-control" name="id" value="{{$order->id}}">
+                        <input type="hidden" class="form-control" name="product_quantity" value="{{$order->product_quantity}}">
+                        <button type="submit" class="btn btn-primary">－</button>
                       </form>
                     </center></font></h5></td>
 

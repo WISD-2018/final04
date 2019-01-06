@@ -111,5 +111,6 @@ Route::get('/shoppingcart', 'ShoppingcartController@shoppingcart')->name('shoppi
 Route::get('orders', ['as' => 'Posts.orders', 'uses' => 'OrdersController@orders']);
 Route::post('store', ['as' => 'orders.store', 'uses' => 'OrdersController@store']);
 Route::post('destroy', ['as' => 'orders.destroy', 'uses' => 'OrdersController@destroy']);
-Route::post('update', ['as' => 'orders.update', 'uses' => 'OrdersController@update']);
+Route::post('update1', ['as' => 'orders.update1', 'uses' => 'OrdersController@update1']);
+Route::post('update2', ['as' => 'orders.update2', 'uses' => 'OrdersController@update2']);
 

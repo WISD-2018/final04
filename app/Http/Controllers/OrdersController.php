@@ -87,11 +87,19 @@ class OrdersController extends Controller
      * @param  \App\orders  $orders
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, orders $orders)
+    public function update1(Request $request, orders $orders)
     {
         DB::table('orders')
             ->where('id', '=' , $request->input('id'))
             ->increment('product_quantity');
+        return redirect()->route('shoppingcart');
+    }
+
+    public function update2(Request $request, orders $orders)
+    {
+        DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->decrement('product_quantity');
         return redirect()->route('shoppingcart');
     }
 
