@@ -105,14 +105,18 @@
               <td><h5><font face="微軟正黑體" ><center>{{$order->product_price}}</center></font></h5></td>
               <td><h5><font face="微軟正黑體" ><center>{{$order->product_quantity}}</center></font></h5></td>
               <td><h5><font face="微軟正黑體" ><center>
+                      <form accept-charset="UTF-8" action="{{ route('orders.update') }}" method="post" role="form">
+                        {{ csrf_field()  }}
+                        <input type="hidden" class="form-control" name="id" value="{{$order->id}}">
+                        <input type="hidden" class="form-control" name="product_quantity" value="{{$order->product_quantity}}">
                       <button type="submit" class="btn btn-primary">＋</button>
-                      <button type="submit" class="btn btn-primary">－</button></center></font></h5></td>
+                      </form>
+                    </center></font></h5></td>
 
-                <td><h5><font face="微軟正黑體" ><center>
-
-                        <form accept-charset="UTF-8" action="{{ route('orders.destroy') }}" method="post" role="form">
-                          {{ csrf_field()  }}
-                          <input type="hidden" class="form-control" name="id" value="{{$order->id}}">
+              <td><h5><font face="微軟正黑體" ><center>
+                      <form accept-charset="UTF-8" action="{{ route('orders.destroy') }}" method="post" role="form">
+                        {{ csrf_field()  }}
+                        <input type="hidden" class="form-control" name="id" value="{{$order->id}}">
                       <button type="submit" class="btn btn-primary">刪除</button>
                         </form>
                       </center></font></h5></td>

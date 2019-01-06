@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\orders;
+use App\products;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use function Sodium\increment;
 
 class OrdersController extends Controller
 {
@@ -86,7 +89,10 @@ class OrdersController extends Controller
      */
     public function update(Request $request, orders $orders)
     {
-        //
+        DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->increment('product_quantity');
+        return redirect()->route('shoppingcart');
     }
 
     /**
@@ -97,7 +103,8 @@ class OrdersController extends Controller
      */
     public function destroy(Request $request)
     {
-        $request = orders::where('id','=',$request->input('id'))
+        DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
             ->delete();
         return redirect()->route('shoppingcart');
     }
