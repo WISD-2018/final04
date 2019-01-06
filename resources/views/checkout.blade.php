@@ -111,10 +111,10 @@
 
           </table>
 
-          <div class="text-xl-center">
+          <div class="text-center">
             <h2> </h2>
             <h3>
-              <a href="http://localhost:8000/shoppingcart"><button type="button" class="btn btn-info"><font face="微軟正黑體" >返回購物車修改</font></button></a>
+              <a href="http://localhost:8000/shoppingcart"><button type="button" class="btn btn-info"><font face="微軟正黑體" >返回修改</font></button></a>
             </h3>
           </div>
 
@@ -127,92 +127,48 @@
         <div class="card-header"><font face="微軟正黑體">Step2 確認個人資料</font></div>
 
         <div class="card-body">
-          <form method="POST" action="{{ route('register') }}">
-            @csrf
+          <form accept-charset="UTF-8" action="{{ route('checkout.update') }}" method="post" role="form">
+            {{ csrf_field()  }}
 
             <div class="form-group row">
-              <label for="name" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('姓名') }}</font></label>
+              <label for="name" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">姓名</font></label>
 
               <div class="col-md-6">
-                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                <input type="text" class="form-control" name="user_name" value="{{ Auth::user()->name }}" required>
 
-                @if ($errors->has('name'))
-                  <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                @endif
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="phone" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('聯絡電話') }}</font></label>
+              <label for="phone" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">聯絡電話</font></label>
 
               <div class="col-md-6">
-                <input id="phone" type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" value="{{ old('phone') }}" required>
+                <input type="text" class="form-control" name="user_phone" value="{{ Auth::user()->phone }}" required>
 
-                @if ($errors->has('phone'))
-                  <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('phone') }}</strong>
-                                    </span>
-                @endif
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="address" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('聯絡地址') }}</font></label>
+              <label for="address" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">聯絡地址</font></label>
 
               <div class="col-md-6">
-                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" value="{{ old('address') }}" required>
+                <input type="text" class="form-control" name="user_address" value="{{ Auth::user()->address }}" required>
 
-                @if ($errors->has('address'))
-                  <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('address') }}</strong>
-                                    </span>
-                @endif
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="email" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('信箱') }}</font></label>
+              <label for="email" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">信箱</font></label>
 
               <div class="col-md-6">
-                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                <input type="email" class="form-control" name="user_email" value="{{ Auth::user()->email }}" required>
 
-                @if ($errors->has('email'))
-                  <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                @endif
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label for="password" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('密碼') }}</font></label>
-
-              <div class="col-md-6">
-                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                @if ($errors->has('password'))
-                  <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                @endif
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label for="password-confirm" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('確認密碼') }}</font></label>
-
-              <div class="col-md-6">
-                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
               </div>
             </div>
 
             <div class="form-group row mb-0">
               <div class="col-md-6 offset-md-4">
-                <button type="submit" class="btn btn-primary">
-                  <font face="微軟正黑體">{{ __('註冊') }}</font>
-                </button>
+                <button type="submit" class="btn btn-info"><font face="微軟正黑體">確認</font></button>
               </div>
             </div>
           </form>
