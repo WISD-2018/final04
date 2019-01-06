@@ -155,7 +155,6 @@
                   $sql = "SELECT * FROM products where id=1";
                   $res = mysqli_query($connection, $sql);
                   $r = mysqli_fetch_array($res);
-                  $user = Auth::user();
                   ?>
 
                 <div class="col-md-8">
@@ -211,9 +210,9 @@
 
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
 
-                                    <input type="hidden" class="form-control" name="user_name" value="<?php echo $user['name']?>">
+                                    <input type="hidden" class="form-control" name="user_id" value="{{ Auth::user()->id }}">
 
-                                    <input type="hidden" class="form-control" name="user_id" value="<?php echo $user['id']?>">
+                                    <input type="hidden" class="form-control" name="user_name" value="{{ Auth::user()->name }}">
 
                                     <input type="hidden" class="form-control" name="product_id" value="<?php echo $r['id']?>">
 
