@@ -102,9 +102,10 @@ Route::get('/c6-9', 'C1Controller@content_c6_9')->name('content-c6-9');
 //C6商品內頁
 
 
-Route::get('/admin_register', 'AdminRegisterController@admin_register')->name('admin_register');
-Route::get('/admin', 'AdminController@admin')->name('admin');
-Route::get('/about', 'AboutController@about')->name('about');
+Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@index']);
+
+
+
 
 Route::get('/shoppingcart', 'ShoppingcartController@shoppingcart')->name('shoppingcart');
 
