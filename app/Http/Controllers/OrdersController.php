@@ -95,8 +95,10 @@ class OrdersController extends Controller
      * @param  \App\orders  $orders
      * @return \Illuminate\Http\Response
      */
-    public function destroy(orders $orders)
+    public function destroy(Request $request)
     {
-        //
+        $request = orders::where('id','=',$request->input('id'))
+            ->delete();
+        return redirect()->route('shoppingcart');
     }
 }

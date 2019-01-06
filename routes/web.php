@@ -110,3 +110,5 @@ Route::get('/shoppingcart', 'ShoppingcartController@shoppingcart')->name('shoppi
 
 Route::get('orders', ['as' => 'Posts.orders', 'uses' => 'OrdersController@orders']);
 Route::post('store', ['as' => 'orders.store', 'uses' => 'OrdersController@store']);
+Route::post('destroy', ['as' => 'orders.destroy', 'uses' => 'OrdersController@destroy']);
+
