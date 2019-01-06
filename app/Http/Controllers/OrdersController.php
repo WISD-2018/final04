@@ -87,6 +87,7 @@ class OrdersController extends Controller
      * @param  \App\orders  $orders
      * @return \Illuminate\Http\Response
      */
+    //增加購物車物品數量
     public function update1(Request $request, orders $orders)
     {
         DB::table('orders')
@@ -95,6 +96,7 @@ class OrdersController extends Controller
         return redirect()->route('shoppingcart');
     }
 
+    //減少購物車物品數量
     public function update2(Request $request, orders $orders)
     {
         DB::table('orders')
@@ -109,6 +111,7 @@ class OrdersController extends Controller
      * @param  \App\orders  $orders
      * @return \Illuminate\Http\Response
      */
+    //刪除購物車物品
     public function destroy(Request $request)
     {
         DB::table('orders')

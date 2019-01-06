@@ -114,3 +114,5 @@ Route::post('destroy', ['as' => 'orders.destroy', 'uses' => 'OrdersController@de
 Route::post('update1', ['as' => 'orders.update1', 'uses' => 'OrdersController@update1']);
 Route::post('update2', ['as' => 'orders.update2', 'uses' => 'OrdersController@update2']);
 
+Route::get('/checkout', 'CheckoutController@checkout')->name('checkout');
+

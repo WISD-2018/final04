@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>中古車體零件 - 購物車</title>
+    <title>中古車體零件 - 結帳</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -86,64 +86,21 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4"><font face="微軟正黑體">購物車清單</font></h1>
+      <h1 class="my-4"><font face="微軟正黑體">結帳</font></h1>
         <div class="card h-auto">
-          <table>
-            <tr>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>名稱</center></font></div></h4></td>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>單價</center></font></div></h4></td>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>數量</center></font></div></h4></td>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>增加</center></font></div></h4></td>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>減少</center></font></div></h4></td>
-              <td><h4><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>刪除</center></font></div></h4></td>
 
-            </tr>
 
-            @foreach($orders as $order)
 
-            <tr>
-              <td><h5><font face="微軟正黑體" ><center>{{$order->product_name}}</center></font></h5></td>
-              <td><h5><font face="微軟正黑體" ><center>{{$order->product_price}}</center></font></h5></td>
-              <td><h5><font face="微軟正黑體" ><center>{{$order->product_quantity}}</center></font></h5></td>
-              <td><h5><font face="微軟正黑體" ><center>
-                      <form accept-charset="UTF-8" action="{{ route('orders.update1') }}" method="post" role="form">
-                        {{ csrf_field()  }}
-                        <input type="hidden" class="form-control" name="id" value="{{$order->id}}">
-                        <input type="hidden" class="form-control" name="product_quantity" value="{{$order->product_quantity}}">
-                      <button type="submit" class="btn btn-group">＋</button>
-                      </form>
-                    </center></font></h5></td>
 
-              <td><h5><font face="微軟正黑體" ><center>
-                      <form accept-charset="UTF-8" action="{{ route('orders.update2') }}" method="post" role="form">
-                        {{ csrf_field()  }}
-                        <input type="hidden" class="form-control" name="id" value="{{$order->id}}">
-                        <input type="hidden" class="form-control" name="product_quantity" value="{{$order->product_quantity}}">
-                        <button type="submit" class="btn btn-group">－</button>
-                      </form>
-                    </center></font></h5></td>
 
-              <td><h5><font face="微軟正黑體" ><center>
-                      <form accept-charset="UTF-8" action="{{ route('orders.destroy') }}" method="post" role="form">
-                        {{ csrf_field()  }}
-                        <input type="hidden" class="form-control" name="id" value="{{$order->id}}">
-                      <button type="submit" class="btn btn-danger">刪除</button>
-                        </form>
-                      </center></font></h5></td>
-            </tr>
 
-            @endforeach
 
-          </table>
+
+
+        
         </div>
-
-      <div class="text-right">
-        <h2> </h2>
-        <h3>
-          <a href="http://localhost:8000/checkout"><button type="button" class="btn btn-info"><font face="微軟正黑體" >結帳囉~</font></button></a>
-        </h3>
-      </div>
-
     </div>
+
     </body>
+
   </html>
