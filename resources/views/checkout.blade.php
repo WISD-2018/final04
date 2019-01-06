@@ -87,18 +87,138 @@
 
       <!-- Page Heading -->
       <h1 class="my-4"><font face="微軟正黑體">結帳</font></h1>
-        <div class="card h-auto">
+      <div class="card">
 
+        <div class="card-header"><font face="微軟正黑體">Step1 確認購買商品</font></div>
 
+        <div class="card">
+          <table>
+            <tr>
+              <td><h5><div class="card-body"><font face="微軟正黑體" color="#6495ed" ><center>名稱</center></font></div></h5></td>
+              <td><h5><div class="card-body"><font face="微軟正黑體" color="#6495ed" ><center>單價</center></font></div></h5></td>
+              <td><h5><div class="card-body"><font face="微軟正黑體" color="#6495ed" ><center>數量</center></font></div></h5></td>
+            </tr>
 
+            @foreach($orders as $order)
 
+              <tr>
+                <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_name}}</center></font></div></h5></td>
+                <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_price}}</center></font></div></h5></td>
+                <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_quantity}}</center></font></div></h5></td>
+              </tr>
 
+            @endforeach
 
+          </table>
 
+          <div class="text-xl-center">
+            <h2> </h2>
+            <h3>
+              <a href="http://localhost:8000/shoppingcart"><button type="button" class="btn btn-info"><font face="微軟正黑體" >返回購物車修改</font></button></a>
+            </h3>
+          </div>
 
-
-        
         </div>
+
+
+
+
+        <div class="card">
+        <div class="card-header"><font face="微軟正黑體">Step2 確認個人資料</font></div>
+
+        <div class="card-body">
+          <form method="POST" action="{{ route('register') }}">
+            @csrf
+
+            <div class="form-group row">
+              <label for="name" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('姓名') }}</font></label>
+
+              <div class="col-md-6">
+                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+
+                @if ($errors->has('name'))
+                  <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                @endif
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="phone" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('聯絡電話') }}</font></label>
+
+              <div class="col-md-6">
+                <input id="phone" type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" value="{{ old('phone') }}" required>
+
+                @if ($errors->has('phone'))
+                  <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('phone') }}</strong>
+                                    </span>
+                @endif
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="address" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('聯絡地址') }}</font></label>
+
+              <div class="col-md-6">
+                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" value="{{ old('address') }}" required>
+
+                @if ($errors->has('address'))
+                  <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('address') }}</strong>
+                                    </span>
+                @endif
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="email" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('信箱') }}</font></label>
+
+              <div class="col-md-6">
+                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+
+                @if ($errors->has('email'))
+                  <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                @endif
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="password" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('密碼') }}</font></label>
+
+              <div class="col-md-6">
+                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+
+                @if ($errors->has('password'))
+                  <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                @endif
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="password-confirm" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">{{ __('確認密碼') }}</font></label>
+
+              <div class="col-md-6">
+                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+              </div>
+            </div>
+
+            <div class="form-group row mb-0">
+              <div class="col-md-6 offset-md-4">
+                <button type="submit" class="btn btn-primary">
+                  <font face="微軟正黑體">{{ __('註冊') }}</font>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     </div>
 
     </body>

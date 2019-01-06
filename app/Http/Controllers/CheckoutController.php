@@ -9,7 +9,12 @@ class CheckoutController extends Controller
 {
     public function checkout()
     {
-        return view('checkout');
+        $order = orders::where('user_id','=',Auth::user()->id)
+            ->get();
+
+        $result = ['orders'=>$order];
+
+        return view('checkout',$result);
     }
 }
 
