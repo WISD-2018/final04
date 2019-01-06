@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\products;
 class C1Controller extends Controller
 {
     //
@@ -15,7 +15,12 @@ class C1Controller extends Controller
 //C1 商品內容
     public function content_c1_1()
     {
-        return view('/product/product_content.content-c1-1');
+        $product = products::where('id','=','1')
+            ->get();
+
+        $result = ['products'=>$product];
+
+        return view('/product/product_content.content-c1-1',$result);
     }
 
     public function content_c1_2()
