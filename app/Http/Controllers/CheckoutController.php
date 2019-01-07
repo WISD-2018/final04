@@ -18,7 +18,7 @@ class CheckoutController extends Controller
 
         return view('checkout',$result);
     }
-
+    
     public function update(Request $request)
     {
 

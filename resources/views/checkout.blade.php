@@ -111,6 +111,19 @@
 
           </table>
 
+            <div class="text-center">
+                <h2> </h2>
+                <h3>
+                    <tr>
+
+                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品合計數量：？項</center></font></div></h5></td>
+                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品合計金額：60元</center></font></div></h5></td>
+                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>運費：？元</center></font></div></h5></td>
+                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>總金額：？元</center></font></div></h5></td>
+                    </tr>
+                </h3>
+            </div>
+
           <div class="text-center">
             <h2> </h2>
             <h3>
@@ -174,6 +187,51 @@
           </form>
         </div>
       </div>
+
+          <div class="card">
+              <div class="card-header"><font face="微軟正黑體">Step3 確認付款方式</font></div>
+
+              <div class="card-body">
+                  <form accept-charset="UTF-8" action="" method="post" role="form">
+                      {{ csrf_field()  }}
+
+                      <div class="form-group row">
+
+                          <label for="phone" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">付款方式：</font></label>
+                          <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  請選擇
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">現金</a>
+                                  <a class="dropdown-item" href="#">貨到付款</a>
+                              </div>
+                          </div>
+
+                      </div>
+
+                      <div class="form-group row">
+                          <label for="phone" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">取貨方式：</font></label>
+                          <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  請選擇
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">自取</a>
+                                  <a class="dropdown-item" href="#">宅急便</a>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="form-group row mb-0">
+                          <div class="col-md-6 offset-md-4">
+                              <button type="submit" class="btn btn-info"><font face="微軟正黑體">確認</font></button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+
     </div>
     </div>
 
