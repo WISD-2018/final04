@@ -49,7 +49,8 @@ class LoginController extends Controller
     {
         $type=Auth::user()->type;
         if ($this->request->has('previous')) {
-            if($type == true){
+            //這個type的地方改的話要跟HomeController一起改
+            if($type == 1){
                 return '/admin';
             }
             else{

@@ -25,12 +25,13 @@ class HomeController extends Controller
      */
     public function index()
     {
+        //抓使用者的type
         $type=Auth::user()->type;
-        if($type == true){
+        if($type == 1){
             return redirect('/admin');
         }
         else{
-
+            //URL後面
             return redirect('/home');
         }
 
