@@ -107,7 +107,16 @@ Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@index'])
 
 
 
-Route::get('/shoppingcart', 'ShoppingcartController@shoppingcart')->name('shoppingcart');
+Route::get('shoppingcart', ['as' => 'shoppingcart', 'uses' => 'ShoppingcartController@shoppingcart']);
 
-Route::get('orders', ['as' => 'Posts.orders', 'uses' => 'OrdersController@orders']);
+Route::get('orders', ['as' => 'orders', 'uses' => 'OrdersController@orders']);
 Route::post('store', ['as' => 'orders.store', 'uses' => 'OrdersController@store']);
+Route::post('destroy', ['as' => 'orders.destroy', 'uses' => 'OrdersController@destroy']);
+Route::post('update1', ['as' => 'orders.update1', 'uses' => 'OrdersController@update1']);
+Route::post('update2', ['as' => 'orders.update2', 'uses' => 'OrdersController@update2']);
+
+Route::get('checkout', ['as' => 'checkout', 'uses' => 'CheckoutController@checkout']);
+Route::post('update', ['as' => 'checkout.update', 'uses' => 'CheckoutController@update']);
+Route::get('end', ['as' => '/end', 'uses' => 'CheckoutController@end']);
+
+

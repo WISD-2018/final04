@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\products;
 class C1Controller extends Controller
 {
     //
@@ -15,42 +15,66 @@ class C1Controller extends Controller
 //C1 商品內容
     public function content_c1_1()
     {
-        return view('/product/product_content.content-c1-1');
+        $product = products::where('id_sequence','=','1-1')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c1-1',$result);
     }
 
     public function content_c1_2()
     {
-        return view('/product/product_content.content-c1-2');
+        $product = products::where('id_sequence','=','1-2')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c1-2',$result);
     }
 
     public function content_c1_3()
     {
-        return view('/product/product_content.content-c1-3');
+        $product = products::where('id_sequence','=','1-3')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c1-3',$result);
     }
 
     public function content_c1_4()
     {
-        return view('/product/product_content.content-c1-4');
+        $product = products::where('id_sequence','=','1-4')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c1-4',$result);
     }
 
     public function content_c1_5()
     {
-        return view('/product/product_content.content-c1-5');
+        $product = products::where('id_sequence','=','1-5')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c1-5',$result);
     }
 
     public function content_c1_6()
     {
-        return view('/product/product_content.content-c1-6');
+        $product = products::where('id_sequence','=','1-6')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c1-6',$result);
     }
 
     public function content_c1_7()
     {
-        return view('/product/product_content.content-c1-7');
+        $product = products::where('id_sequence','=','1-7')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c1-7',$result);
     }
 
     public function content_c1_8()
     {
-        return view('/product/product_content.content-c1-8');
+        $product = products::where('id_sequence','=','1-8')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c1-8',$result);
     }
 //C1 商品內容
 
@@ -61,42 +85,66 @@ class C1Controller extends Controller
 //C2 商品內容
     public function content_c2_1()
     {
-        return view('/product/product_content.content-c2-1');
+        $product = products::where('id_sequence','=','2-1')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c2-1',$result);
     }
 
     public function content_c2_2()
     {
-        return view('/product/product_content.content-c2-2');
+        $product = products::where('id_sequence','=','2-2')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c2-2',$result);
     }
 
     public function content_c2_3()
     {
-        return view('/product/product_content.content-c2-3');
+        $product = products::where('id_sequence','=','2-3')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c2-3',$result);
     }
 
     public function content_c2_4()
     {
-        return view('/product/product_content.content-c2-4');
+        $product = products::where('id_sequence','=','2-4')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c2-4',$result);
     }
 
     public function content_c2_5()
     {
-        return view('/product/product_content.content-c2-5');
+        $product = products::where('id_sequence','=','2-5')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c2-5',$result);
     }
 
     public function content_c2_6()
     {
-        return view('/product/product_content.content-c2-6');
+        $product = products::where('id_sequence','=','2-6')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c2-6',$result);
     }
 
     public function content_c2_7()
     {
-        return view('/product/product_content.content-c2-7');
+        $product = products::where('id_sequence','=','2-7')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c2-7',$result);
     }
 
     public function content_c2_8()
     {
-        return view('/product/product_content.content-c2-8');
+        $product = products::where('id_sequence','=','2-8')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c2-8',$result);
     }
 //C2 商品內容
 
@@ -107,47 +155,74 @@ class C1Controller extends Controller
 //C3 商品內容
     public function content_c3_1()
     {
-        return view('/product/product_content.content-c3-1');
+        $product = products::where('id_sequence','=','3-1')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c3-1',$result);
     }
 
     public function content_c3_2()
     {
-        return view('/product/product_content.content-c3-2');
+        $product = products::where('id_sequence','=','3-2')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c3-2',$result);
     }
 
     public function content_c3_3()
     {
-        return view('/product/product_content.content-c3-3');
+        $product = products::where('id_sequence','=','3-3')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c3-3',$result);
     }
 
     public function content_c3_4()
     {
-        return view('/product/product_content.content-c3-4');
+        $product = products::where('id_sequence','=','3-4')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c3-4',$result);
     }
 
     public function content_c3_5()
     {
-        return view('/product/product_content.content-c3-5');
+        $product = products::where('id_sequence','=','3-5')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c3-5',$result);
     }
 
     public function content_c3_6()
     {
-        return view('/product/product_content.content-c3-6');
+        $product = products::where('id_sequence','=','3-6')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c3-6',$result);
     }
 
     public function content_c3_7()
     {
-        return view('/product/product_content.content-c3-7');
+        $product = products::where('id_sequence','=','3-7')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c3-7',$result);
     }
 
     public function content_c3_8()
     {
-        return view('/product/product_content.content-c3-8');
+        $product = products::where('id_sequence','=','3-8')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c3-8',$result);
     }
 
     public function content_c3_9()
     {
-        return view('/product/product_content.content-c3-9');
+        $product = products::where('id_sequence','=','3-9')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c3-9',$result);
     }
 //C3 商品內容
 
@@ -158,22 +233,34 @@ class C1Controller extends Controller
 //C4 商品內容
     public function content_c4_1()
     {
-        return view('/product/product_content.content-c4-1');
+        $product = products::where('id_sequence','=','4-1')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c4-1',$result);
     }
 
     public function content_c4_2()
     {
-        return view('/product/product_content.content-c4-2');
+        $product = products::where('id_sequence','=','4-2')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c4-2',$result);
     }
 
     public function content_c4_3()
     {
-        return view('/product/product_content.content-c4-3');
+        $product = products::where('id_sequence','=','4-3')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c4-3',$result);
     }
 
     public function content_c4_4()
     {
-        return view('/product/product_content.content-c4-4');
+        $product = products::where('id_sequence','=','4-4')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c4-4',$result);
     }
 //C4 商品內容
 
@@ -184,47 +271,74 @@ class C1Controller extends Controller
 //C5 商品內容
     public function content_c5_1()
     {
-        return view('/product/product_content.content-c5-1');
+        $product = products::where('id_sequence','=','5-1')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c5-1',$result);
     }
 
     public function content_c5_2()
     {
-        return view('/product/product_content.content-c5-2');
+        $product = products::where('id_sequence','=','5-2')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c5-2',$result);
     }
 
     public function content_c5_3()
     {
-        return view('/product/product_content.content-c5-3');
+        $product = products::where('id_sequence','=','5-3')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c5-3',$result);
     }
 
     public function content_c5_4()
     {
-        return view('/product/product_content.content-c5-4');
+        $product = products::where('id_sequence','=','5-4')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c5-4',$result);
     }
 
     public function content_c5_5()
     {
-        return view('/product/product_content.content-c5-5');
+        $product = products::where('id_sequence','=','5-5')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c5-5',$result);
     }
 
     public function content_c5_6()
     {
-        return view('/product/product_content.content-c5-6');
+        $product = products::where('id_sequence','=','5-6')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c5-6',$result);
     }
 
     public function content_c5_7()
     {
-        return view('/product/product_content.content-c5-7');
+        $product = products::where('id_sequence','=','5-7')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c5-7',$result);
     }
 
     public function content_c5_8()
     {
-        return view('/product/product_content.content-c5-8');
+        $product = products::where('id_sequence','=','5-8')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c5-8',$result);
     }
 
     public function content_c5_9()
     {
-        return view('/product/product_content.content-c5-9');
+        $product = products::where('id_sequence','=','5-9')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c5-9',$result);
     }
 //C5 商品內容
 
@@ -235,47 +349,74 @@ class C1Controller extends Controller
 //C6 商品內容
     public function content_c6_1()
     {
-        return view('/product/product_content.content-c6-1');
+        $product = products::where('id_sequence','=','6-1')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c6-1',$result);
     }
 
     public function content_c6_2()
     {
-        return view('/product/product_content.content-c6-2');
+        $product = products::where('id_sequence','=','6-2')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c6-2',$result);
     }
 
     public function content_c6_3()
     {
-        return view('/product/product_content.content-c6-3');
+        $product = products::where('id_sequence','=','6-3')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c6-3',$result);
     }
 
     public function content_c6_4()
     {
-        return view('/product/product_content.content-c6-4');
+        $product = products::where('id_sequence','=','6-4')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c6-4',$result);
     }
 
     public function content_c6_5()
     {
-        return view('/product/product_content.content-c6-5');
+        $product = products::where('id_sequence','=','6-5')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c6-5',$result);
     }
 
     public function content_c6_6()
     {
-        return view('/product/product_content.content-c6-6');
+        $product = products::where('id_sequence','=','6-6')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c6-6',$result);
     }
 
     public function content_c6_7()
     {
-        return view('/product/product_content.content-c6-7');
+        $product = products::where('id_sequence','=','6-7')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c6-7',$result);
     }
 
     public function content_c6_8()
     {
-        return view('/product/product_content.content-c6-8');
+        $product = products::where('id_sequence','=','6-8')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c6-8',$result);
     }
 
     public function content_c6_9()
     {
-        return view('/product/product_content.content-c6-9');
+        $product = products::where('id_sequence','=','6-9')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product/product_content.content-c6-9',$result);
     }
 //C6 商品內容
 }

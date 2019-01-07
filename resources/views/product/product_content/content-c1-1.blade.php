@@ -149,27 +149,20 @@
             <!-- Portfolio Item Row -->
             <div class="row">
 
-                  <?php
-                  $connection = mysqli_connect("localhost:33060","root","root","secondhand");
-                  mysqli_set_charset($connection,"utf8");
-                  $sql = "SELECT * FROM products where id=1";
-                  $res = mysqli_query($connection, $sql);
-                  $r = mysqli_fetch_array($res);
-                  $user = Auth::user();
-                  ?>
+              @foreach($products as $product)
 
                 <div class="col-md-8">
-                  <img class="img-fluid" src="img/TOYOTA/TOYOTA A秀 EXSIOR 1.6 2.0 傳動軸.jpg" alt="">
+                  <img class="img-fluid" src={{$product->picture}} alt="">
                 </div>
 
                 <div class="col-md-4">
                   <font face="微軟正黑體">
-                    <h3 class="my-3"><?php echo $r['name']?></h3>
-                    <p class="my-3"><?php echo $r['source']?></p>
-                    <p class="my-3"><?php echo $r['time']?></p>
-                    <p class="my-3"><?php echo $r['where']?></p>
-                    <p class="my-3">庫存：<?php echo $r['stock']?></p>
-                    <h4 class="my-3">價格：<?php echo $r['price']?></h4>
+                    <h3 class="my-3">{{$product->name}}</h3>
+                    <p class="my-3">{{$product->source}}</p>
+                    <p class="my-3">{{$product->time}}</p>
+                    <p class="my-3">{{$product->where}}</p>
+                    <p class="my-3">庫存：{{$product->stock}}</p>
+                    <h4 class="my-3">價格：{{$product->price}}</h4>
 
                     <!-- Button trigger modal -->
                     @if (Auth::check())
@@ -211,24 +204,24 @@
 
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
 
-                                    <input type="hidden" class="form-control" name="user_name" value="<?php echo $user['name']?>">
+                                    <input type="hidden" class="form-control" name="user_id" value="{{ Auth::user()->id }}">
 
-                                    <input type="hidden" class="form-control" name="user_id" value="<?php echo $user['id']?>">
+                                    <input type="hidden" class="form-control" name="user_name" value="{{ Auth::user()->name }}">
 
-                                    <input type="hidden" class="form-control" name="product_id" value="<?php echo $r['id']?>">
+                                    <input type="hidden" class="form-control" name="product_id" value={{$product->id}}>
 
                                   <div class="col-6">
-                                    <input type="text" class="form-control" name="product_name" value="<?php echo $r['name']?>" readonly>
+                                    <pre><input  type="text" class="form-control" name="product_name" readonly value="{{$product->name}}"></pre>
                                   </div>
 
                                   <div class="col-3">
-                                    <input type="text" class="form-control" name="product_price" value="<?php echo $r['price']?>" readonly>
+                                    <input type="text" class="form-control" name="product_price" value={{$product->price}} readonly>
                                   </div>
 
                                   <div class="col-3">
                                     <select class="form-control" name="product_quantity">
-                                      @foreach(range(1, $r['stock']) as $r['stock'])
-                                        <option>{{ $r['stock'] }}</option>
+                                      @foreach(range(1, $product->stock) as $product->stock)
+                                        <option>{{$product->stock}}</option>
                                       @endforeach
                                     </select>
                                   </div>
@@ -257,6 +250,9 @@
 
                   </font>
                 </div>
+
+                @endforeach
+
             </div>
             <!-- /.row -->
 
