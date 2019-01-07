@@ -41,6 +41,8 @@
 
 
 
+
+
           <!-- Right Side Of Navbar -->
           <ul class="navbar-nav ml-auto">
             <!-- Authentication Links -->
@@ -93,52 +95,74 @@
     </header>
 
     <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-10 mx-auto">
+        <div class="post-preview">
 
-          <!--CSS太難看-->
+        <!--CSS太難看-->
           <h1>     </h1><br>
-          <!--所以靠他們調整版面一下-->
+        <!--所以靠他們調整版面一下-->
 
-          <div class="post-preview">
-            <a href="http://localhost:8000/BackstageUser">
-              <h4 class="post-title">
-                <font face="微軟正黑體">
-                  使用者管理
-                </font>
-              </h4>
-            </a>
-          </div>
-          <hr>
-          <div class="post-preview">
-            <a href="http://localhost:8000/BackstageOrder">
-              <h4 class="post-title">
-                <font face="微軟正黑體">
-                  訂單管理
-                </font>
-              </h4>
-            </a>
-          </div>
-          <hr>
-          <div class="post-preview">
-            <a href="http://localhost:8000/BackstageOrder">
-              <h4 class="post-title">
-                <font face="微軟正黑體">
-                  商品管理
-                </font>
-              </h4>
-            </a>
-          </div>
-          <hr>
+          <div class="row">
+            <div class="col-lg-12">
+              <form action="/users/{{$user->id}}/edit" method="POST" role="form">
+                {{ csrf_field() }}
+                {{ method_field('PATCH') }}
 
+                <div class="form-group">
+                  <label>使用者名稱：</label>
+                  <input name="title" class="form-control" placeholder="請輸入文章標題" value="{{$user->name}}">
+                </div>
+
+                <div class="form-group">
+                  <label>使用者電話：</label>
+                  <input name="title" class="form-control" placeholder="請輸入文章標題" value="{{$user->email}}">
+                </div>
+
+                <div class="form-group">
+                  <label>使用者電話：</label>
+                  <input name="title" class="form-control" placeholder="請輸入文章標題" value="{{$user->phone}}">
+                </div>
+
+                <div class="form-group">
+                  <label>使用者地址：</label>
+                  <input name="title" class="form-control" placeholder="請輸入文章標題" value="{{$user->address}}">
+                </div>
+
+                <div class="form-group">
+                  <label>使用者類別：</label>
+                  <input name="title" class="form-control" placeholder="請輸入文章標題" value="{{$user->type}}">
+                </div>
+
+                <table>
+                  <tr>
+                    <td>
+                      <div class="col-lg-12">
+                        <button type="submit" class="btn btn-primary"><font face="微軟正黑體" size="4px" >更新</font></button>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="col-lg-12">
+                        <a href="http://localhost:8000/BackstageUser" class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></a>
+                      </div>
+                    </td>
+
+                  </tr>
+                </table>
+              </form>
+
+
+
+            </div>
+          </div>
+          </div>
+          </div>
         </div>
       </div>
     </div>
 
-
-
-    <!-- Bootstrap core JavaScript -->
 
 
   </body>
