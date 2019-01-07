@@ -116,5 +116,6 @@ Route::post('update2', ['as' => 'orders.update2', 'uses' => 'OrdersController@up
 
 Route::get('checkout', ['as' => 'checkout', 'uses' => 'CheckoutController@checkout']);
 Route::post('update', ['as' => 'checkout.update', 'uses' => 'CheckoutController@update']);
+Route::get('end', ['as' => '/end', 'uses' => 'CheckoutController@end']);
 
 

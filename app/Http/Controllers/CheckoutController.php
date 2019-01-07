@@ -33,6 +33,11 @@ class CheckoutController extends Controller
 */
         return redirect()->route('shoppingcart');
     }
+
+    public function end()
+    {
+        return view('end');
+    }
 }
 
 
