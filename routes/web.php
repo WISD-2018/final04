@@ -108,13 +108,33 @@ Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@index'])
 
 //使用者管理
 Route::get('/BackstageUser', ['as' => 'admin.user.backstage_user' , 'uses' => 'AdminBackstageController@index']);
-
 //修改使用者
 Route::get('/BackstageUser/edit/{id}', ['as' => 'admin.user.backstage_useredit'   , 'uses' => 'AdminBackstageController@edit']);
 Route::post('/BackstageUser/update', ['as' => 'admin.user.backstage_userupdate', 'uses' => 'AdminBackstageController@update']);
-
 //刪除使用者
 Route::delete('/BackstageUser/delete{id}'  , ['as' => 'admin.user.backstage_userdelete', 'uses' => 'AdminBackstageController@destroy']);
+
+
+//訂單管理
+Route::get('/BackstageOrder', ['as' => 'admin.order.backstage_order' , 'uses' => 'AdminBackstageController@index']);
+//修改訂單
+Route::get('/BackstageOrder/edit/{id}', ['as' => 'admin.order.backstage_orderedit'   , 'uses' => 'AdminBackstageController@orderedit']);
+Route::post('/BackstageOrder/update', ['as' => 'admin.order.backstage_orderupdate', 'uses' => 'AdminBackstageController@orderupdate']);
+//刪除訂單
+Route::delete('/BackstageOrder/delete{id}'  , ['as' => 'admin.order.backstage_orderdelete', 'uses' => 'AdminBackstageController@orderdestroy']);
+
+
+//商品管理
+Route::get('/BackstageProduct', ['as' => 'admin.product.backstage_product' , 'uses' => 'AdminBackstageController@productindex']);
+//修改商品
+Route::get('/BackstageProduct/edit/{id}', ['as' => 'admin.product.backstage_productedit'   , 'uses' => 'AdminBackstageController@productedit']);
+Route::post('/BackstageProduct/update', ['as' => 'admin.product.backstage_productupdate', 'uses' => 'AdminBackstageController@productupdate']);
+//刪除商品
+Route::delete('/BackstageProduct/delete{id}'  , ['as' => 'admin.product.backstage_productdelete', 'uses' => 'AdminBackstageController@productdestroy']);
+
+
+
+
 
 
 

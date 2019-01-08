@@ -41,6 +41,8 @@
 
 
 
+
+
           <!-- Right Side Of Navbar -->
           <ul class="navbar-nav ml-auto">
             <!-- Authentication Links -->
@@ -93,52 +95,84 @@
     </header>
 
     <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-10 mx-auto">
+        <div class="post-preview">
 
-          <!--CSS太難看-->
+
+
+        <!--CSS太難看-->
           <h1>     </h1><br>
-          <!--所以靠他們調整版面一下-->
+        <!--所以靠他們調整版面一下-->
 
-          <div class="post-preview">
-            <a href="http://localhost:8000/BackstageUser">
-              <h4 class="post-title">
-                <font face="微軟正黑體">
-                  使用者管理
-                </font>
-              </h4>
-            </a>
-          </div>
-          <hr>
-          <div class="post-preview">
-            <a href="http://localhost:8000/BackstageOrder">
-              <h4 class="post-title">
-                <font face="微軟正黑體">
-                  訂單管理
-                </font>
-              </h4>
-            </a>
-          </div>
-          <hr>
-          <div class="post-preview">
-            <a href="http://localhost:8000/BackstageProduct">
-              <h4 class="post-title">
-                <font face="微軟正黑體">
-                  商品管理
-                </font>
-              </h4>
-            </a>
-          </div>
-          <hr>
+          <div class="row">
+            <div class="col-lg-12">
+              <form accept-charset="UTF-8" action="{{ route('admin.product.backstage_productstore') }}" method="POST" role="form">
+                {{ csrf_field() }}
+                {{ method_field('PATCH') }}
 
+                <font face="微軟正黑體">
+                <div class="form-group">
+                  <label>商品名稱：</label>
+                  <input type="string" class="form-control" name="name" value="{{$product->name}}" required>
+                </div>
+
+                <div class="form-group">
+                  <label>商品圖示：</label>
+                  <input type="string" class="form-control" name="picture" value="{{$product->picture}}" required>
+                </div>
+
+                <div class="form-group">
+                  <label>商品時間：</label>
+                  <input type="string" class="form-control" name="time" value="{{$product->time}}" required>
+                </div>
+
+                <div class="form-group">
+                  <label>商品來源：</label>
+                  <input type="string" class="form-control" name="where" value="{{$product->where}}" required>
+                </div>
+
+                <div class="form-group">
+                  <label>商品型號：</label>
+                  <input type="string" class="form-control" name="source" value="{{$product->source}}" required>
+                </div>
+
+                <div class="form-group">
+                  <label>商品價格：</label>
+                  <input type="string" class="form-control" name="price" value="{{$product->price}}" required>
+                </div>
+
+                <div class="form-group">
+                  <label>商品類別：</label>
+                  <input type="string" class="form-control" name="kind" value="{{$product->kind}}" required>
+                </div>
+
+                <div class="form-group">
+                  <label>商品庫存：</label>
+                  <input type="string" class="form-control" name="stock" value="{{$product->stock}}" required>
+                </div>
+
+
+                <div class="col-lg-12 col-md-10 mx-auto">
+                  <button type="submit" class="btn btn-primary"><font face="微軟正黑體" size="4px" >更新</font></button>
+                  <a href="http://localhost:8000/BackstageProduct" ><button class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></button></a>
+                </div>
+                </font>
+
+              </form>
+
+
+
+
+            </div>
+          </div>
+          </div>
+          </div>
         </div>
       </div>
     </div>
 
-
-
-    <!-- Bootstrap core JavaScript -->
 
 
   </body>
