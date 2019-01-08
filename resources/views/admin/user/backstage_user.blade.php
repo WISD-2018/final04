@@ -166,7 +166,7 @@
               <td>
                 <center>
                     <!--form條件還沒加-->
-                    <form >
+                    <form action="{{ route('admin.user.backstage_userdelete' , $user->id) }}" method="POST">
                       {{ csrf_field() }}
                       {{ method_field('DELETE') }}
 

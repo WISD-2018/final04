@@ -47,15 +47,16 @@ class AdminBackstageController extends Controller
         return redirect()->route('admin.user.backstage_user');
     }
 
-    public function store(UserRequest $request)
-    {
-        User::create($request->all());
-        return redirect()->route('admin.user.backstage_userstore');
-    }
-    //public function destroy($id)
+    //public function store(UserRequest $request)
     //{
-    //    Post::destroy($id);
-    //    return redirect()->route('admin.posts.index');
+    //    User::create($request->all());
+    //    return redirect()->route('admin.user.backstage_user');
     //}
+
+    public function destroy($id)
+    {
+        User::destroy($id);
+        return redirect()->route('admin.user.backstage_user');
+    }
 
 }

@@ -111,12 +111,10 @@ Route::get('/BackstageUser', ['as' => 'admin.user.backstage_user' , 'uses' => 'A
 
 //修改使用者
 Route::get('/BackstageUser/edit/{id}', ['as' => 'admin.user.backstage_useredit'   , 'uses' => 'AdminBackstageController@edit']);
-//Route::patch('/BackstageUser/{id}', ['as' => 'admin.user.backstage_userupdate' , 'uses' => 'AdminBackstageController@update']);
 Route::post('/BackstageUser/update', ['as' => 'admin.user.backstage_userupdate', 'uses' => 'AdminBackstageController@update']);
-//Route::post('/BackstageUser', ['as' => 'admin.user.backstage_userstore'  , 'uses' => 'AdminBackstageController@store']);
 
-
-//Route::delete('posts/{id}'  , ['as' => 'admin.posts.destroy', 'uses' => 'AdminPostsController@destroy']);
+//刪除使用者
+Route::delete('/BackstageUser/delete{id}'  , ['as' => 'admin.user.backstage_userdelete', 'uses' => 'AdminBackstageController@destroy']);
 
 
 
