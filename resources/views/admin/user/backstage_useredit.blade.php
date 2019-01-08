@@ -100,58 +100,50 @@
       <div class="col-lg-12 col-md-10 mx-auto">
         <div class="post-preview">
 
+
+
         <!--CSS太難看-->
           <h1>     </h1><br>
         <!--所以靠他們調整版面一下-->
 
           <div class="row">
             <div class="col-lg-12">
-              <form action="/users/{{$user->id}}/edit" method="POST" role="form">
+              <form accept-charset="UTF-8" action="{{ route('admin.user.backstage_userupdate') }}" method="POST" role="form">
                 {{ csrf_field() }}
-                {{ method_field('PATCH') }}
 
                 <div class="form-group">
                   <label>使用者名稱：</label>
-                  <input name="title" class="form-control" placeholder="請輸入文章標題" value="{{$user->name}}">
-                </div>
-
-                <div class="form-group">
-                  <label>使用者電話：</label>
-                  <input name="title" class="form-control" placeholder="請輸入文章標題" value="{{$user->email}}">
-                </div>
-
-                <div class="form-group">
-                  <label>使用者電話：</label>
-                  <input name="title" class="form-control" placeholder="請輸入文章標題" value="{{$user->phone}}">
+                  <input type="string" class="form-control" name="name" value="{{$user->name}}" required>
                 </div>
 
                 <div class="form-group">
                   <label>使用者地址：</label>
-                  <input name="title" class="form-control" placeholder="請輸入文章標題" value="{{$user->address}}">
+                  <input type="string" class="form-control" name="email" value="{{$user->email}}" required>
+                </div>
+
+                <div class="form-group">
+                  <label>使用者電話：</label>
+                  <input type="string" class="form-control" name="phone" value="{{$user->phone}}" required>
+                </div>
+
+                <div class="form-group">
+                  <label>使用者電話：</label>
+                  <input type="string" class="form-control" name="address" value="{{$user->address}}" required>
                 </div>
 
                 <div class="form-group">
                   <label>使用者類別：</label>
-                  <input name="title" class="form-control" placeholder="請輸入文章標題" value="{{$user->type}}">
+                  <input type="string" class="form-control" name="type" value="{{$user->type}}" required>
                 </div>
 
-                <table>
-                  <tr>
-                    <td>
-                      <div class="col-lg-12">
-                        <button type="submit" class="btn btn-primary"><font face="微軟正黑體" size="4px" >更新</font></button>
-                      </div>
-                    </td>
+                <div class="col-lg-12 col-md-10 mx-auto">
+                  <button type="submit" class="btn btn-primary"><font face="微軟正黑體" size="4px" >更新</font></button>
+                  <a href="http://localhost:8000/BackstageUser" ><button class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></button></a>
+                </div>
 
-                    <td>
-                      <div class="col-lg-12">
-                        <a href="http://localhost:8000/BackstageUser" class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></a>
-                      </div>
-                    </td>
 
-                  </tr>
-                </table>
               </form>
+
 
 
 

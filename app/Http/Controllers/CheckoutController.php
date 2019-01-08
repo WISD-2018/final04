@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\orders;
-use App\user;
+use App\User;
 use Illuminate\Support\Facades\Auth;
 class CheckoutController extends Controller
 {

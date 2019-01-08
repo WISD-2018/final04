@@ -181,26 +181,13 @@
           </table>
           <br>
 
+
           <!--form條件還沒加-->
-          <div class="row" style="margin-bottom: 20px; text-align: right">
-          <table>
-          <tr>
-            <td>
-
-            <div class="col-lg-12">
-              <a href="" class="btn btn-primary"><font face="微軟正黑體" size="4px" >建立新使用者</font></a>
+            <div class="col-lg-12 col-md-10 mx-auto">
+                <a href="" class="btn btn-primary"><font face="微軟正黑體" size="4px" >建立新使用者</font></a>
+                <a href="http://localhost:8000/admin" class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></a>
             </div>
-            </td>
 
-            <td>
-            <div class="col-lg-12">
-              <a href="http://localhost:8000/admin" class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></a>
-            </div>
-            </td>
-
-          </tr>
-          </table>
-          </div>
           </div>
         </div>
       </div>

@@ -103,20 +103,20 @@ Route::get('/c6-9', 'C1Controller@content_c6_9')->name('content-c6-9');
 
 
 Route::get('/about', ['as' => 'admin.index', 'uses' => 'AboutController@About']);
-
 Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@index']);
+
+
+//使用者管理
 Route::get('/BackstageUser', ['as' => 'admin.user.backstage_user' , 'uses' => 'AdminBackstageController@index']);
-Route::post('/BackstageUser', ['as' => 'admin.user.backstage_user'  , 'uses' => 'AdminBackstageController@index']);
 
 //修改使用者
-Route::get('users/{id}/edit', ['as' => 'admin.user.backstage_useredit'   , 'uses' => 'AdminBackstageController@edit']);
-Route::patch('/BackstageUser', ['as' => 'admin.user.backstage_userupdate' , 'uses' => 'AdminBackstageController@update']);
-Route::post('/BackstageUser', ['as' => 'admin.user.backstage_userstore'  , 'uses' => 'AdminBackstageController@store']);
+Route::get('/BackstageUser/edit/{id}', ['as' => 'admin.user.backstage_useredit'   , 'uses' => 'AdminBackstageController@edit']);
+//Route::patch('/BackstageUser/{id}', ['as' => 'admin.user.backstage_userupdate' , 'uses' => 'AdminBackstageController@update']);
+Route::post('/BackstageUser/update', ['as' => 'admin.user.backstage_userupdate', 'uses' => 'AdminBackstageController@update']);
+//Route::post('/BackstageUser', ['as' => 'admin.user.backstage_userstore'  , 'uses' => 'AdminBackstageController@store']);
 
 
-    //Route::delete('posts/{id}'  , ['as' => 'admin.posts.destroy', 'uses' => 'AdminPostsController@destroy']);
-
-
+//Route::delete('posts/{id}'  , ['as' => 'admin.posts.destroy', 'uses' => 'AdminPostsController@destroy']);
 
 
 
