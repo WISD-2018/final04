@@ -110,30 +110,32 @@
             <div class="col-lg-12">
               <form accept-charset="UTF-8" action="{{ route('admin.user.backstage_userupdate') }}" method="POST" role="form">
                 {{ csrf_field() }}
+                {{ method_field('PATCH') }}
+
                 <font face="微軟正黑體">
                 <div class="form-group">
                   <label>使用者名稱：</label>
-                  <input type="string" class="form-control" name="name" value="{{$user->name}}" required>
+                  <input name="name" class="form-control" value="{{$user->name}}">
                 </div>
 
                 <div class="form-group">
                   <label>使用者信箱：</label>
-                  <input type="string" class="form-control" name="email" value="{{$user->email}}" required>
+                  <input name="email" class="form-control" value="{{$user->email}}">
                 </div>
 
                 <div class="form-group">
                   <label>使用者電話：</label>
-                  <input type="string" class="form-control" name="phone" value="{{$user->phone}}" required>
+                  <input name="phone" class="form-control" value="{{$user->phone}}">
                 </div>
 
                 <div class="form-group">
                   <label>使用者地址：</label>
-                  <input type="string" class="form-control" name="address" value="{{$user->address}}" required>
+                  <input name="address" class="form-control" value="{{$user->address}}">
                 </div>
 
                 <div class="form-group">
                   <label>使用者類別：</label>
-                  <input type="string" class="form-control" name="type" value="{{$user->type}}" required>
+                  <input name="type" class="form-control" value="{{$user->type}}">
                 </div>
 
                 <div class="col-lg-12 col-md-10 mx-auto">

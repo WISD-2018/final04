@@ -3,12 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\UserRequest;
 use App\User;
 use App\orders;
 use App\products;
-use DB;
-use Illuminate\Support\Facades\Auth;
+
 class AdminBackstageController extends Controller
 {
     //
@@ -28,22 +26,17 @@ class AdminBackstageController extends Controller
     }
 
 
-    public function update(Request $request)
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request , $id)
     {
-        $user = User::where('id','=',Auth::user()->id)
-            ->get();
-
-        $user= User::where('id','=',Auth::user()->id)
-            ->update(array('name' => $request->input('name')));
-        $user= User::where('id','=',Auth::user()->id)
-            ->update(array('email' => $request->input('email')));
-        $user= User::where('id','=',Auth::user()->id)
-            ->update(array('phone' => $request->input('phone')));
-        $user= User::where('id','=',Auth::user()->id)
-            ->update(array('address' => $request->input('address')));
-        $user= User::where('id','=',Auth::user()->id)
-            ->update(array('type' => $request->input('type')));
-
+        $user=User::find($id);
+        $user->update($request->all());
         return redirect()->route('admin.user.backstage_user');
     }
 
