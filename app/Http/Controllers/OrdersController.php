@@ -183,9 +183,9 @@ class OrdersController extends Controller
     //刪除購物車物品
     public function destroy(Request $request)
     {
-        DB::table('orders')
-            ->where('id', '=' , $request->input('id'))
-            ->delete();
+        //DB::table('orders')
+            //->where('id', '=' , $request->input('id'))
+           // ->delete();
 
         $id = DB::table('orders')
             ->where('id', '=' , $request->input('id'))
@@ -201,9 +201,13 @@ class OrdersController extends Controller
 
         $total3=$stock+$quantity;
 
-        //$product= products::where('id', '=' , $id)
-            //->update(array('stock' => $total3));
+        DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->delete();
 
-        //return redirect()->route('shoppingcart');
+        $product= products::where('id', '=' , $id)
+             ->update(array('stock' => $total3));
+
+        return redirect()->route('shoppingcart');
     }
 }
