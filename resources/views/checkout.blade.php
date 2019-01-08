@@ -170,15 +170,6 @@
               </div>
             </div>
 
-            <div class="form-group row">
-              <label for="email" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">信箱</font></label>
-
-              <div class="col-md-6">
-                <input type="email" class="form-control" name="user_email" value="{{ Auth::user()->email }}" required>
-
-              </div>
-            </div>
-
             <div class="form-group row mb-0">
               <div class="col-md-6 offset-md-4">
                 <button type="submit" class="btn btn-info"><font face="微軟正黑體">確認</font></button>

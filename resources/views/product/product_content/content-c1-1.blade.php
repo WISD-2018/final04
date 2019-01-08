@@ -206,8 +206,6 @@
 
                                     <input type="hidden" class="form-control" name="user_id" value="{{ Auth::user()->id }}">
 
-                                    <input type="hidden" class="form-control" name="user_name" value="{{ Auth::user()->name }}">
-
                                     <input type="hidden" class="form-control" name="product_id" value={{$product->id}}>
 
                                   <div class="col-6">

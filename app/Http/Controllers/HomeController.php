@@ -32,7 +32,7 @@ class HomeController extends Controller
         }
         else{
             //URL後面
-            return redirect('/home');
+            return redirect('/');
         }
 
     }

@@ -9,7 +9,6 @@ class orders extends Model
     protected $table = 'orders';
 
     protected $fillable=[
-        'id','user_id','user_name','product_id','product_name','product_price','product_quantity',
-        'freight','deliverydate','way',
+        'id','user_id','product_id','product_name','product_price','product_quantity','way',
     ];
 }
