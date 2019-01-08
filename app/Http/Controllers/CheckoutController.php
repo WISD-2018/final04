@@ -36,19 +36,31 @@ class CheckoutController extends Controller
             ->update(array('user_phone' => $request->input('user_phone')));
         $order= orders::where('user_id','=',Auth::user()->id)
             ->update(array('user_address' => $request->input('user_address')));
+        $order= orders::where('user_id','=',Auth::user()->id)
+            ->update(array('way' => $request->input('way')));
 
-        return redirect()->route('checkout');
+        return redirect()->route('end');
+    }
+
+    public function checkout2()
+    {
+        $order = orders::where('user_id','=',Auth::user()->id)
+            ->get();
+
+        $result = ['orders'=>$order];
+
+
+        return view('checkout2',$result);
+    }
+
+    public function checkout3()
+    {
+        return view('checkout3');
     }
 
     public function end()
     {
         return view('end');
-    }
-
-    public function count( )
-    {
-
-
     }
 
 }

@@ -154,8 +154,9 @@ Route::post('update1', ['as' => 'orders.update1', 'uses' => 'OrdersController@up
 Route::post('update2', ['as' => 'orders.update2', 'uses' => 'OrdersController@update2']);
 
 Route::get('checkout', ['as' => 'checkout', 'uses' => 'CheckoutController@checkout']);
-Route::post('update', ['as' => 'checkout.update', 'uses' => 'CheckoutController@update']);
-Route::post('count', ['as' => 'checkout.count', 'uses' => 'CheckoutController@count']);
-Route::get('end', ['as' => '/end', 'uses' => 'CheckoutController@end']);
+Route::get('/checkout2', ['as' => 'checkout2', 'uses' => 'CheckoutController@checkout2']);
+Route::get('/checkout3', ['as' => 'checkout3', 'uses' => 'CheckoutController@checkout3']);
+Route::get('update', ['as' => 'checkout.update', 'uses' => 'CheckoutController@update']);
+Route::get('end', ['as' => 'end', 'uses' => 'CheckoutController@end']);
 
 
