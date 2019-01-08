@@ -102,16 +102,15 @@ Route::get('/c6-9', 'C1Controller@content_c6_9')->name('content-c6-9');
 //C6商品內頁
 
 
+Route::get('/about', ['as' => 'admin.index', 'uses' => 'AboutController@About']);
+
 Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@index']);
 Route::get('/BackstageUser', ['as' => 'admin.user.backstage_user' , 'uses' => 'AdminBackstageController@index']);
 Route::post('/BackstageUser', ['as' => 'admin.user.backstage_user'  , 'uses' => 'AdminBackstageController@index']);
 
-    //Route::get('/', ['as' => 'admin.dashboard.index', 'uses' => 'AdminDashboardController@index']);
-    //Route::get('posts/create'   , ['as' => 'admin.posts.create' , 'uses' => 'AdminPostsController@create']);
-
 //修改使用者
 Route::get('users/{id}/edit', ['as' => 'admin.user.backstage_useredit'   , 'uses' => 'AdminBackstageController@edit']);
-//Route::patch('users/{id}', ['as' => 'admin.user.backstage_userupdate' , 'uses' => 'AdminBackstageController@update']);
+Route::patch('/BackstageUser', ['as' => 'admin.user.backstage_userupdate' , 'uses' => 'AdminBackstageController@update']);
 Route::post('/BackstageUser', ['as' => 'admin.user.backstage_userstore'  , 'uses' => 'AdminBackstageController@store']);
 
 
