@@ -93,6 +93,7 @@
               <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>品名</center></font></div></h5></td>
               <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>單價</center></font></div></h5></td>
               <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>數量</center></font></div></h5></td>
+              <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>小計</center></font></div></h5></td>
               <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>增加</center></font></div></h5></td>
               <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>減少</center></font></div></h5></td>
               <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>刪除</center></font></div></h5></td>
@@ -105,6 +106,7 @@
               <td><h6><font face="微軟正黑體" ><center>{{$order->product_name}}</center></font></h6></td>
               <td><h6><font face="微軟正黑體" ><center>{{$order->product_price}}</center></font></h6></td>
               <td><h6><font face="微軟正黑體" ><center>{{$order->product_quantity}}</center></font></h6></td>
+              <td><h6><font face="微軟正黑體" ><center>{{$order->total}}</center></font></h6></td>
               <td><h6><font face="微軟正黑體" ><center>
                       <form accept-charset="UTF-8" action="{{ route('orders.update1') }}" method="post" role="form">
                         {{ csrf_field()  }}
