@@ -22,7 +22,14 @@ class CheckoutController extends Controller
     public function update(Request $request)
     {
 
-        return redirect()->route('shoppingcart');
+        $order= orders::where('user_id','=',Auth::user()->id)
+            ->update(array('user_name' => $request->input('user_name')));
+        $order= orders::where('user_id','=',Auth::user()->id)
+            ->update(array('user_phone' => $request->input('user_phone')));
+        $order= orders::where('user_id','=',Auth::user()->id)
+            ->update(array('user_address' => $request->input('user_address')));
+
+        return redirect()->route('checkout');
     }
 
     public function end()

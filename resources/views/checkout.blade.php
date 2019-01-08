@@ -116,10 +116,8 @@
                 <h3>
                     <tr>
 
-                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品合計數量：？項</center></font></div></h5></td>
-                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品合計金額：？元</center></font></div></h5></td>
-                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>運費：60元</center></font></div></h5></td>
-                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>總金額：？元</center></font></div></h5></td>
+                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品總數量：？項</center></font></div></h5></td>
+                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品總金額：？元</center></font></div></h5></td>
                     </tr>
                 </h3>
             </div>
@@ -147,7 +145,7 @@
               <label for="name" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">姓名</font></label>
 
               <div class="col-md-6">
-                <input type="text" class="form-control" name="user_name" value="{{ Auth::user()->name }}" required>
+                <input type="text" class="form-control" name="user_name" value="{{$order->user_name}}" required>
 
               </div>
             </div>
@@ -156,7 +154,7 @@
               <label for="phone" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">聯絡電話</font></label>
 
               <div class="col-md-6">
-                <input type="text" class="form-control" name="user_phone" value="{{ Auth::user()->phone }}" required>
+                <input type="string" class="form-control" name="user_phone" value="{{$order->user_phone}}" required>
 
               </div>
             </div>
@@ -165,14 +163,14 @@
               <label for="address" class="col-md-4 col-form-label text-md-right"><font face="微軟正黑體">聯絡地址</font></label>
 
               <div class="col-md-6">
-                <input type="text" class="form-control" name="user_address" value="{{ Auth::user()->address }}" required>
+                <input type="text" class="form-control" name="user_address" value="{{$order->user_address}}" required>
 
               </div>
             </div>
 
             <div class="form-group row mb-0">
               <div class="col-md-6 offset-md-4">
-                <button type="submit" class="btn btn-info"><font face="微軟正黑體">確認</font></button>
+                <button type="submit" class="btn btn-info"><font face="微軟正黑體">確認修改</font></button>
               </div>
             </div>
           </form>

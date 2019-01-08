@@ -90,7 +90,7 @@
         <div class="card h-auto">
           <table>
             <tr>
-              <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>名稱</center></font></div></h5></td>
+              <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>品名</center></font></div></h5></td>
               <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>單價</center></font></div></h5></td>
               <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>數量</center></font></div></h5></td>
               <td><h5><div class="card-header"><font face="微軟正黑體" color="#6495ed" ><center>增加</center></font></div></h5></td>
