@@ -23,6 +23,7 @@ class CreateOrdersTable extends Migration
             $table->string('product_name')->index();
             $table->integer('product_price')->index();
             $table->integer('product_quantity')->index();
+            $table->string('total')->nullable();
             $table->string('way')->nullable();
             $table->timestamps();
         });

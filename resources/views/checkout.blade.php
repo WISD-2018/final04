@@ -94,35 +94,32 @@
         <div class="card">
           <table>
             <tr>
-              <td><h5><div class="card-body"><font face="微軟正黑體" color="#6495ed" ><center>名稱</center></font></div></h5></td>
-              <td><h5><div class="card-body"><font face="微軟正黑體" color="#6495ed" ><center>單價</center></font></div></h5></td>
-              <td><h5><div class="card-body"><font face="微軟正黑體" color="#6495ed" ><center>數量</center></font></div></h5></td>
+                <td><h5><div class="card-body"><font face="微軟正黑體" color="#6495ed" ><center>名稱</center></font></div></h5></td>
+                <td><h5><div class="card-body"><font face="微軟正黑體" color="#6495ed" ><center>單價</center></font></div></h5></td>
+                <td><h5><div class="card-body"><font face="微軟正黑體" color="#6495ed" ><center>數量</center></font></div></h5></td>
+                <td><h5><div class="card-body"><font face="微軟正黑體" color="#6495ed" ><center>小計</center></font></div></h5></td>
             </tr>
 
             @foreach($orders as $order)
 
               <tr>
-                <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_name}}</center></font></div></h5></td>
-                <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_price}}</center></font></div></h5></td>
-                <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_quantity}}</center></font></div></h5></td>
+                  <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_name}}</center></font></div></h5></td>
+                  <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_price}}</center></font></div></h5></td>
+                  <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_quantity}}</center></font></div></h5></td>
+                  <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->total}}</center></font></div></h5></td>
               </tr>
 
             @endforeach
 
           </table>
 
-            <div class="text-center">
-                <form accept-charset="UTF-8" action="{{ route('checkout.count') }}" method="post" role="form">
-                    {{ csrf_field()  }}
-                <h2> </h2>
+            <div class="card-body">
                 <h3>
                     <tr>
-
-                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品總數量：{{$total}}項</center></font></div></h5></td>
-                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品總金額：？元</center></font></div></h5></td>
+                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品總數量：{{$total1}}項</center></font></div></h5></td>
+                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品總金額：{{$total2}}元</center></font></div></h5></td>
                     </tr>
                 </h3>
-                </form>
             </div>
 
           <div class="text-center">

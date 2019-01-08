@@ -54,6 +54,7 @@ class OrdersController extends Controller
         $orders->product_name = $request->input('product_name');
         $orders->product_price = $request->input('product_price');
         $orders->product_quantity = $request->input('product_quantity');
+        $orders->total = $request->input('product_price') * $request->input('product_quantity');
         $orders->save();
 
         return redirect()->route('shoppingcart');
@@ -95,6 +96,9 @@ class OrdersController extends Controller
         DB::table('orders')
             ->where('id', '=' , $request->input('id'))
             ->increment('product_quantity');
+
+
+
         return redirect()->route('shoppingcart');
     }
 

@@ -16,7 +16,15 @@ class CheckoutController extends Controller
 
         $result = ['orders'=>$order];
 
-        return view('checkout',$result);
+        //商品總數量
+        $total1 = orders::where('user_id','=',Auth::user()->id)
+            ->sum('product_quantity');
+
+        //商品總金額
+        $total2 = orders::where('user_id','=',Auth::user()->id)
+            ->sum('total');
+
+        return view('checkout',$result,['total1'=>$total1,'total2'=>$total2]);
     }
     
     public function update(Request $request)
@@ -37,12 +45,10 @@ class CheckoutController extends Controller
         return view('end');
     }
 
-    public function count()
+    public function count( )
     {
-        $total= orders::where('user_id','=',Auth::user()->id)
-            ->sum('product_quantity');
 
-        return redirect()->route('checkout',$total);
+
     }
 
 }
