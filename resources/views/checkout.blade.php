@@ -112,14 +112,17 @@
           </table>
 
             <div class="text-center">
+                <form accept-charset="UTF-8" action="{{ route('checkout.count') }}" method="post" role="form">
+                    {{ csrf_field()  }}
                 <h2> </h2>
                 <h3>
                     <tr>
 
-                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品總數量：？項</center></font></div></h5></td>
+                        <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品總數量：{{$total}}項</center></font></div></h5></td>
                         <td><h5><div class="card-body"><font face="微軟正黑體" ><center>商品總金額：？元</center></font></div></h5></td>
                     </tr>
                 </h3>
+                </form>
             </div>
 
           <div class="text-center">
@@ -135,7 +138,7 @@
 
 
         <div class="card">
-        <div class="card-header"><font face="微軟正黑體">Step2 確認個人資料</font></div>
+        <div class="card-header"><font face="微軟正黑體">Step2 確認取貨個人資料</font></div>
 
         <div class="card-body">
           <form accept-charset="UTF-8" action="{{ route('checkout.update') }}" method="post" role="form">
@@ -208,7 +211,7 @@
                       <tr>
 
                           <td><h5><div class="card-body"><font face="微軟正黑體" ><center>請仔細閱讀下列條款後再點選確認購買，按下確認購買後視同同意以下條款：</center></font></div></h5></td>
-                          <td><h5><div class="card-body"><font face="微軟正黑體" ><center>1. 商品售出後7天內只接受換貨將不進行退款。</center></font></div></h5></td>
+                          <td><h5><div class="card-body"><font face="微軟正黑體" ><center>1. 商品售出後7天內可接受到店換貨。</center></font></div></h5></td>
                           <td><h5><div class="card-body"><font face="微軟正黑體" ><center>2. 商品售出後若因人為因素造成商品損壞等，將不接受換貨。</center></font></div></h5></td>
                           <td><h5><div class="card-body"><font face="微軟正黑體" ><center>3. 以上。</center></font></div></h5></td>
                       </tr>

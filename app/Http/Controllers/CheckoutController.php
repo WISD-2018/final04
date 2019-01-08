@@ -36,6 +36,15 @@ class CheckoutController extends Controller
     {
         return view('end');
     }
+
+    public function count()
+    {
+        $total= orders::where('user_id','=',Auth::user()->id)
+            ->sum('product_quantity');
+
+        return redirect()->route('checkout',$total);
+    }
+
 }
 
 
