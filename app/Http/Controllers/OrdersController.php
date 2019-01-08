@@ -55,6 +55,18 @@ class OrdersController extends Controller
         $orders->product_price = $request->input('product_price');
         $orders->product_quantity = $request->input('product_quantity');
         $orders->total = $request->input('product_price') * $request->input('product_quantity');
+
+        $stock = DB::table('products')
+            ->where('id', '=' , $request->input('product_id'))
+            ->value('stock');
+
+        $quantity = $request->input('product_quantity');
+
+        $total=$stock-$quantity;
+
+        $product= products::where('id', '=' , $request->input('product_id'))
+            ->update(array('stock' => $total));
+
         $orders->save();
 
         return redirect()->route('shoppingcart');
@@ -94,10 +106,34 @@ class OrdersController extends Controller
     public function update1(Request $request, orders $orders)
     {
         DB::table('orders')
-            ->where('id', '=' , $request->input('id'))
+        ->where('id', '=' , $request->input('id'))
             ->increment('product_quantity');
 
+        $quantity = DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->value('product_quantity');
 
+        $price = DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->value('product_price');
+
+        $total = $quantity * $price ;
+
+        $order= orders::where('id', '=' , $request->input('id'))
+            ->update(array('total' => $total));
+
+        $id = DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->value('product_id');
+
+        $stock = DB::table('products')
+            ->where('id', '=' , $id)
+            ->value('stock');
+
+        $total2=$stock-1;
+
+        $product= products::where('id', '=' , $id)
+            ->update(array('stock' => $total2));
 
         return redirect()->route('shoppingcart');
     }
@@ -108,6 +144,33 @@ class OrdersController extends Controller
         DB::table('orders')
             ->where('id', '=' , $request->input('id'))
             ->decrement('product_quantity');
+
+        $quantity = DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->value('product_quantity');
+
+        $price = DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->value('product_price');
+
+        $total1 = $quantity * $price ;
+
+        $order= orders::where('id', '=' , $request->input('id'))
+            ->update(array('total' => $total1));
+
+        $id = DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->value('product_id');
+
+        $stock = DB::table('products')
+            ->where('id', '=' , $id)
+            ->value('stock');
+
+        $total2=$stock+1;
+
+        $product= products::where('id', '=' , $id)
+            ->update(array('stock' => $total2));
+
         return redirect()->route('shoppingcart');
     }
 
@@ -123,6 +186,24 @@ class OrdersController extends Controller
         DB::table('orders')
             ->where('id', '=' , $request->input('id'))
             ->delete();
-        return redirect()->route('shoppingcart');
+
+        $id = DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->value('product_id');
+
+        $stock = DB::table('products')
+            ->where('id', '=' , $id)
+            ->value('stock');
+
+        $quantity = DB::table('orders')
+            ->where('id', '=' , $request->input('id'))
+            ->value('product_quantity');
+
+        $total3=$stock+$quantity;
+
+        //$product= products::where('id', '=' , $id)
+            //->update(array('stock' => $total3));
+
+        //return redirect()->route('shoppingcart');
     }
 }
