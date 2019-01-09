@@ -100,8 +100,8 @@
     </header>
 
     <!-- Main Content -->
-  <div class="container">
-    <div class="row">
+  <div class="container" style="float: left">
+
       <div class="col-lg-12 col-md-10 mx-auto">
         <div class="post-preview">
 
@@ -111,7 +111,7 @@
 
           <h1><font face="微軟正黑體">商品管理</font></h1>
 
-          <table style="border:1px #cccccc solid;" cellpadding="10" border='1' width="1450px">
+          <table style="border:1px #cccccc solid;" cellpadding="10" border='1' width="1800px">
 
           <tr>
             <td bgcolor="#cccccc" width="90px">
@@ -141,8 +141,8 @@
             <td bgcolor="#cccccc" width="100px">
               <h5><font face="微軟正黑體" color="#343a40" ><center>庫存</center></font></h5>
             </td>
-            <td bgcolor="#cccccc" width="160px">
-              <h5><font face="微軟正黑體" color="#343a40" ><center></center></font></h5>
+            <td bgcolor="#cccccc" width="120px">
+              <h5><font face="微軟正黑體" color="#343a40" ><center>管理</center></font></h5>
             </td>
             <td bgcolor="#cccccc" width="120px">
               <h5><font face="微軟正黑體" color="#343a40" ><center></center></font></h5>
@@ -213,7 +213,6 @@
           </div>
         </div>
       </div>
-    </div>
 
 
 

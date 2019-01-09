@@ -101,8 +101,8 @@
 
     <!-- Main Content -->
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-10 mx-auto">
+    <div class="row" >
+      <div class="col-lg-12 col-md-10 mx-auto" >
         <div class="post-preview">
 
         <!--CSS太難看-->
@@ -111,7 +111,7 @@
 
           <h1><font face="微軟正黑體">使用者管理</font></h1>
 
-          <table style="border:1px #cccccc solid;" cellpadding="10" border='1' width="1300px">
+          <table style="border:1px #cccccc solid;" cellpadding="10" border='1' width="100%">
 
           <tr>
             <td bgcolor="#cccccc" width="90px">

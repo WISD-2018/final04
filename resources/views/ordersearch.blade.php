@@ -100,8 +100,8 @@
 </header>
 
 <!-- Main Content -->
-<div class="container">
-    <div class="row">
+<div class="container" style="float: left">
+
         <div class="col-lg-12 col-md-10 mx-auto">
             <div class="post-preview">
 
@@ -111,19 +111,19 @@
 
                 <h1><font face="微軟正黑體">現有訂單</font></h1>
 
-                <table style="border:1px #cccccc solid;" cellpadding="10" border='1' width="1400px">
+                <table style="border:1px #cccccc solid;" cellpadding="10" border='1' width="1650px">
 
                     <tr>
                         <td bgcolor="#cccccc" width="100px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>訂單編號</center></font></h5>
                         </td>
-                        <td bgcolor="#cccccc" width="150px">
+                        <td bgcolor="#cccccc" width="120px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>取貨人姓名</center></font></h5>
                         </td>
-                        <td bgcolor="#cccccc" width="150px">
+                        <td bgcolor="#cccccc" width="10px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>取貨人電話</center></font></h5>
                         </td>
-                        <td bgcolor="#cccccc" width="150px">
+                        <td bgcolor="#cccccc" width="200px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>產品名稱</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="100px">
@@ -132,10 +132,10 @@
                         <td bgcolor="#cccccc" width="100px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>訂單總和</center></font></h5>
                         </td>
-                        <td bgcolor="#cccccc" width="150px">
+                        <td bgcolor="#cccccc" width="210px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>取貨地址</center></font></h5>
                         </td>
-                        <td bgcolor="#cccccc" width="120px">
+                        <td bgcolor="#cccccc" width="180px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>取貨方式</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="100px">
@@ -196,7 +196,7 @@
 
             </div>
         </div>
-    </div>
+
 </div>
 
 
