@@ -15,7 +15,17 @@ class shoppingcartController extends Controller
 
         $result = ['orders'=>$order];
 
-        return view('shoppingcart',$result);
+        $style= orders::where('user_id','=',Auth::user()->id)
+            ->count('product_id');
+
+        if ($style != 0)
+
+        $style = '';
+
+        else
+            $style = 'display: none';
+
+        return view('shoppingcart',$result)->with('style',$style);
     }
 }
 

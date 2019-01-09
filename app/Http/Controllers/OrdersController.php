@@ -207,7 +207,17 @@ class OrdersController extends Controller
         $order= orders::where('id', '=' , $request->input('id'))
             ->update(array('total' => $total));
 
-        return redirect()->route('shoppingcart');
+        if($quantity2 <= 0){
+            DB::table('orders')
+                ->where('id', '=' , $request->input('id'))
+                ->delete();
+            return redirect()->route('shoppingcart');
+        }
+        else{
+            return redirect()->route('shoppingcart');
+        }
+
+
     }
 
     /**
