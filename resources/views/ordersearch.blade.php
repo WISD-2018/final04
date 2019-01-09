@@ -120,7 +120,7 @@
                         <td bgcolor="#cccccc" width="120px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>取貨人姓名</center></font></h5>
                         </td>
-                        <td bgcolor="#cccccc" width="10px">
+                        <td bgcolor="#cccccc" width="100px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>取貨人電話</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="200px">
