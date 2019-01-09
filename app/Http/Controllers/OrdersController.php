@@ -255,4 +255,10 @@ class OrdersController extends Controller
         $data=['orders'=>$order];
         return view('ordersearch', $data);
     }
+
+    public function orderdestroy($id)
+    {
+        orders::destroy($id);
+        return redirect()->route('ordersearch');
+    }
 }

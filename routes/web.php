@@ -161,3 +161,4 @@ Route::get('end', ['as' => 'end', 'uses' => 'CheckoutController@end']);
 
 Route::get('/ordersearch', ['as' => 'ordersearch' , 'uses' => 'OrdersController@ordersearch']);
 Route::post('/ordersearch', ['as' => 'ordersearch' , 'uses' => 'OrdersController@ordersearch']);
+Route::delete('/ordersearch/delete/{id}'  , ['as' => 'search.orderdelete', 'uses' => 'OrdersController@orderdestroy']);

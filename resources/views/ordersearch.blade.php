@@ -174,7 +174,7 @@
                             <td>
                                 <center>
                                     <!--form條件還沒加-->
-                                    <form action="{{ route('admin.order.backstage_orderdelete' , $order->id) }}" method="POST">
+                                    <form action="{{ route('search.orderdelete' , $order->id) }}" method="POST">
                                         {{ csrf_field() }}
                                         {{ method_field('DELETE') }}
 
