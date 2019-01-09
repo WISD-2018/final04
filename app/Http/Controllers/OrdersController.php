@@ -71,6 +71,7 @@ class OrdersController extends Controller
         $quantity0 = DB::table('orders')
             ->where('product_id', '=' , $id2)
             ->value('product_quantity');
+
         $quantity0 = $quantity0 + $request->input('product_quantity');
 
         $order= orders::where('product_id', '=' , $id2)
@@ -91,7 +92,6 @@ class OrdersController extends Controller
 
         $product= orders::where('product_id', '=' , $id2)
             ->update(array('total' => $amount));
-
 
     }
 
