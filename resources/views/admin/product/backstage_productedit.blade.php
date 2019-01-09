@@ -121,6 +121,8 @@
                 <div class="form-group">
                   <label>圖示：</label>
                   <input type="string" class="form-control" name="picture" value="{{$product->picture}}" required>
+                  <br>
+                  <img src="{{$product->picture}}" width="50%">
                 </div>
 
                 <div class="form-group">
