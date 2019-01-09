@@ -72,11 +72,22 @@ class AdminBackstageController extends Controller
         return redirect()->route('admin.product.backstage_product');
     }
 
+    public function productstore(Request $request)
+    {
+        products::create($request->all());
+        return redirect()->route('admin.product.backstage_product');
+    }
+
 
     public function productdestroy($id)
     {
         products::destroy($id);
         return redirect()->route('admin.product.backstage_product');
+    }
+
+    public function productcreate()
+    {
+        return view('admin.product.backstage_productcreate');
     }
 
 }
