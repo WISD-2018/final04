@@ -14,16 +14,13 @@ class SearchController extends Controller
     }
     public function search(Request $request){
         $searchword=$request->input('searchword');
-        $start=trim($searchword);
-        $end=trim($searchword);
 
-        if($start != null and $end != null){
+        if($searchword != null){
 
         $product=products::where('name','like',"%$searchword%")
             ->orWhere('price','<=',$searchword)
             ->get();
         $data=['products'=>$product];
-
         return view('product.c7',$data);
 
         }
