@@ -87,6 +87,7 @@
 
       <!-- Page Heading -->
       <h1 class="my-4"><font face="微軟正黑體">購物車清單</font></h1>
+
         <div class="card h-auto">
           <table>
             <tr>
@@ -154,6 +155,10 @@
         <h3>
           <a href="http://localhost:8000/checkout"><button type="button" class="btn btn-info"><font face="微軟正黑體" >結帳去囉~</font></button></a>
         </h3>
+      </div>
+
+      <div class="text-center">
+        <a href="http://localhost:8000/ordersearch" ><button class="btn btn-primary" type="button"><font face="微軟正黑體" >查詢現有訂單</font></button></a>
       </div>
 
     </div>

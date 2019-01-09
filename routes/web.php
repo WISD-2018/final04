@@ -159,4 +159,5 @@ Route::get('/checkout3', ['as' => 'checkout3', 'uses' => 'CheckoutController@che
 Route::get('update', ['as' => 'checkout.update', 'uses' => 'CheckoutController@update']);
 Route::get('end', ['as' => 'end', 'uses' => 'CheckoutController@end']);
 
-
+Route::get('/ordersearch', ['as' => 'ordersearch' , 'uses' => 'OrdersController@ordersearch']);
+Route::post('/ordersearch', ['as' => 'ordersearch' , 'uses' => 'OrdersController@ordersearch']);
