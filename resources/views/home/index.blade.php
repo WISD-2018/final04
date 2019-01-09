@@ -149,7 +149,7 @@
                 <img class="d-block img-fluid" src="img/index_threefaces/2.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="img/index_threefaces/1.png" alt="Second slide">
+                <img class="d-block img-fluid" src="img/index_threefaces/4.png" alt="Second slide">
               </div>
               <div class="carousel-item">
                 <img class="d-block img-fluid" src="img/index_threefaces/3.png" alt="Third slide">
