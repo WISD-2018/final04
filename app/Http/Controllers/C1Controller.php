@@ -10,8 +10,13 @@ class C1Controller extends Controller
 
     public function View1()
     {
-        return view('/product.c1');
+        $product = products::where('kind_id','=','1')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product.c1',$result);
     }
+
+
 //C1 商品內容
     public function content_c1_1()
     {
@@ -80,7 +85,10 @@ class C1Controller extends Controller
 
     public function View2()
     {
-        return view('/product.c2');
+        $product = products::where('kind_id','=','2')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product.c2',$result);
     }
 //C2 商品內容
     public function content_c2_1()
@@ -150,7 +158,10 @@ class C1Controller extends Controller
 
     public function View3()
     {
-        return view('/product.c3');
+        $product = products::where('kind_id','=','3')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product.c3',$result);
     }
 //C3 商品內容
     public function content_c3_1()
@@ -228,7 +239,10 @@ class C1Controller extends Controller
 
     public function View4()
     {
-        return view('/product.c4');
+        $product = products::where('kind_id','=','4')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product.c4',$result);
     }
 //C4 商品內容
     public function content_c4_1()
@@ -266,7 +280,10 @@ class C1Controller extends Controller
 
     public function View5()
     {
-        return view('/product.c5');
+        $product = products::where('kind_id','=','5')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product.c5',$result);
     }
 //C5 商品內容
     public function content_c5_1()
@@ -344,7 +361,10 @@ class C1Controller extends Controller
 
     public function View6()
     {
-        return view('/product.c6');
+        $product = products::where('kind_id','=','6')
+            ->get();
+        $result = ['products'=>$product];
+        return view('/product.c6',$result);
     }
 //C6 商品內容
     public function content_c6_1()

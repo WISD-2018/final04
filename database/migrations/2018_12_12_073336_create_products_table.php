@@ -23,6 +23,7 @@ class CreateProductsTable extends Migration
             $table->string('source')->nullable();
             $table->integer('price');
             $table->string('kind');
+            $table->string('kind_id')->nullable();
             $table->string('stock');
             $table->timestamps();
         });

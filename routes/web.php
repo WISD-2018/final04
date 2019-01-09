@@ -30,7 +30,8 @@ Route::post('products/search','SearchController@search');
 
 Route::get('/home', 'HomeController@index')->name('home.index');
 
-Route::get('/c1', 'C1Controller@View1')->name('c1');
+Route::get('/c1',['as'=>'type1','uses'=>'C1Controller@View1']);
+Route::post('/c1',['as'=>'type_1','uses'=>'C1Controller@View1']);
 //C1商品內頁
 Route::get('/c1-1', 'C1Controller@content_c1_1')->name('content-c1-1');
 Route::get('/c1-2', 'C1Controller@content_c1_2')->name('content-c1-2');
@@ -42,7 +43,8 @@ Route::get('/c1-7', 'C1Controller@content_c1_7')->name('content-c1-7');
 Route::get('/c1-8', 'C1Controller@content_c1_8')->name('content-c1-8');
 //C1商品內頁
 
-Route::get('/c2', 'C1Controller@View2')->name('c2');
+Route::get('/c2',['as'=>'type2','uses'=>'C1Controller@View2']);
+Route::post('/c2',['as'=>'type_2','uses'=>'C1Controller@View2']);
 //C2商品內頁
 Route::get('/c2-1', 'C1Controller@content_c2_1')->name('content-c2-1');
 Route::get('/c2-2', 'C1Controller@content_c2_2')->name('content-c2-2');
@@ -54,7 +56,8 @@ Route::get('/c2-7', 'C1Controller@content_c2_7')->name('content-c2-7');
 Route::get('/c2-8', 'C1Controller@content_c2_8')->name('content-c2-8');
 //C2商品內頁
 
-Route::get('/c3', 'C1Controller@View3')->name('c3');
+Route::get('/c3',['as'=>'type3','uses'=>'C1Controller@View3']);
+Route::post('/c3',['as'=>'type_3','uses'=>'C1Controller@View3']);
 //C3商品內頁
 Route::get('/c3-1', 'C1Controller@content_c3_1')->name('content-c3-1');
 Route::get('/c3-2', 'C1Controller@content_c3_2')->name('content-c3-2');
@@ -67,7 +70,8 @@ Route::get('/c3-8', 'C1Controller@content_c3_8')->name('content-c3-8');
 Route::get('/c3-9', 'C1Controller@content_c3_9')->name('content-c3-9');
 //C3商品內頁
 
-Route::get('/c4', 'C1Controller@View4')->name('c4');
+Route::get('/c4',['as'=>'type4','uses'=>'C1Controller@View4']);
+Route::post('/c4',['as'=>'type_4','uses'=>'C1Controller@View4']);
 //C4商品內頁
 Route::get('/c4-1', 'C1Controller@content_c4_1')->name('content-c4-1');
 Route::get('/c4-2', 'C1Controller@content_c4_2')->name('content-c4-2');
@@ -75,7 +79,8 @@ Route::get('/c4-3', 'C1Controller@content_c4_3')->name('content-c4-3');
 Route::get('/c4-4', 'C1Controller@content_c4_4')->name('content-c4-4');
 //C4商品內頁
 
-Route::get('/c5', 'C1Controller@View5')->name('c5');
+Route::get('/c5',['as'=>'type5','uses'=>'C1Controller@View5']);
+Route::post('/c5',['as'=>'type_5','uses'=>'C1Controller@View5']);
 //C5商品內頁
 Route::get('/c5-1', 'C1Controller@content_c5_1')->name('content-c5-1');
 Route::get('/c5-2', 'C1Controller@content_c5_2')->name('content-c5-2');
@@ -88,7 +93,8 @@ Route::get('/c5-8', 'C1Controller@content_c5_8')->name('content-c5-8');
 Route::get('/c5-9', 'C1Controller@content_c5_9')->name('content-c5-9');
 //C5商品內頁
 
-Route::get('/c6', 'C1Controller@View6')->name('c6');
+Route::get('/c6',['as'=>'type6','uses'=>'C1Controller@View6']);
+Route::post('/c6',['as'=>'type_6','uses'=>'C1Controller@View6']);
 //C6商品內頁
 Route::get('/c6-1', 'C1Controller@content_c6_1')->name('content-c6-1');
 Route::get('/c6-2', 'C1Controller@content_c6_2')->name('content-c6-2');

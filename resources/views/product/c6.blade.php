@@ -145,141 +145,25 @@
 
           <div class="row">
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c6-1"><img class="card-img-top" src="img/light/HONDA CRV 左大燈.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c6-1"><font face="微軟正黑體">HONDA CRV 大燈</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：1000元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：HONDA CRV</font></p>
-                </div>
-              </div>
-            </div>
+              @foreach($products as $product)
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c6-2"><img class="card-img-top" src="img/light/honda CRV 4代4.5代 大燈.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c6-2"><font face="微軟正黑體">HONDA CRV4代 4.5代 大燈</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：1250元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：HONDA CRV4  4.5代</font></p>
-                </div>
-              </div>
-            </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="card h-100">
+                          <img class="card-img-top" src="{{$product->picture}}" alt="">
+                          <div class="card-body">
+                              <h6 class="card-title">
+                                  <a href="http://localhost:8000/c{{$product->id_sequence}}"><font face="微軟正黑體">{{$product->name}}</font></a>
+                              </h6>
+                              <h5>
+                                  <p class="card-text"><font face="微軟正黑體">價格：{{$product->price}}元</font></p>
+                              </h5>
+                              <p class="card-text"><font face="微軟正黑體">{{$product->source}}</font></p>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c6-3"><img class="card-img-top" src="img/light/HONDA CIVIC 右大燈.JPG" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c6-3"><font face="微軟正黑體">HONDA CIVI 右大燈</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：1400元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：HONDA CIVI</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c6-4"><img class="card-img-top" src="img/light/TOYOTA Wish 06年 原廠車頭大燈.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c6-4"><font face="微軟正黑體">TOYOTA WISH 06年 原廠車頭大燈</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：1350元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：TOYOTA WISH</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c6-5"><img class="card-img-top" src="img/light/TOYOTA WISH 左大燈.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c6-5"><font face="微軟正黑體">TOYOTA WISH 左大燈</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：750元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：TOYOTA WISH</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                      <a href="http://localhost:8000/c6-6"><img class="card-img-top" src="img/light/TOYOTA  CAMRY原廠二手大燈.jpg" alt=""></a>
-                      <div class="card-body">
-                          <h6 class="card-title">
-                              <a href="http://localhost:8000/c6-6"><font face="微軟正黑體">TOYOTA CAMRY原廠二手大燈</font></a>
-                          </h6>
-                          <h5>
-                              <p class="card-text"><font face="微軟正黑體">價格：1850元</font></p>
-                          </h5>
-                          <p class="card-text"><font face="微軟正黑體">型號：TOYOTA CAMRY</font></p>
+                          </div>
                       </div>
                   </div>
-              </div>
 
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                      <a href="http://localhost:8000/c6-7"><img class="card-img-top" src="img/light/BENZ W221 S350 左大燈.jpg" alt=""></a>
-                      <div class="card-body">
-                          <h6 class="card-title">
-                              <a href="http://localhost:8000/c6-7"><font face="微軟正黑體">BENZ W221 S350 左大燈</font></a>
-                          </h6>
-                          <h5>
-                              <p class="card-text"><font face="微軟正黑體">價格：800元</font></p>
-                          </h5>
-                          <p class="card-text"><font face="微軟正黑體">型號：BENZ W211 S350 </font></p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                      <a href="http://localhost:8000/c6-8"><img class="card-img-top" src="img/light/Benz c w204 頭燈.jpg" alt=""></a>
-                      <div class="card-body">
-                          <h6 class="card-title">
-                              <a href="http://localhost:8000/c6-8"><font face="微軟正黑體">BENZ cw204 頭燈</font></a>
-                          </h6>
-                          <h5>
-                              <p class="card-text"><font face="微軟正黑體">價格：1400元</font></p>
-                          </h5>
-                          <p class="card-text"><font face="微軟正黑體">型號：BENZ cw204</font></p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                      <a href="http://localhost:8000/c6-9"><img class="card-img-top" src="img/light/賓士 BENZ W207 C207 W212 大燈.jpg" alt=""></a>
-                      <div class="card-body">
-                          <h6 class="card-title">
-                              <a href="http://localhost:8000/c6-9"><font face="微軟正黑體">BENZ w207 C207 W212 大燈</font></a>
-                          </h6>
-                          <h5>
-                              <p class="card-text"><font face="微軟正黑體">價格：1500元</font></p>
-                          </h5>
-                          <p class="card-text"><font face="微軟正黑體">型號：BENZ w207 207 w212</font></p>
-                      </div>
-                  </div>
-              </div>
-
+              @endforeach
           </div>
           <!-- /.row -->
 
