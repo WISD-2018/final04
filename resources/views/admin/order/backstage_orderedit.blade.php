@@ -108,57 +108,65 @@
 
           <div class="row">
             <div class="col-lg-12">
-              <form action="/BackstageProduct/update/{{$product->id}}" method="POST" role="form">
+              <form action="/BackstageOrder/update/{{$order->id}}" method="POST" role="form">
                 {{ csrf_field() }}
                 {{ method_field('PATCH') }}
 
                 <font face="微軟正黑體">
                 <div class="form-group">
-                  <label>名稱：</label>
-                  <input type="string" class="form-control" name="name" value="{{$product->name}}" required>
+                  <label>訂單編號：</label>
+                  <input type="string" class="form-control" name="id" readonly="readonly" value="{{$order->id}}">
                 </div>
 
                 <div class="form-group">
-                  <label>圖示：</label>
-                  <input type="string" class="form-control" name="picture" value="{{$product->picture}}" required>
-                  <br>
-                  <img src="{{$product->picture}}" width="50%">
+                  <label>使用者編號：</label>
+                  <input type="string" class="form-control" name="user_id" readonly="readonly" value="{{$order->user_id}}">
                 </div>
 
                 <div class="form-group">
-                  <label>時間：</label>
-                  <input type="string" class="form-control" name="time" value="{{$product->time}}" required>
+                  <label>取貨人姓名：</label>
+                  <input type="string" class="form-control" name="user_name" value="{{$order->user_name}}">
                 </div>
 
                 <div class="form-group">
-                  <label>來源：</label>
-                  <input type="string" class="form-control" name="where" value="{{$product->where}}" required>
+                  <label>取貨人電話：</label>
+                  <input type="string" class="form-control" name="user_phone" value="{{$order->user_phone}}">
                 </div>
 
                 <div class="form-group">
-                  <label>型號：</label>
-                  <input type="string" class="form-control" name="source" value="{{$product->source}}" required>
+                  <label>取貨人地址：</label>
+                  <input type="string" class="form-control" name="user_address" value="{{$order->user_address}}">
                 </div>
 
                 <div class="form-group">
-                  <label>價格：</label>
-                  <input type="string" class="form-control" name="price" value="{{$product->price}}" required>
+                  <label>產品編號：</label>
+                  <input type="string" class="form-control" name="product_id" readonly="readonly" value="{{$order->product_id}}">
                 </div>
 
                 <div class="form-group">
-                  <label>類別：</label>
-                  <input type="string" class="form-control" name="kind" value="{{$product->kind}}" required>
+                  <label>產品名稱：</label>
+                  <input type="string" class="form-control" name="product_name" readonly="readonly" value="{{$order->product_name}}">
                 </div>
 
+                  <div class="form-group">
+                    <label>產品價格：</label>
+                    <input type="string" class="form-control" name="product_price" readonly="readonly" value="{{$order->product_price}}">
+                  </div>
+
+                  <div class="form-group">
+                    <label>產品數量：</label>
+                    <input type="string" class="form-control" name="product_quantity" value="{{$order->product_quantity}}" required>
+                  </div>
+
                 <div class="form-group">
-                  <label>庫存：</label>
-                  <input type="string" class="form-control" name="stock" value="{{$product->stock}}" required>
+                  <label>運送方式：</label>
+                  <input type="string" class="form-control" name="stock" readonly="readonly" value="{{$order->way}}" required>
                 </div>
 
 
                 <div class="col-lg-12 col-md-10 mx-auto">
                   <button type="submit" class="btn btn-primary"><font face="微軟正黑體" size="4px" >更新</font></button>
-                  <a href="http://localhost:8000/BackstageProduct" ><button class="btn btn-primary" type="button"><font face="微軟正黑體" size="4px" >返回</font></button></a>
+                  <a href="http://localhost:8000/BackstageOrder" ><button class="btn btn-primary" type="button"><font face="微軟正黑體" size="4px" >返回</font></button></a>
                 </div>
                 </font>
 

@@ -104,28 +104,25 @@
                 <h1>     </h1><br>
                 <!--所以靠他們調整版面一下-->
 
-                <h1><font face="微軟正黑體">使用者管理</font></h1>
+                <h1><font face="微軟正黑體">訂單管理</font></h1>
 
                 <table style="border:1px #cccccc solid;" cellpadding="10" border='1' width="1300px">
 
                     <tr>
                         <td bgcolor="#cccccc" width="90px">
-                            <h5><font face="微軟正黑體" color="#343a40" ><center>排序</center></font></h5>
+                            <h5><font face="微軟正黑體" color="#343a40" ><center>訂單編號</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="150px">
-                            <h5><font face="微軟正黑體" color="#343a40" ><center>使用者名稱</center></font></h5>
+                            <h5><font face="微軟正黑體" color="#343a40" ><center>取貨人姓名</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="100px">
-                            <h5><font face="微軟正黑體" color="#343a40" ><center>使用者信箱</center></font></h5>
+                            <h5><font face="微軟正黑體" color="#343a40" ><center>產品名稱</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="100px">
-                            <h5><font face="微軟正黑體" color="#343a40" ><center>使用者電話</center></font></h5>
+                            <h5><font face="微軟正黑體" color="#343a40" ><center>運送方式</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="200px">
-                            <h5><font face="微軟正黑體" color="#343a40" ><center>使用者地址</center></font></h5>
-                        </td>
-                        <td bgcolor="#cccccc" width="100px">
-                            <h5><font face="微軟正黑體" color="#343a40" ><center>類別</center></font></h5>
+                            <h5><font face="微軟正黑體" color="#343a40" ><center>取貨人地址</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="100px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>管理</center></font></h5>
@@ -143,30 +140,24 @@
                                 <center><font face="微軟正黑體">{{$order->id}}</font></center>
                             </td>
                             <td>
-                                <center><font face="微軟正黑體">{{$order->name}}</font></center>
+                                <center><font face="微軟正黑體">{{$order->user_name}}</font></center>
                             </td>
                             <td>
-                                <center><font face="微軟正黑體">{{$order->email}}</font></center>
+                                <center><font face="微軟正黑體">{{$order->product_name}}</font></center>
                             </td>
                             <td>
-                                <center><font face="微軟正黑體">{{$order->phone}}</font></center>
-                            </td>
-                            <td>
-                                <center><font face="微軟正黑體">{{$order->address}}</font></center>
-                            </td>
-                            <td>
-                                <center><font face="微軟正黑體">{{$order->type}}</font></center>
+                                <center><font face="微軟正黑體">{{$order->way}}</font></center>
                             </td>
                             <td>
                                 <center><font face="微軟正黑體" size="5px">
                                         <!--form條件還沒加-->
-                                        <a href="{{route('admin.order.backstage_orderedit', $orders->id)}}"><font color="#008B8B"><b>編輯</b></font></a>
+                                        <a href="{{route('admin.order.backstage_orderedit', $order->id)}}"><font color="#008B8B"><b>編輯</b></font></a>
                                     </font></center>
                             </td>
                             <td>
                                 <center>
                                     <!--form條件還沒加-->
-                                    <form action="{{ route('admin.order.backstage_orderdelete' , $orders->id) }}" method="POST">
+                                    <form action="{{ route('admin.order.backstage_orderdelete' , $order->id) }}" method="POST">
                                         {{ csrf_field() }}
                                         {{ method_field('DELETE') }}
 
@@ -175,7 +166,6 @@
                                 </center>
                             </td>
                         </tr>
-                        <br>
 
                     @endforeach
                 </table>
