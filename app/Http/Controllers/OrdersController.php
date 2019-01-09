@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\orders;
 use App\products;
+use http\Url;
+use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -94,8 +96,7 @@ class OrdersController extends Controller
             ->update(array('total' => $amount));
 
     }
-
-        return redirect()->route('shoppingcart');
+        return redirect(\url()->previous());
     }
 
     /**
