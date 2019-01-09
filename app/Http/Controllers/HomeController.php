@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
-
-
+use App\orders;
 class HomeController extends Controller
 {
     /**
@@ -32,7 +31,10 @@ class HomeController extends Controller
         }
         else{
             //URL後面
-            return redirect('/');
+            $name = orders::where('user_id','=',Auth::user()->id)
+                ->where('way','=',null)
+                ->sum('product_quantity');
+            return redirect('/')->with('name',$name);
         }
 
     }

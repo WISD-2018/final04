@@ -10,9 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use App\orders;
+use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
-    return view('/home.index');
+    $name = orders::where('user_id','=',Auth::user()->id)
+        ->where('way','=',null)
+        ->sum('product_quantity');
+    return view('/home.index')->with('name',$name);
 });
 
 //Route::get('/', function () {

@@ -15,6 +15,10 @@ class shoppingcartController extends Controller
 
         $result = ['orders'=>$order];
 
+        $name = $order = orders::where('user_id','=',Auth::user()->id)
+            ->where('way','=',null)
+            ->sum('product_quantity');
+
         $style= orders::where('user_id','=',Auth::user()->id)
             ->count('product_id');
 
@@ -25,7 +29,7 @@ class shoppingcartController extends Controller
         else
             $style = 'display: none';
 
-        return view('shoppingcart',$result)->with('style',$style);
+        return view('shoppingcart',$result)->with('style',$style)->with('name',$name);
     }
 }
 

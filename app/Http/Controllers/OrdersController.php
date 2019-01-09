@@ -67,6 +67,10 @@ class OrdersController extends Controller
 
             $product= products::where('id', '=' , $request->input('product_id'))
                 ->update(array('stock' => $total));
+
+            $name = $order = orders::where('user_id','=',Auth::user()->id)
+                ->where('way','=',null)
+                ->sum('product_quantity');
     }
     else
     {
@@ -95,8 +99,12 @@ class OrdersController extends Controller
         $product= orders::where('product_id', '=' , $id2)
             ->update(array('total' => $amount));
 
+        $name = $order = orders::where('user_id','=',Auth::user()->id)
+            ->where('way','=',null)
+            ->sum('product_quantity');
+
     }
-        return redirect(\url()->previous());
+        return redirect(\url()->previous())->with('name',$name);
     }
 
     /**
@@ -152,6 +160,9 @@ class OrdersController extends Controller
 
             $product= products::where('id', '=' , $id)
                 ->update(array('stock' => $total2));
+            $name = $order = orders::where('user_id','=',Auth::user()->id)
+                ->where('way','=',null)
+                ->sum('product_quantity');
         }
 
         $price = DB::table('orders')
@@ -166,8 +177,11 @@ class OrdersController extends Controller
 
         $order= orders::where('id', '=' , $request->input('id'))
             ->update(array('total' => $total));
+        $name = $order = orders::where('user_id','=',Auth::user()->id)
+            ->where('way','=',null)
+            ->sum('product_quantity');
 
-        return redirect()->route('shoppingcart');
+        return redirect()->route('shoppingcart')->with('name',$name);
     }
 
     //減少購物車物品數量
@@ -211,10 +225,16 @@ class OrdersController extends Controller
             DB::table('orders')
                 ->where('id', '=' , $request->input('id'))
                 ->delete();
-            return redirect()->route('shoppingcart');
+            $name = $order = orders::where('user_id','=',Auth::user()->id)
+                ->where('way','=',null)
+                ->sum('product_quantity');
+            return redirect()->route('shoppingcart')->with('name',$name);
         }
         else{
-            return redirect()->route('shoppingcart');
+            $name = $order = orders::where('user_id','=',Auth::user()->id)
+                ->where('way','=',null)
+                ->sum('product_quantity');
+            return redirect()->route('shoppingcart')->with('name',$name);
         }
 
 

@@ -27,7 +27,11 @@ class CheckoutController extends Controller
             ->where('way','=',null)
             ->sum('total');
 
-        return view('checkout',$result,['total1'=>$total1,'total2'=>$total2]);
+        $name = orders::where('user_id','=',Auth::user()->id)
+            ->where('way','=',null)
+            ->sum('product_quantity');
+
+        return view('checkout',$result,['total1'=>$total1,'total2'=>$total2])->with('name',$name);
     }
     
     public function update(Request $request)
@@ -57,18 +61,18 @@ class CheckoutController extends Controller
 
         $result = ['orders'=>$order];
 
-
-        return view('checkout2',$result);
-    }
-
-    public function checkout3()
-    {
-        return view('checkout3');
+        $name = orders::where('user_id','=',Auth::user()->id)
+            ->where('way','=',null)
+            ->sum('product_quantity');
+        return view('checkout2',$result)->with('name',$name);
     }
 
     public function end()
     {
-        return view('end');
+        $name = orders::where('user_id','=',Auth::user()->id)
+            ->where('way','=',null)
+            ->sum('product_quantity');
+        return view('end')->with('name',$name);
     }
 
 }
