@@ -184,7 +184,7 @@
                 <td>
                   <center>
                     <!--form條件還沒加-->
-                    <form action="" method="POST">
+                    <form action="{{ route('admin.product.backstage_productdelete' , $product->id) }}" method="POST">
                       {{ csrf_field() }}
                       {{ method_field('DELETE') }}
 
