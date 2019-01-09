@@ -145,126 +145,25 @@
 
           <div class="row">
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c1-1"><img class="card-img-top" src="img/TOYOTA/TOYOTA A秀 EXSIOR 1.6 2.0 傳動軸.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c1-1"><font face="微軟正黑體">TOYOTA EXSIOR 1.6 2.0 傳動軸</font></a>
-                  </h6>
-                      <h5>
-                          <p class="card-text"><font face="微軟正黑體">價格：200元</font></p>
-                      </h5>
-                      <p class="card-text"><font face="微軟正黑體">型號：EXSIOR 1.6、2.0 </font></p>
-                </div>
+            @foreach($products as $product)
 
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c1-2"><img class="card-img-top" src="img/TOYOTA/TOYOTA 台製 新頭 傳動軸.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c1-2"><font face="微軟正黑體">TOYOTA 台製 新頭 傳動軸</font></a>
-                  </h6>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="{{$product->picture}}" alt="">
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      <a href="http://localhost:8000/c{{$product->id_sequence}}"><font face="微軟正黑體">{{$product->name}}</font></a>
+                    </h6>
                     <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：150元</font></p>
+                      <p class="card-text"><font face="微軟正黑體">價格：{{$product->price}}元</font></p>
                     </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：EXSIOR PREMIO TERCEL YARIS ALTIS VIOS RAV4 </font></p>
-                </div>
-              </div>
-            </div>
+                    <p class="card-text"><font face="微軟正黑體">{{$product->source}}</font></p>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c1-3"><img class="card-img-top" src="img/TOYOTA/TOYOTA傳動軸_ALTIS 1.6 傳動軸.JPG" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c1-3"><font face="微軟正黑體">TOYOTA_ALTIS 1.6 傳動軸</font></a>
-                  </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：400元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：ALTIS 1.6 </font></p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c1-4"><img class="card-img-top" src="img/Benz/BENZ W245 B170 傳動軸.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c1-4"><font face="微軟正黑體">BENZ W245 B170 傳動軸</font></a>
-                  </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：1200元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：W245 B170</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c1-5"><img class="card-img-top" src="img/Benz/Benz w124 w140 後地軸傳動軸.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c1-5"><font face="微軟正黑體">BENZ W124 W140 後地軸 傳動軸</font></a>
-                  </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：1500元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：W124 W140</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c1-6"><img class="card-img-top" src="img/Benz/Benz  VIANO 中間傳動軸.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c1-6"><font face="微軟正黑體">BENZ VIANO 中間傳動軸</font></a>
-                  </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：18000元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：VIANO</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c1-7"><img class="card-img-top" src="img/Honda/Honda TEANA  X-TRAIL 傳動軸.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c1-7"><font face="微軟正黑體">HONDA TEANA X-TRAIL 傳動軸</font></a>
-                  </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：600元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：MARCH SENTRA 331 341 180 931 A32 A33</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c1-8"><img class="card-img-top" src="img/Honda/Honda crv 二代 4WD 傳動軸.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c1-8"><font face="微軟正黑體">HONDA crv 二代 4WD 傳動軸</font></a>
-                  </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：1000元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：crv 二代 4WD</font></p>
-                </div>
-              </div>
-            </div>
+            @endforeach
 
           </div>
           <!-- /.row -->

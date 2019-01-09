@@ -146,140 +146,25 @@
 
           <div class="row">
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c5-1"><img class="card-img-top" src="img/sound/本田 原廠音響主機2.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c5-1"><font face="微軟正黑體">HONDA 原廠音響主機</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：2500元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：CRV3</font></p>
-                </div>
-              </div>
-            </div>
+              @foreach($products as $product)
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c5-2"><img class="card-img-top" src="img/sound/本田 FIT音響主機 A款2.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c5-2"><font face="微軟正黑體">HONDA FIT音響主機 A款</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：1500元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：HONDA FIT </font></p>
-                </div>
-              </div>
-            </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="card h-100">
+                          <img class="card-img-top" src="{{$product->picture}}" alt="">
+                          <div class="card-body">
+                              <h6 class="card-title">
+                                  <a href="http://localhost:8000/c{{$product->id_sequence}}"><font face="微軟正黑體">{{$product->name}}</font></a>
+                              </h6>
+                              <h5>
+                                  <p class="card-text"><font face="微軟正黑體">價格：{{$product->price}}元</font></p>
+                              </h5>
+                              <p class="card-text"><font face="微軟正黑體">{{$product->source}}</font></p>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c5-3"><img class="card-img-top" src="img/sound/本田 FIT 音響主機.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c5-3"><font face="微軟正黑體">HONDA FIT 音響主機</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：750元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：HONDA FIT </font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c5-4"><img class="card-img-top" src="img/sound/TOYOTA CAMRY 國際牌 6.5吋螢幕 音響主機.JPG" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c5-4"><font face="微軟正黑體">TOYOTA CAMRY 國際牌 6.5吋螢幕 音響主機</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：800元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：TOYOTA CARMAY</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c5-5"><img class="card-img-top" src="img/sound/TOYOTA ALTIS 前置6片CD音響主機.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c5-5"><font face="微軟正黑體">TOYOTA ALTIS 前置6片CD音響主機</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：1200元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：TOYOTA ALTIS</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                      <a href="http://localhost:8000/c5-6"><img class="card-img-top" src="img/sound/TOYOTA  原廠音響主機.jpg" alt=""></a>
-                      <div class="card-body">
-                          <h6 class="card-title">
-                              <a href="http://localhost:8000/c5-6"><font face="微軟正黑體">TOYOTA  原廠音響主機</font></a>
-                          </h6>
-                          <h5>
-                              <p class="card-text"><font face="微軟正黑體">價格：1350元</font></p>
-                          </h5>
-                          <p class="card-text"><font face="微軟正黑體">型號：TOYOTA ALTIS</font></p>
+                          </div>
                       </div>
                   </div>
-              </div>
 
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                      <a href="http://localhost:8000/c5-7"><img class="card-img-top" src="img/sound/BENZ原廠音響主機.JPG" alt=""></a>
-                      <div class="card-body">
-                          <h6 class="card-title">
-                              <a href="http://localhost:8000/c5-7"><font face="微軟正黑體">BENZ 原廠音響主機</font></a>
-                          </h6>
-                          <h5>
-                              <p class="card-text"><font face="微軟正黑體">價格：2200元</font></p>
-                          </h5>
-                          <p class="card-text"><font face="微軟正黑體">型號：BENZ ML320</font></p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                      <a href="http://localhost:8000/c5-8"><img class="card-img-top" src="img/sound/BENZ W211音響主機.jpg" alt=""></a>
-                      <div class="card-body">
-                          <h6 class="card-title">
-                              <a href="http://localhost:8000/c5-8"><font face="微軟正黑體">BENZ W211音響主機</font></a>
-                          </h6>
-                          <h5>
-                              <p class="card-text"><font face="微軟正黑體">價格：2500元</font></p>
-                          </h5>
-                          <p class="card-text"><font face="微軟正黑體">型號：BENZ  W2111</font></p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card h-100">
-                      <a href="http://localhost:8000/c5-9"><img class="card-img-top" src="img/sound/BENZ R350 原廠音響主機.jpeg" alt=""></a>
-                      <div class="card-body">
-                          <h6 class="card-title">
-                              <a href="http://localhost:8000/c5-9"><font face="微軟正黑體">BENZ R350 原廠音響主機</font></a>
-                          </h6>
-                          <h5>
-                              <p class="card-text"><font face="微軟正黑體">價格：2350元</font></p>
-                          </h5>
-                          <p class="card-text"><font face="微軟正黑體">型號：BENZ R350</font></p>
-                      </div>
-                  </div>
-              </div>
+              @endforeach
 
           </div>
           <!-- /.row -->

@@ -145,65 +145,25 @@
 
           <div class="row">
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c4-1"><img class="card-img-top" src="img/brakes/benz w220-s320煞車組.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c4-1"><font face="微軟正黑體">BENZ w220-s320煞車組</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：4000元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：BENZ w220 </font></p>
-                </div>
-              </div>
-            </div>
+              @foreach($products as $product)
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c4-2"><img class="card-img-top" src="img/brakes/TOYOTA TERCEL 前煞車盤.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c4-2"><font face="微軟正黑體">TOYOTA TERCEL 前煞車盤</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：3500元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：TOYOT TERCEL</font></p>
-                </div>
-              </div>
-            </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                      <div class="card h-100">
+                          <img class="card-img-top" src="{{$product->picture}}" alt="">
+                          <div class="card-body">
+                              <h6 class="card-title">
+                                  <a href="http://localhost:8000/c{{$product->id_sequence}}"><font face="微軟正黑體">{{$product->name}}</font></a>
+                              </h6>
+                              <h5>
+                                  <p class="card-text"><font face="微軟正黑體">價格：{{$product->price}}元</font></p>
+                              </h5>
+                              <p class="card-text"><font face="微軟正黑體">{{$product->source}}</font></p>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c4-3"><img class="card-img-top" src="img/brakes/TOYOTA PREVIA 03後 煞車盤.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c4-3"><font face="微軟正黑體">TOYOTA PREVIA 03後煞車碟盤</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：4500元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：PREVIA03</font></p>
-                </div>
-              </div>
-            </div>
+                          </div>
+                      </div>
+                  </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c4-4"><img class="card-img-top" src="img/brakes/TOYOTA ALTIS 原廠前卡鉗+碟盤+煞車皮2.jpg" alt=""></a>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        <a href="http://localhost:8000/c4-4"><font face="微軟正黑體">TOYOTA ALTIS 原廠卡鉗+碟盤+煞車皮</font></a>
-                    </h6>
-                    <h5>
-                        <p class="card-text"><font face="微軟正黑體">價格：7000元</font></p>
-                    </h5>
-                    <p class="card-text"><font face="微軟正黑體">型號：ALTIS </font></p>
-                </div>
-              </div>
-            </div>
+              @endforeach
 
           </div>
           <!-- /.row -->

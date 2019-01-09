@@ -145,125 +145,25 @@
 
           <div class="row">
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c2-1"><img class="card-img-top" src="img/TOYOTA/TOYOTA引擎_3SGE VVT-I 紅頭.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c2-1"><font face="微軟正黑體">TOYOTA 3SGE VVT-I 紅頭引擎</font></a>
-                  </h6>
-                  <h5>
-                    <p class="card-text"><font face="微軟正黑體">價格：48000元</font></p>
-                  </h5>
-                  <p class="card-text"><font face="微軟正黑體">型號：3SGE VVT-I</font></p>
-                </div>
-              </div>
-            </div>
+            @foreach($products as $product)
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c2-2"><img class="card-img-top" src="img/TOYOTA/TOYOTA引擎_3SGTE_$15000.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c2-2"><font face="微軟正黑體">TOYOTA 3SGTE 引擎</font></a>
-                  </h6>
-                  <h5>
-                    <p class="card-text"><font face="微軟正黑體">價格：87000元</font></p>
-                  </h5>
-                  <p class="card-text"><font face="微軟正黑體">型號：3SGTE</font></p>
-                </div>
-              </div>
-            </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                  <img class="card-img-top" src="{{$product->picture}}" alt="">
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      <a href="http://localhost:8000/c{{$product->id_sequence}}"><font face="微軟正黑體">{{$product->name}}</font></a>
+                    </h6>
+                    <h5>
+                      <p class="card-text"><font face="微軟正黑體">價格：{{$product->price}}元</font></p>
+                    </h5>
+                    <p class="card-text"><font face="微軟正黑體">{{$product->source}}</font></p>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c2-3"><img class="card-img-top" src="img/TOYOTA/TOYOTA引擎_3sgte260.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c2-3"><font face="微軟正黑體">TOYOTA 3SGTE 260 引擎</font></a>
-                  </h6>
-                  <h5>
-                    <p class="card-text"><font face="微軟正黑體">價格：50000元</font></p>
-                  </h5>
-                  <p class="card-text"><font face="微軟正黑體">型號：3SGTE 260</font></p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c2-4"><img class="card-img-top" src="img/Benz/Benz R172 SLK350  V6 引擎組.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c2-4"><font face="微軟正黑體">BENZ R172 SLK350 V6 引擎組</font></a>
-                  </h6>
-                  <h5>
-                    <p class="card-text"><font face="微軟正黑體">價格：75000元</font></p>
-                  </h5>
-                  <p class="card-text"><font face="微軟正黑體">型號：R172 SLK350 V6 </font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c2-5"><img class="card-img-top" src="img/Benz/Benz W140 直6 引擎.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c2-5"><font face="微軟正黑體">BENZ W140 直6 引擎</font></a>
-                  </h6>
-                  <h5>
-                    <p class="card-text"><font face="微軟正黑體">價格：90000元</font></p>
-                  </h5>
-                  <p class="card-text"><font face="微軟正黑體">型號：W140 W210 W202 W203 W124</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c2-6"><img class="card-img-top" src="img/Benz/Benz W211 320 112949 3.2L 引擎 自排 變速箱.JPG" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c2-6"><font face="微軟正黑體">BENZ W211 320 112949 3.2L 引擎</font></a>
-                  </h6>
-                  <h5>
-                    <p class="card-text"><font face="微軟正黑體">價格：83000元</font></p>
-                  </h5>
-                  <p class="card-text"><font face="微軟正黑體">型號：W211 320 112949 3.2L</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c2-7"><img class="card-img-top" src="img/Honda/Honda K6 K8引擎.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c2-7"><font face="微軟正黑體">HONDA K6 K8引擎</font></a>
-                  </h6>
-                  <h5>
-                    <p class="card-text"><font face="微軟正黑體">價格：20000元</font></p>
-                  </h5>
-                  <p class="card-text"><font face="微軟正黑體">型號：K6 K8</font></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <a href="http://localhost:8000/c2-8"><img class="card-img-top" src="img/Honda/Honda K20A 雙凸引擎.jpg" alt=""></a>
-                <div class="card-body">
-                  <h6 class="card-title">
-                    <a href="http://localhost:8000/c2-8"><font face="微軟正黑體">HONDA K20A 雙凸引擎</font></a>
-                  </h6>
-                  <h5>
-                    <p class="card-text"><font face="微軟正黑體">價格：19000元</font></p>
-                  </h5>
-                  <p class="card-text"><font face="微軟正黑體">型號：K20A</font></p>
-                </div>
-              </div>
-            </div>
+            @endforeach
 
 
           </div>
