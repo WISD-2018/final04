@@ -120,5 +120,9 @@ class AdminBackstageController extends Controller
     {
         return view('admin.product.backstage_productcreate');
     }
-
+    public function orderdestroy($id)
+    {
+        orders::destroy($id);
+        return redirect()->route('shoppingcart');
+    }
 }

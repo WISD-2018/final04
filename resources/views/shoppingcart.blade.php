@@ -102,6 +102,8 @@
 
             @foreach($orders as $order)
 
+              @if($order->product_quantity >0)
+
             <tr>
               <td><h6><font face="微軟正黑體" ><center>{{$order->product_name}}</center></font></h6></td>
               <td><h6><font face="微軟正黑體" ><center>{{$order->product_price}}</center></font></h6></td>
@@ -134,6 +136,7 @@
                       </center></font></h6></td>
             </tr>
 
+              @endif
             @endforeach
 
           </table>
