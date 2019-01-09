@@ -201,7 +201,8 @@
           <br>
 
             <div class="col-lg-12 col-md-10 mx-auto">
-                <a href="http://localhost:8000/admin" class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></a>
+              <a href="http://localhost:8000/BackstageProduct/create" ><button class="btn btn-primary" type="button"><font face="微軟正黑體" size="4px" >新增商品</font></button></a>
+              <a href="http://localhost:8000/admin" class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></a>
             </div>
           <br>
           </div>
