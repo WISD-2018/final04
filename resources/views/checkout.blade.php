@@ -98,12 +98,16 @@
 
                     @foreach($orders as $order)
 
+                        @if($order->product_quantity >0)
+
                         <tr>
                             <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_name}}</center></font></div></h5></td>
                             <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_price}}</center></font></div></h5></td>
                             <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->product_quantity}}</center></font></div></h5></td>
                             <td><h5><div class="card-body"><font face="微軟正黑體" ><center>{{$order->total}}</center></font></div></h5></td>
                         </tr>
+
+                        @endif
 
                     @endforeach
 

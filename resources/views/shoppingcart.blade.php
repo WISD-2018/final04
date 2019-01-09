@@ -138,7 +138,7 @@
             </tr>
 
               @endif
-            @endforeach
+              @endforeach
 
           </table>
         </div>
@@ -150,12 +150,18 @@
         </h3>
       </div>
 
+      @forelse($orders as $order)
+
+      @if($order->id != null)
       <div class="text-center">
         <h2> </h2>
         <h3>
           <a href="http://localhost:8000/checkout"><button type="button" class="btn btn-info"><font face="微軟正黑體" >結帳去囉~</font></button></a>
         </h3>
       </div>
+      @endif
+      @endforeach
+
 
       <div class="text-center">
         <a href="http://localhost:8000/ordersearch" ><button class="btn btn-primary" type="button"><font face="微軟正黑體" >查詢現有訂單</font></button></a>
