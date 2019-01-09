@@ -47,6 +47,11 @@
                 <ul class="navbar-nav ml-auto">
                     <!-- Authentication Links -->
                     <li class="nav-item active">
+                        <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000">購物首頁
+                                <span class="sr-only">(current)</span>
+                            </a></font>
+                    </li>
+                    <li class="nav-item active">
                         <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/admin">首頁
                                 <span class="sr-only">(current)</span>
                             </a></font>
