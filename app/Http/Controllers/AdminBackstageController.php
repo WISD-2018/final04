@@ -47,6 +47,37 @@ class AdminBackstageController extends Controller
         return redirect()->route('admin.user.backstage_user');
     }
 
+    //訂單管理
+    public function orderindex()
+    {
+        $order=orders::orderBy('id', 'ASC')->get();
+        $data=['orders'=>$order];
+        return view('admin.order.backstage_order', $data);
+    }
+
+    public function orderedit($id)
+    {
+        $order=orders::find($id);
+        $data = ['order' => $order];
+        return view('admin.order.backstage_orderedit', $data);
+    }
+
+
+    public function orderupdate(Request $request , $id)
+    {
+        $order=orders::find($id);
+        $order->update($request->all());
+
+        return redirect()->route('admin.order.backstage_order');
+    }
+
+
+    public function orderdestroy($id)
+    {
+        orders::destroy($id);
+        return redirect()->route('admin.order.backstage_order');
+    }
+
 
     //商品管理
     public function productindex()
