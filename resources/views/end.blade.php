@@ -103,7 +103,7 @@
           <div class="text-center">
               <h2> </h2>
               <h3>
-                  <a href="http://localhost:8000/home"><button type="button" class="btn btn-info"><font face="微軟正黑體" >回主畫面</font></button></a>
+                  <a href="http://localhost:8000"><button type="button" class="btn btn-info"><font face="微軟正黑體" >回主畫面</font></button></a>
               </h3>
           </div>
 

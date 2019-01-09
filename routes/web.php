@@ -13,10 +13,14 @@
 use App\orders;
 use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
+    if (Auth::check()){
     $name = orders::where('user_id','=',Auth::user()->id)
         ->where('way','=',null)
         ->sum('product_quantity');
     return view('/home.index')->with('name',$name);
+    }
+    else
+        return view('/home.index');
 });
 
 //Route::get('/', function () {

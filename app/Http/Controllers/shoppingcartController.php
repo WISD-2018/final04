@@ -20,6 +20,7 @@ class shoppingcartController extends Controller
             ->sum('product_quantity');
 
         $style= orders::where('user_id','=',Auth::user()->id)
+            ->where('way','=',null)
             ->count('product_id');
 
         if ($style != 0)
