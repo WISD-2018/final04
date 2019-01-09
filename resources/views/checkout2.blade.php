@@ -148,7 +148,7 @@
             </div>
             <div class="text-center">
                 <br>
-                <a href="http://localhost:8000/checkout2"><button type="button" class="btn btn-info"><font face="微軟正黑體" >返回上一步：確認購買商品</font></button></a>
+                <a href="http://localhost:8000/checkout"><button type="button" class="btn btn-info"><font face="微軟正黑體" >返回上一步：確認購買商品</font></button></a>
                 <button type="submit" class="btn btn-info"><font face="微軟正黑體" >確定購買！</font></button>
                 <br> <br>
             </div>
