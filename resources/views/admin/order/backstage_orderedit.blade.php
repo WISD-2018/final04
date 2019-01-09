@@ -163,8 +163,13 @@
                     <input type="string" class="form-control" name="product_quantity" value="{{$order->product_quantity}}" required>
                   </div>
 
+                  <div class="form-group">
+                    <label>訂單總額：</label>
+                    <input type="string" class="form-control" name="total" readonly="readonly" value="{{$order->total}}" required>
+                  </div>
+
                 <div class="form-group">
-                  <label>運送方式：</label>
+                  <label>取貨方式：</label>
                   <input type="string" class="form-control" name="stock" readonly="readonly" value="{{$order->way}}" required>
                 </div>
 

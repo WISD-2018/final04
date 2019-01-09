@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\orders;
 use App\products;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use function Sodium\increment;
@@ -243,5 +244,15 @@ class OrdersController extends Controller
              ->update(array('stock' => $total3));
 
         return redirect()->route('shoppingcart');
+    }
+
+    public function ordersearch()
+    {
+        $order = orders::where('user_id','=',Auth::user()->id)
+            ->where('way','!=',null)
+            ->get();
+
+        $data=['orders'=>$order];
+        return view('ordersearch', $data);
     }
 }

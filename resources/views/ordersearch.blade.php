@@ -109,31 +109,37 @@
                 <h1>     </h1><br>
                 <!--所以靠他們調整版面一下-->
 
-                <h1><font face="微軟正黑體">訂單管理</font></h1>
+                <h1><font face="微軟正黑體">現有訂單</font></h1>
 
-                <table style="border:1px #cccccc solid;" cellpadding="10" border='1' width="1300px">
+                <table style="border:1px #cccccc solid;" cellpadding="10" border='1' width="1400px">
 
                     <tr>
-                        <td bgcolor="#cccccc" width="90px">
+                        <td bgcolor="#cccccc" width="100px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>訂單編號</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="150px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>取貨人姓名</center></font></h5>
                         </td>
-                        <td bgcolor="#cccccc" width="100px">
+                        <td bgcolor="#cccccc" width="150px">
+                            <h5><font face="微軟正黑體" color="#343a40" ><center>取貨人電話</center></font></h5>
+                        </td>
+                        <td bgcolor="#cccccc" width="150px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>產品名稱</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="100px">
-                            <h5><font face="微軟正黑體" color="#343a40" ><center>取貨方式</center></font></h5>
+                            <h5><font face="微軟正黑體" color="#343a40" ><center>訂購數量</center></font></h5>
                         </td>
-                        <td bgcolor="#cccccc" width="200px">
+                        <td bgcolor="#cccccc" width="100px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>訂單總和</center></font></h5>
+                        </td>
+                        <td bgcolor="#cccccc" width="150px">
+                            <h5><font face="微軟正黑體" color="#343a40" ><center>取貨地址</center></font></h5>
+                        </td>
+                        <td bgcolor="#cccccc" width="120px">
+                            <h5><font face="微軟正黑體" color="#343a40" ><center>取貨方式</center></font></h5>
                         </td>
                         <td bgcolor="#cccccc" width="100px">
                             <h5><font face="微軟正黑體" color="#343a40" ><center>管理</center></font></h5>
-                        </td>
-                        <td bgcolor="#cccccc" width="100px">
-                            <h5><font face="微軟正黑體" color="#343a40" ><center></center></font></h5>
                         </td>
 
                     </tr>
@@ -148,19 +154,22 @@
                                 <center><font face="微軟正黑體">{{$order->user_name}}</font></center>
                             </td>
                             <td>
+                                <center><font face="微軟正黑體">{{$order->user_phone}}</font></center>
+                            </td>
+                            <td>
                                 <center><font face="微軟正黑體">{{$order->product_name}}</font></center>
                             </td>
                             <td>
-                                <center><font face="微軟正黑體">{{$order->way}}</font></center>
+                                <center><font face="微軟正黑體">{{$order->product_quantity}}</font></center>
                             </td>
                             <td>
                                 <center><font face="微軟正黑體">{{$order->total}}</font></center>
                             </td>
                             <td>
-                                <center><font face="微軟正黑體" size="5px">
-                                        <!--form條件還沒加-->
-                                        <a href="{{route('admin.order.backstage_orderedit', $order->id)}}"><font color="#008B8B"><b>編輯</b></font></a>
-                                    </font></center>
+                                <center><font face="微軟正黑體">{{$order->user_address}}</font></center>
+                            </td>
+                            <td>
+                                <center><font face="微軟正黑體">{{$order->way}}</font></center>
                             </td>
                             <td>
                                 <center>
@@ -169,7 +178,7 @@
                                         {{ csrf_field() }}
                                         {{ method_field('DELETE') }}
 
-                                        <button class="btn btn-link"><font face="微軟正黑體" size="5px" color="#008B8B">刪除</font></button>
+                                        <button class="btn btn-link"><font face="微軟正黑體" size="5px" color="#008B8B">取消訂單</font></button>
                                     </form>
                                 </center>
                             </td>
@@ -182,7 +191,7 @@
 
                 <!--form條件還沒加-->
                 <div class="col-lg-12 col-md-10 mx-auto">
-                    <a href="http://localhost:8000/admin" class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></a>
+                    <a href="http://localhost:8000/shoppingcart" class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></a>
                 </div>
 
             </div>
