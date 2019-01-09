@@ -38,13 +38,6 @@ class OrdersController extends Controller
      */
     public function store(Request $request)
     {
-        /*
-        $request->create([
-            orders::creat($request->all())
-        ]);
-        */
-        //orders::creat($request->all());
-        //return redirect()->route('orders.store');
         $orders = new orders();
         $orders->user_id = $request->input('user_id');
         $orders->user_name = $request->input('user_name');

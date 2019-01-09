@@ -10,6 +10,7 @@ class shoppingcartController extends Controller
     public function shoppingcart()
     {
         $order = orders::where('user_id','=',Auth::user()->id)
+            ->where('way','=',null)
             ->get();
 
         $result = ['orders'=>$order];

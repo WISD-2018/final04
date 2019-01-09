@@ -95,8 +95,6 @@
               <h2> </h2>
               <h3>
                   <tr>
-
-                      <td><h5><div class="card-body"><font face="微軟正黑體" ><center>親愛的{{ Auth::user()->name }}</center></font></div></h5></td>
                       <td><h5><div class="card-body"><font face="微軟正黑體" ><center>謝謝您本次的訂購，期待您的再度光臨~</center></font></div></h5></td>
                   </tr>
               </h3>

@@ -167,9 +167,7 @@
                 <!-- Button trigger modal -->
                 @if (Auth::check())
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">加入購物車</button>
-
-
-
+                  @if($product->stock > 0)
 
                   <!-- Modal -->
                   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -245,6 +243,31 @@
                       </div>
                     </div>
                   </div>
+
+                    @else
+
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">暫無庫存！</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+
+                          <div class="modal-body">
+                              <h6 class="my-0">很抱歉~目前沒有庫存，正在補貨中~</h6>
+                          </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">OK！</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                  @endif
 
                 @else
 
