@@ -38,32 +38,63 @@ class OrdersController extends Controller
      */
     public function store(Request $request)
     {
-        $orders = new orders();
-        $orders->user_id = $request->input('user_id');
-        $orders->user_name = $request->input('user_name');
-        $orders->user_phone = $request->input('user_phone');
-        $orders->user_address = $request->input('user_address');
-        $orders->product_id = $request->input('product_id');
-        $orders->product_name = $request->input('product_name');
-        $orders->product_price = $request->input('product_price');
-        $orders->product_quantity = $request->input('product_quantity');
-        $orders->total = $request->input('product_price') * $request->input('product_quantity');
+        $id1 = DB::table('orders')
+            ->value('product_id');
+        $id2 = $request->input('product_id');
+        if($id1 != $id2) {
+            $orders = new orders();
+            $orders->user_id = $request->input('user_id');
+            $orders->user_name = $request->input('user_name');
+            $orders->user_phone = $request->input('user_phone');
+            $orders->user_address = $request->input('user_address');
+            $orders->product_id = $request->input('product_id');
+            $orders->product_name = $request->input('product_name');
+            $orders->product_price = $request->input('product_price');
+            $orders->product_quantity = $request->input('product_quantity');
+            $orders->total = $request->input('product_price') * $request->input('product_quantity');
+            $orders->save();
+
+            $stock = DB::table('products')
+                ->where('id', '=' , $request->input('product_id'))
+                ->value('stock');
+
+            $quantity = $request->input('product_quantity');
+
+            $total=$stock-$quantity;
+
+            $product= products::where('id', '=' , $request->input('product_id'))
+                ->update(array('stock' => $total));
+    }
+    else
+    {
+        $quantity0 = DB::table('orders')
+            ->where('product_id', '=' , $id2)
+            ->value('product_quantity');
+        $quantity0 = $quantity0 + $request->input('product_quantity');
+
+        $order= orders::where('product_id', '=' , $id2)
+            ->update(array('product_quantity' => $quantity0));
 
         $stock = DB::table('products')
-            ->where('id', '=' , $request->input('product_id'))
+            ->where('id', '=' , $id2)
             ->value('stock');
 
-        $quantity = $request->input('product_quantity');
+        $total=$stock-$quantity0;
 
-        $total=$stock-$quantity;
-
-        $product= products::where('id', '=' , $request->input('product_id'))
+        $product= products::where('id', '=' , $id2)
             ->update(array('stock' => $total));
 
-        $orders->save();
+        $price = $request->input('product_price');
+
+        $amount = $price * $quantity0;
+
+        $product= orders::where('product_id', '=' , $id2)
+            ->update(array('total' => $amount));
+
+
+    }
 
         return redirect()->route('shoppingcart');
-
     }
 
     /**
