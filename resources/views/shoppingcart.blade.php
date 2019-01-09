@@ -137,7 +137,7 @@
             </tr>
 
               @endif
-            @endforeach
+
 
           </table>
         </div>
@@ -149,13 +149,15 @@
         </h3>
       </div>
 
+      @if($order->product_quantity > 0)
       <div class="text-center">
         <h2> </h2>
         <h3>
           <a href="http://localhost:8000/checkout"><button type="button" class="btn btn-info"><font face="微軟正黑體" >結帳去囉~</font></button></a>
         </h3>
       </div>
-
+      @endif
+      @endforeach
     </div>
     </body>
   </html>
