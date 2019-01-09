@@ -113,12 +113,12 @@
           </div>
 
           <div class="list-group">
-            <a href="http://localhost:8000/c1" class="list-group-item"><font face="微軟正黑體">傳動系統</font></a>
-            <a href="http://localhost:8000/c2" class="list-group-item"><font face="微軟正黑體">引擎系統</font></a>
-            <a href="http://localhost:8000/c3" class="list-group-item"><font face="微軟正黑體">冷卻系統</font></a>
-            <a href="http://localhost:8000/c4" class="list-group-item"><font face="微軟正黑體">煞車裝置</font></a>
-            <a href="http://localhost:8000/c5" class="list-group-item"><font face="微軟正黑體">音響主機</font></a>
-            <a href="http://localhost:8000/c6" class="list-group-item"><font face="微軟正黑體">車體、外觀</font></a>
+            <a href="http://localhost:8000/DriveLineSystem" class="list-group-item"><font face="微軟正黑體">傳動系統</font></a>
+            <a href="http://localhost:8000/AutomotiveEngineSystem" class="list-group-item"><font face="微軟正黑體">引擎系統</font></a>
+            <a href="http://localhost:8000/CoolingSystem" class="list-group-item"><font face="微軟正黑體">冷卻系統</font></a>
+            <a href="http://localhost:8000/BrakeSystem" class="list-group-item"><font face="微軟正黑體">煞車裝置</font></a>
+            <a href="http://localhost:8000/SoundSystem" class="list-group-item"><font face="微軟正黑體">音響主機</font></a>
+            <a href="http://localhost:8000/BodySyystem" class="list-group-item"><font face="微軟正黑體">車體、外觀</font></a>
           </div>
 
         </div>
