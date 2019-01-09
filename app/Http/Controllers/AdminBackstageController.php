@@ -64,29 +64,10 @@ class AdminBackstageController extends Controller
     }
 
 
-    public function productupdate(Request $request)
+    public function productupdate(Request $request , $id)
     {
-        $product = DB::table('products')::where('id','=',range(1,8,1))
-            ->get();
-
-
-        $product= products::where('id','=',DB::table('products')->id)
-            ->update(array('name' => $request->input('name')));
-        $product= products::where('id','=',DB::table('products')->id)
-            ->update(array('time' => $request->input('picture')));
-        $product= products::where('id','=',DB::table('products')->id)
-            ->update(array('where' => $request->input('time')));
-        $product= products::where('id','=',DB::table('products')->id)
-            ->update(array('where' => $request->input('where')));
-        $product= products::where('id','=',DB::table('products')->id)
-            ->update(array('where' => $request->input('source')));
-        $product= products::where('id','=',DB::table('products')->id)
-            ->update(array('where' => $request->input('price')));
-        $product= products::where('id','=',DB::table('products')->id)
-            ->update(array('where' => $request->input('kind')));
-        $product= products::where('id','=',DB::table('products')->id)
-            ->update(array('where' => $request->input('stock')));
-
+        $product=products::find($id);
+        $product->update($request->all());
 
         return redirect()->route('admin.product.backstage_product');
     }

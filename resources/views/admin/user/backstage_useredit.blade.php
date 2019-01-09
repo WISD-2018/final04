@@ -108,11 +108,12 @@
 
           <div class="row">
             <div class="col-lg-12">
-              <form accept-charset="UTF-8" action="{{ route('admin.user.backstage_userupdate') }}" method="POST" role="form">
+              <form action="/BackstageUser/update/{{$user->id}}" method="POST" role="form">
                 {{ csrf_field() }}
                 {{ method_field('PATCH') }}
 
                 <font face="微軟正黑體">
+
                 <div class="form-group">
                   <label>使用者名稱：</label>
                   <input name="name" class="form-control" value="{{$user->name}}">
@@ -140,13 +141,11 @@
 
                 <div class="col-lg-12 col-md-10 mx-auto">
                   <button type="submit" class="btn btn-primary"><font face="微軟正黑體" size="4px" >更新</font></button>
-                  <a href="http://localhost:8000/BackstageUser" ><button class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></button></a>
+                  <a href="http://localhost:8000/BackstageUser" ><button class="btn btn-primary" type="button"><font face="微軟正黑體" size="4px" >返回</font></button></a>
                 </div>
                 </font>
 
               </form>
-
-
 
 
             </div>

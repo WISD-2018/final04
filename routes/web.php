@@ -110,13 +110,9 @@ Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@index'])
 Route::get('/BackstageUser', ['as' => 'admin.user.backstage_user' , 'uses' => 'AdminBackstageController@index']);
 //修改使用者
 Route::get('/BackstageUser/edit/{id}', ['as' => 'admin.user.backstage_useredit'   , 'uses' => 'AdminBackstageController@edit']);
-//Route::post('/BackstageUser/update', ['as' => 'admin.user.backstage_userupdate', 'uses' => 'AdminBackstageController@update']);
-
-Route::patch('/BackstageUser/update', ['as' => 'admin.user.backstage_userupdate' , 'uses' => 'AdminBackstageController@update']);
-Route::post('/BackstageUser/update', ['as' => 'admin.user.backstage_userupdate'  , 'uses' => 'AdminBackstageController@update']);
-
+Route::patch('/BackstageUser/update/{id}', ['as' => 'admin.user.backstage_userupdate' , 'uses' => 'AdminBackstageController@update']);
 //刪除使用者
-Route::delete('/BackstageUser/delete{id}'  , ['as' => 'admin.user.backstage_userdelete', 'uses' => 'AdminBackstageController@destroy']);
+Route::delete('/BackstageUser/delete/{id}'  , ['as' => 'admin.user.backstage_userdelete', 'uses' => 'AdminBackstageController@destroy']);
 
 
 //訂單管理
@@ -132,12 +128,9 @@ Route::delete('/BackstageOrder/delete{id}'  , ['as' => 'admin.order.backstage_or
 Route::get('/BackstageProduct', ['as' => 'admin.product.backstage_product' , 'uses' => 'AdminBackstageController@productindex']);
 //修改商品
 Route::get('/BackstageProduct/edit/{id}', ['as' => 'admin.product.backstage_productedit'   , 'uses' => 'AdminBackstageController@productedit']);
-//Route::post('/BackstageProduct/update', ['as' => 'admin.product.backstage_productupdate', 'uses' => 'AdminBackstageController@productupdate']);
-
-Route::patch('/BackstageProduct/update', ['as' => 'admin.product.backstage_productupdate' , 'uses' => 'AdminBackstageController@productupdate']);
-Route::post('/BackstageProduct/update', ['as' => 'admin.product.backstage_productupdate'  , 'uses' => 'AdminBackstageController@productupdate']);
+Route::patch('/BackstageProduct/update/{id}', ['as' => 'admin.product.backstage_productupdate' , 'uses' => 'AdminBackstageController@productupdate']);
 //刪除商品
-Route::delete('/BackstageProduct/delete{id}'  , ['as' => 'admin.product.backstage_productdelete', 'uses' => 'AdminBackstageController@productdestroy']);
+Route::delete('/BackstageProduct/delete/{id}'  , ['as' => 'admin.product.backstage_productdelete', 'uses' => 'AdminBackstageController@productdestroy']);
 
 
 
