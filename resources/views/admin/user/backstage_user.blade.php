@@ -193,6 +193,7 @@
 
           <!--form條件還沒加-->
             <div class="col-lg-12 col-md-10 mx-auto">
+              {{$users->render()}} <br>
                 <a href="http://localhost:8000/admin" class="btn btn-primary"><font face="微軟正黑體" size="4px" >返回</font></a>
             </div>
 

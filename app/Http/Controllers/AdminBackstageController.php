@@ -13,7 +13,7 @@ class AdminBackstageController extends Controller
 
     public function index()
     {
-        $user=User::orderBy('id', 'ASC')->get();
+        $user=User::orderBy('id', 'ASC')->paginate(6);
         $data=['users'=>$user];
         return view('admin.user.backstage_user', $data);
     }
@@ -50,7 +50,7 @@ class AdminBackstageController extends Controller
     //訂單管理
     public function orderindex()
     {
-        $order=orders::orderBy('id', 'ASC')->get();
+        $order=orders::orderBy('id', 'ASC')->paginate(6);
         $data=['orders'=>$order];
         return view('admin.order.backstage_order', $data);
     }
@@ -82,7 +82,7 @@ class AdminBackstageController extends Controller
     //商品管理
     public function productindex()
     {
-        $product=products::orderBy('id', 'ASC')->get();
+        $product=products::orderBy('id', 'ASC')->paginate(6);
         $data=['products'=>$product];
         return view('admin.product.backstage_product', $data);
     }
