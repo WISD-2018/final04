@@ -20,9 +20,9 @@ class SearchController extends Controller
         $product=products::where('name','like',"%$searchword%")
             ->orWhere('price','<=',$searchword)
             ->get();
-
         $data=['products'=>$product];
         return view('product.c7',$data);
+
         }
         else{
             return redirect()->route('home.index');
