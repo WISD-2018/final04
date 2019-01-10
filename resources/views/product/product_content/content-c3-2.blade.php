@@ -158,7 +158,7 @@
           @foreach($products as $product)
 
             <div class="col-md-8">
-              <img class="img-fluid" src={{$product->picture}} alt="">
+              <img class="img-fluid" src={{$product->picture}} width="900">
             </div>
 
             <div class="col-md-4">
@@ -296,20 +296,20 @@
           <div class="row">
 
             <div class="co2-md-3 col-sm-4 mb-4">
-              <a href="http://localhost:8000/c1-2">
-                <img class="img-fluid" src="img/TOYOTA/TOYOTA 台製 新頭 傳動軸.jpg" alt="">
+              <a href="http://localhost:8000/c3-3">
+                <img class="img-fluid" src="img/Honda/Honda CIVIC 8代 K12 冷氣壓縮機.jpg" alt="">
               </a>
             </div>
 
             <div class="co2-md-3 col-sm-4 mb-4">
-              <a href="http://localhost:8000/c1-3">
-                <img class="img-fluid" src="img/TOYOTA/TOYOTA傳動軸_ALTIS 1.6 傳動軸.JPG" alt="">
+              <a href="http://localhost:8000/c3-4">
+                <img class="img-fluid" src="img/TOYOTA/TOYOTO海力士2.7 冷氣壓縮機.jpg" alt="">
               </a>
             </div>
 
             <div class="co2-md-3 col-sm-4 mb-4">
-              <a href="http://localhost:8000/c1-4">
-                <img class="img-fluid" src="img/Benz/BENZ W245 B170 傳動軸.jpg" alt="">
+              <a href="http://localhost:8000/c3-5">
+                <img class="img-fluid" src="img/TOYOTA/TOYOTA Yaris 1.5 冷氣壓縮機2.jpg" alt="">
               </a>
             </div>
 

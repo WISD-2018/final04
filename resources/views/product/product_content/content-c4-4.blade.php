@@ -296,20 +296,20 @@
           <div class="row">
 
             <div class="co2-md-3 col-sm-4 mb-4">
-              <a href="http://localhost:8000/c1-2">
-                <img class="img-fluid" src="img/TOYOTA/TOYOTA 台製 新頭 傳動軸.jpg" alt="">
+              <a href="http://localhost:8000/c4-1">
+                <img class="img-fluid" src="img/Benz/benz w220-s320煞車組.jpg" alt="">
               </a>
             </div>
 
             <div class="co2-md-3 col-sm-4 mb-4">
-              <a href="http://localhost:8000/c1-3">
-                <img class="img-fluid" src="img/TOYOTA/TOYOTA傳動軸_ALTIS 1.6 傳動軸.JPG" alt="">
+              <a href="http://localhost:8000/c4-2">
+                <img class="img-fluid" src="img/TOYOTA/TOYOTA TERCEL 前煞車盤.jpg" alt="">
               </a>
             </div>
 
             <div class="co2-md-3 col-sm-4 mb-4">
-              <a href="http://localhost:8000/c1-4">
-                <img class="img-fluid" src="img/Benz/BENZ W245 B170 傳動軸.jpg" alt="">
+              <a href="http://localhost:8000/c4-3">
+                <img class="img-fluid" src="img/TOYOTA/TOYOTA PREVIA 03後 煞車盤.JPG" alt="">
               </a>
             </div>
 
