@@ -174,7 +174,9 @@
 
           </div>
           <!-- /.row -->
-
+          <div class="text-center">
+            <br>{{$products->render()}}
+          </div>
         </div>
         <!-- /.col-lg-9 -->
 

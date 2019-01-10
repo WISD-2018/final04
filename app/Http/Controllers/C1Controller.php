@@ -13,7 +13,7 @@ class C1Controller extends Controller
     public function View1()
     {
         $product = products::where('kind_id','=','1')
-            ->get();
+            ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()){
         $name = orders::where('user_id','=',Auth::user()->id)
@@ -162,7 +162,7 @@ class C1Controller extends Controller
     public function View2()
     {
         $product = products::where('kind_id','=','2')
-            ->get();
+            ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()) {
             $name = orders::where('user_id', '=', Auth::user()->id)
@@ -307,7 +307,7 @@ class C1Controller extends Controller
     public function View3()
     {
         $product = products::where('kind_id','=','3')
-            ->get();
+            ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()) {
             $name = orders::where('user_id', '=', Auth::user()->id)
@@ -468,7 +468,7 @@ class C1Controller extends Controller
     public function View4()
     {
         $product = products::where('kind_id','=','4')
-            ->get();
+            ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()) {
             $name = orders::where('user_id', '=', Auth::user()->id)
@@ -549,7 +549,7 @@ class C1Controller extends Controller
     public function View5()
     {
         $product = products::where('kind_id','=','5')
-            ->get();
+            ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()) {
             $name = orders::where('user_id', '=', Auth::user()->id)
@@ -710,7 +710,7 @@ class C1Controller extends Controller
     public function View6()
     {
         $product = products::where('kind_id','=','6')
-            ->get();
+            ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()) {
             $name = orders::where('user_id', '=', Auth::user()->id)
