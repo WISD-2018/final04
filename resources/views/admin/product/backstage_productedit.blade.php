@@ -52,7 +52,7 @@
                 </a></font>
             </li>
             <li class="nav-item active">
-              <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/admin">首頁
+              <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/admin">管理員首頁
                   <span class="sr-only">(current)</span>
                 </a></font>
             </li>

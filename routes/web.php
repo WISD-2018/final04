@@ -35,8 +35,8 @@ Auth::routes();
 Route::get('/product.c1',['as'=>'index.show','uses'=>'SearchController@getindex']);
 Route::post('products/search','SearchController@search');
 
-
-Route::get('/home', 'HomeController@index')->name('home.index');
+Route::get('/home',['as'=>'home','uses'=>'HomeController@index']);
+//Route::get('/home', 'HomeController@index')->name('home.index');
 
 Route::get('/DriveLineSystem',['as'=>'type1','uses'=>'C1Controller@View1']);
 Route::post('/DriveLineSystem',['as'=>'type_1','uses'=>'C1Controller@View1']);
