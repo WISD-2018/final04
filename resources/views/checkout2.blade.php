@@ -76,6 +76,12 @@
                 <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/shoppingcart">購物車({{$name}})
                   </a></font>
               </li>
+                @if(Auth::user()->type ==1)
+                    <li class="nav-item active">
+                        <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/admin">管理員首頁
+                            </a></font>
+                    </li>
+                @endif
             </ul>
           </ul>
         </div>

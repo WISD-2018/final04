@@ -79,6 +79,12 @@
                                 </form>
                             </div>
                         </li>
+                        @if(Auth::user()->type ==1)
+                            <li class="nav-item active">
+                                <font face="微軟正黑體"><a class="nav-link" href="http://localhost:8000/admin">管理員首頁
+                                    </a></font>
+                            </li>
+                        @endif
                     @endguest
                 </ul>
             </ul>
