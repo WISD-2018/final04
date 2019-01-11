@@ -287,7 +287,26 @@ class OrdersController extends Controller
 
     public function orderdestroy($id)
     {
-        orders::destroy($id);
-        return redirect()->route('ordersearch');
+        date_default_timezone_set('Asia/Taipei');
+        //取得年份/月/日 時:分:秒
+        $datetime= date("Y/m/d H:i:s");
+
+        $created_at = DB::table('orders')
+            ->where('id', '=' , $id)
+            ->value('created_at');
+
+
+        $date=floor((strtotime($datetime)-strtotime($created_at))/86400);
+
+        if(0<= $date && $date<= 1){
+            orders::destroy($id);
+            return redirect()->route('ordersearch');
+        }
+        else{
+            
+            return redirect()->route('ordersearch');
+        }
+
+
     }
 }
