@@ -87,7 +87,7 @@ class OrdersController extends Controller
             ->where('id', '=' , $id2)
             ->value('stock');
 
-        $total=$stock-$quantity0;
+        $total=$stock-$request->input('product_quantity');
 
         $product= products::where('id', '=' , $id2)
             ->update(array('stock' => $total));
@@ -268,7 +268,7 @@ class OrdersController extends Controller
         DB::table('orders')
             ->where('id', '=' , $request->input('id'))
             ->delete();
-        
+
         $product= products::where('id', '=' , $id)
              ->update(array('stock' => $total3));
 
