@@ -249,9 +249,7 @@ class OrdersController extends Controller
     //刪除購物車物品
     public function destroy(Request $request)
     {
-        DB::table('orders')
-            ->where('id', '=' , $request->input('id'))
-            ->delete();
+
 
         $id = DB::table('orders')
             ->where('id', '=' , $request->input('id'))
@@ -270,11 +268,9 @@ class OrdersController extends Controller
         DB::table('orders')
             ->where('id', '=' , $request->input('id'))
             ->delete();
-
-        $total4 = $total3+1;
-
+        
         $product= products::where('id', '=' , $id)
-             ->update(array('stock' => $total4));
+             ->update(array('stock' => $total3));
 
         return redirect()->route('shoppingcart');
     }
