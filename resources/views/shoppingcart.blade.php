@@ -116,12 +116,40 @@
               <td><h6><font face="微軟正黑體" ><center>{{$order->product_quantity}}</center></font></h6></td>
               <td><h6><font face="微軟正黑體" ><center>{{$order->total}}</center></font></h6></td>
               <td><h6><font face="微軟正黑體" ><center>
+                      @if($name >0)
                       <form accept-charset="UTF-8" action="{{ route('orders.update1') }}" method="post" role="form">
+
                         {{ csrf_field()  }}
                         <input type="hidden" class="form-control" name="id" value="{{$order->id}}">
                         <input type="hidden" class="form-control" name="product_quantity" value="{{$order->product_quantity}}">
-                      <button type="submit" class="btn btn-group">＋</button>
+                      <button type="submit" class="btn btn-group">＋{{$stock}}</button>
                       </form>
+
+                        @else
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">+</button>
+
+                          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="exampleModalLabel">暫無庫存！</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+
+                                <div class="modal-body">
+                                  <h6 class="my-0">很抱歉~目前沒有庫存，正在補貨中~</h6>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">OK！</button>
+                                </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        @endif
                     </center></font></h6></td>
 
               <td><h6><font face="微軟正黑體" ><center>

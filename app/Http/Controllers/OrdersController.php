@@ -44,6 +44,9 @@ class OrdersController extends Controller
         $id1 = DB::table('orders')
             ->value('product_id');
         $id2 = $request->input('product_id');
+        $stock = DB::table('products')
+            ->where('id', '=' , $request->input('product_id'))
+            ->value('stock');
         if($id1 != $id2) {
             $orders = new orders();
             $orders->user_id = $request->input('user_id');
@@ -56,10 +59,6 @@ class OrdersController extends Controller
             $orders->product_quantity = $request->input('product_quantity');
             $orders->total = $request->input('product_price') * $request->input('product_quantity');
             $orders->save();
-
-            $stock = DB::table('products')
-                ->where('id', '=' , $request->input('product_id'))
-                ->value('stock');
 
             $quantity = $request->input('product_quantity');
 
@@ -82,10 +81,6 @@ class OrdersController extends Controller
 
         $order= orders::where('product_id', '=' , $id2)
             ->update(array('product_quantity' => $quantity0));
-
-        $stock = DB::table('products')
-            ->where('id', '=' , $id2)
-            ->value('stock');
 
         $total=$stock-$request->input('product_quantity');
 
@@ -152,6 +147,7 @@ class OrdersController extends Controller
             ->value('product_quantity');
 
         if($stock > 0){
+
             DB::table('orders')
                 ->where('id', '=' , $request->input('id'))
                 ->increment('product_quantity');
@@ -177,11 +173,15 @@ class OrdersController extends Controller
 
         $order= orders::where('id', '=' , $request->input('id'))
             ->update(array('total' => $total));
-        $name = $order = orders::where('user_id','=',Auth::user()->id)
+        $name = orders::where('user_id','=',Auth::user()->id)
             ->where('way','=',null)
             ->sum('product_quantity');
 
-        return redirect()->route('shoppingcart')->with('name',$name);
+        $stock = DB::table('products')
+            ->where('id', '=' , $id)
+            ->value('stock');
+
+        return redirect()->route('shoppingcart',$stock)->with('stock',$stock)->with('name',$name);
     }
 
     //減少購物車物品數量

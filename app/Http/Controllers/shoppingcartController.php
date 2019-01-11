@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\orders;
 use Illuminate\Support\Facades\Auth;
+use App\products;
+use Illuminate\Support\Facades\DB;
+
 class shoppingcartController extends Controller
 {
     public function shoppingcart()
@@ -19,6 +22,7 @@ class shoppingcartController extends Controller
             ->where('way','=',null)
             ->sum('product_quantity');
 
+
         $style= orders::where('user_id','=',Auth::user()->id)
             ->where('way','=',null)
             ->count('product_id');
@@ -30,7 +34,10 @@ class shoppingcartController extends Controller
         else
             $style = 'display: none';
 
-        return view('shoppingcart',$result)->with('style',$style)->with('name',$name);
+        $stock1 = $stock;
+
+
+        return view('shoppingcart',$result)->with('style',$style)->with('stock1',$stock1)->with('name',$name);
     }
 }
 
