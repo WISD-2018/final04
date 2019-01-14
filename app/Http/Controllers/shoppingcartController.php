@@ -34,10 +34,8 @@ class shoppingcartController extends Controller
         else
             $style = 'display: none';
 
-        $stock1 = $stock;
 
-
-        return view('shoppingcart',$result)->with('style',$style)->with('stock1',$stock1)->with('name',$name);
+        return view('shoppingcart',$result)->with('style',$style)->with('name',$name);
     }
 }
 
