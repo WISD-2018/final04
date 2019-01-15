@@ -4,14 +4,13 @@
 <html lang="en">
 
   <head>
-    <title>中古車體零件 - 傳動系統</title>
+    <title>搜尋結果</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Homepage - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
     <link href="SecondHand/public/css/bootstrap.min.css" rel="stylesheet">

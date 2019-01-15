@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>查詢現有訂單</title>
 
     <!-- Bootstrap core CSS -->
     <link href="SecondHand/public/css/bootstrap.min.css" rel="stylesheet">

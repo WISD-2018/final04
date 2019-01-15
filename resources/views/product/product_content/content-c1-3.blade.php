@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Portfolio Item - Start Bootstrap Template</title>
+  <title>商品詳細資訊</title>
 
   <!-- Bootstrap core CSS -->
   <link href="SecondHand/public/css/bootstrap.min.css" rel="stylesheet">
