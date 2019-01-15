@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Order;
 use App\Products;
+=======
+use App\orders;
+use App\Product;
+>>>>>>> eee6392215a393045a8c38c7274e8e38c22e7862
 use http\Url;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Auth;
@@ -64,7 +69,7 @@ class OrdersController extends Controller
 
             $total=$stock-$quantity;
 
-            $product= products::where('id', '=' , $request->input('product_id'))
+            $product= Product::where('id', '=' , $request->input('product_id'))
                 ->update(array('stock' => $total));
 
             $name = $order = Order::where('user_id','=',Auth::user()->id)
@@ -84,7 +89,7 @@ class OrdersController extends Controller
 
         $total=$stock-$request->input('product_quantity');
 
-        $product= products::where('id', '=' , $id2)
+        $product= Product::where('id', '=' , $id2)
             ->update(array('stock' => $total));
 
         $price = $request->input('product_price');
@@ -154,7 +159,7 @@ class OrdersController extends Controller
 
             $total2=$stock-1;
 
-            $product= Products::where('id', '=' , $id)
+            $product= Product::where('id', '=' , $id)
                 ->update(array('stock' => $total2));
             $name = $order = Order::where('user_id','=',Auth::user()->id)
                 ->where('way','=',null)
@@ -205,7 +210,7 @@ class OrdersController extends Controller
 
         $total2 = $stock + 1;
 
-        $product = Products::where('id', '=', $id)
+        $product = Product::where('id', '=', $id)
             ->update(array('stock' => $total2));
 
         $price = DB::table('orders')
@@ -269,7 +274,7 @@ class OrdersController extends Controller
             ->where('id', '=' , $request->input('id'))
             ->delete();
 
-        $product= products::where('id', '=' , $id)
+        $product= Product::where('id', '=' , $id)
              ->update(array('stock' => $total3));
 
         return redirect()->route('shoppingcart');

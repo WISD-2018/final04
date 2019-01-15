@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Products;
+use App\Product;
 class SearchController extends Controller
 {
     //
     public function getindex(){
-        $product=Products::get();
+        $product=Product::get();
         $data=['products'=>$product];
         return view('product.c7',$data);
     }
@@ -17,7 +17,7 @@ class SearchController extends Controller
 
         if($searchword != null){
 
-        $product=Products::where('name','like',"%$searchword%")
+        $product=Product::where('name','like',"%$searchword%")
             ->orWhere('price','<=',$searchword)
             ->get();
         $data=['products'=>$product];
