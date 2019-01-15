@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\products;
+use App\Products;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -44,7 +44,7 @@ class ProductsController extends Controller
      * @param  \App\products  $products
      * @return \Illuminate\Http\Response
      */
-    public function show(products $products)
+    public function show(Products $products)
     {
         //
     }
@@ -55,7 +55,7 @@ class ProductsController extends Controller
      * @param  \App\products  $products
      * @return \Illuminate\Http\Response
      */
-    public function edit(products $products)
+    public function edit(Products $products)
     {
         //
     }
@@ -67,7 +67,7 @@ class ProductsController extends Controller
      * @param  \App\products  $products
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, products $products)
+    public function update(Request $request, Products $products)
     {
         //
     }
@@ -78,7 +78,7 @@ class ProductsController extends Controller
      * @param  \App\products  $products
      * @return \Illuminate\Http\Response
      */
-    public function destroy(products $products)
+    public function destroy(Products $products)
     {
         //
     }

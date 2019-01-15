@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\orders;
-use App\products;
+use App\Products;
 use http\Url;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Auth;
@@ -154,7 +154,7 @@ class OrdersController extends Controller
 
             $total2=$stock-1;
 
-            $product= products::where('id', '=' , $id)
+            $product= Products::where('id', '=' , $id)
                 ->update(array('stock' => $total2));
             $name = $order = orders::where('user_id','=',Auth::user()->id)
                 ->where('way','=',null)
@@ -205,7 +205,7 @@ class OrdersController extends Controller
 
         $total2 = $stock + 1;
 
-        $product = products::where('id', '=', $id)
+        $product = Products::where('id', '=', $id)
             ->update(array('stock' => $total2));
 
         $price = DB::table('orders')
