@@ -1,4 +1,5 @@
 <p align="center"><img src="https://i.imgur.com/3sa8Llu.png"></p>
+更多[系統畫面](https://imgur.com/a/6As04YR)
 
 ## 系統作用
 因應時代的轉變，中古車零件需求日益增加，但許多店家仍然是紙本作業，這對消費者而言相當不便，所需零件的價格、庫存數量等都無法立即得知。若改為線上系統的話，不但可以24小時線上購物，零件的價格、庫存數量、來源等都透明公開，且能立即下訂。
@@ -23,15 +24,23 @@
 <p align="center"><img src="https://i.imgur.com/hXBxHwj.png"></p>
 
 
-
 ## 初始專案與DB負責的同學
-
 1. 初始專案負責人:[萬宜旻](https://github.com/3A532051)
 2. DB建置負責人:[萬宜旻](https://github.com/3A532051)、[黃宣毓](https://github.com/3A532053)
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 系統復原步驟
+1. 登入github找到專案clone網址並複製下來
+複製https://github.com/WISD-2018/final04.git
+2.打開sourcetree將專案clone下來
+貼上https://github.com/WISD-2018/final04.git
+3.打開cmd切至專案目錄
+cmd輸入cd final04
+4.繼續利用cmd還原套件
+依序輸入
+composer install
+composer run-script post-root-package-install
+composer run-script post-create-project-cmd
 
 ## License
 
