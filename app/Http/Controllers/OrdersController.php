@@ -285,6 +285,16 @@ class OrdersController extends Controller
         return view('ordersearch', $data);
     }
 
+    public function overtime()
+    {
+        $order = orders::where('user_id','=',Auth::user()->id)
+            ->where('way','!=',null)
+            ->get();
+
+        $data=['orders'=>$order];
+        return view('overtime', $data);
+    }
+
     public function orderdestroy($id)
     {
         date_default_timezone_set('Asia/Taipei');
@@ -303,8 +313,8 @@ class OrdersController extends Controller
             return redirect()->route('ordersearch');
         }
         else{
-            
-            return redirect()->route('ordersearch');
+
+            return redirect()->route('overtime');
         }
 
 
