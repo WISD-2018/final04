@@ -7,11 +7,11 @@
 ## 系統主要功能
 <p align="center"><img src="https://i.imgur.com/d0kpTWU.png"></p>
 系統主頁面(進行身份辨識)/萬宜旻
-<p align="center"><img src="https://i.imgur.com/hcRtMT4.png"></p>
-商品分類/萬宜旻
 <p align="center"><img src="https://i.imgur.com/PIf2eyY.png"></p>
-商品詳細內頁/萬宜旻、黃宣毓
+商品分類/萬宜旻
 <p align="center"><img src="https://i.imgur.com/INsyBPq.png"></p>
+商品詳細內頁/萬宜旻、黃宣毓
+<p align="center"><img src="https://i.imgur.com/glibvjs.png"></p>
 關鍵字搜尋商品/萬宜旻
 <p align="center"><img src="https://i.imgur.com/3jdQuHT.png"></p>
 加入購物車及結帳/黃宣毓
