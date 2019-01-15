@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\orders;
-use App\Products;
+use App\Product;
 
 class AdminBackstageController extends Controller
 {
@@ -82,14 +82,14 @@ class AdminBackstageController extends Controller
     //商品管理
     public function productindex()
     {
-        $product=Products::orderBy('id', 'ASC')->paginate(6);
+        $product=Product::orderBy('id', 'ASC')->paginate(6);
         $data=['products'=>$product];
         return view('admin.product.backstage_product', $data);
     }
 
     public function productedit($id)
     {
-        $product=Products::find($id);
+        $product=Product::find($id);
         $data = ['product' => $product];
         return view('admin.product.backstage_productedit', $data);
     }
@@ -97,7 +97,7 @@ class AdminBackstageController extends Controller
 
     public function productupdate(Request $request , $id)
     {
-        $product=Products::find($id);
+        $product=Product::find($id);
         $product->update($request->all());
 
         return redirect()->route('admin.product.backstage_product');
@@ -105,14 +105,14 @@ class AdminBackstageController extends Controller
 
     public function productstore(Request $request)
     {
-        Products::create($request->all());
+        Product::create($request->all());
         return redirect()->route('admin.product.backstage_product');
     }
 
 
     public function productdestroy($id)
     {
-        Products::destroy($id);
+        Product::destroy($id);
         return redirect()->route('admin.product.backstage_product');
     }
 
