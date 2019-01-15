@@ -3,8 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
+use App\Products;
+use App\Order;
+=======
 use App\Product;
 use App\orders;
+>>>>>>> eee6392215a393045a8c38c7274e8e38c22e7862
 use Illuminate\Support\Facades\Auth;
 class C1Controller extends Controller
 {
@@ -16,7 +21,7 @@ class C1Controller extends Controller
             ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()){
-        $name = orders::where('user_id','=',Auth::user()->id)
+        $name = Order::where('user_id','=',Auth::user()->id)
             ->where('way','=',null)
             ->sum('product_quantity');
         return view('/product.c1',$result)->with('name',$name);
@@ -36,7 +41,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c1-1', $result)->with('name', $name);
@@ -52,7 +57,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c1-2', $result)->with('name', $name);
@@ -68,7 +73,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c1-3', $result)->with('name', $name);
@@ -84,7 +89,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c1-4', $result)->with('name', $name);
@@ -100,7 +105,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c1-5', $result)->with('name', $name);
@@ -116,7 +121,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c1-6', $result)->with('name', $name);
@@ -132,7 +137,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c1-7', $result)->with('name', $name);
@@ -148,7 +153,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c1-8', $result)->with('name', $name);
@@ -165,7 +170,7 @@ class C1Controller extends Controller
             ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product.c2', $result)->with('name', $name);
@@ -181,7 +186,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c2-1', $result)->with('name', $name);
@@ -197,7 +202,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c2-2', $result)->with('name', $name);
@@ -213,7 +218,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c2-3', $result)->with('name', $name);
@@ -229,7 +234,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c2-4', $result)->with('name', $name);
@@ -245,7 +250,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c2-5', $result)->with('name', $name);
@@ -261,7 +266,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c2-6', $result)->with('name', $name);
@@ -277,7 +282,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c2-7', $result)->with('name', $name);
@@ -293,7 +298,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c2-8', $result)->with('name', $name);
@@ -310,7 +315,7 @@ class C1Controller extends Controller
             ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product.c3', $result)->with('name', $name);
@@ -326,7 +331,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c3-1', $result)->with('name', $name);
@@ -342,7 +347,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c3-2', $result)->with('name', $name);
@@ -358,7 +363,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c3-3', $result)->with('name', $name);
@@ -374,7 +379,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c3-4', $result)->with('name', $name);
@@ -390,7 +395,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c3-5', $result)->with('name', $name);
@@ -406,7 +411,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c3-6', $result)->with('name', $name);
@@ -422,7 +427,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c3-7', $result)->with('name', $name);
@@ -438,7 +443,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c3-8', $result)->with('name', $name);
@@ -454,7 +459,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c3-9', $result)->with('name', $name);
@@ -471,7 +476,7 @@ class C1Controller extends Controller
             ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product.c4', $result)->with('name', $name);
@@ -487,7 +492,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c4-1', $result)->with('name', $name);
@@ -503,7 +508,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c4-2', $result)->with('name', $name);
@@ -519,7 +524,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c4-3', $result)->with('name', $name);
@@ -535,7 +540,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c4-4', $result)->with('name', $name);
@@ -552,7 +557,7 @@ class C1Controller extends Controller
             ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product.c5', $result)->with('name', $name);
@@ -568,7 +573,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c5-1', $result)->with('name', $name);
@@ -584,7 +589,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c5-2', $result)->with('name', $name);
@@ -600,7 +605,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c5-3', $result)->with('name', $name);
@@ -616,7 +621,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c5-4', $result)->with('name', $name);
@@ -632,7 +637,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c5-5', $result)->with('name', $name);
@@ -648,7 +653,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c5-6', $result)->with('name', $name);
@@ -664,7 +669,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c5-7', $result)->with('name', $name);
@@ -680,7 +685,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c5-8', $result)->with('name', $name);
@@ -696,7 +701,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c5-9', $result)->with('name', $name);
@@ -713,7 +718,7 @@ class C1Controller extends Controller
             ->paginate(6);
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product.c6', $result)->with('name', $name);
@@ -729,7 +734,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c6-1', $result)->with('name', $name);
@@ -745,7 +750,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c6-2', $result)->with('name', $name);
@@ -761,7 +766,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c6-3', $result)->with('name', $name);
@@ -777,7 +782,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c6-4', $result)->with('name', $name);
@@ -793,7 +798,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c6-5', $result)->with('name', $name);
@@ -809,7 +814,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c6-6', $result)->with('name', $name);
@@ -825,7 +830,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c6-7', $result)->with('name', $name);
@@ -841,7 +846,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c6-8', $result)->with('name', $name);
@@ -857,7 +862,7 @@ class C1Controller extends Controller
             ->get();
         $result = ['products'=>$product];
         if (Auth::check()) {
-            $name = orders::where('user_id', '=', Auth::user()->id)
+            $name = Order::where('user_id', '=', Auth::user()->id)
                 ->where('way', '=', null)
                 ->sum('product_quantity');
             return view('/product/product_content.content-c6-9', $result)->with('name', $name);

@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
+use App\Order;
+use App\Products;
+=======
 use App\orders;
 use App\Product;
+>>>>>>> eee6392215a393045a8c38c7274e8e38c22e7862
 use http\Url;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Auth;
@@ -48,7 +53,7 @@ class OrdersController extends Controller
             ->where('id', '=' , $request->input('product_id'))
             ->value('stock');
         if($id1 != $id2) {
-            $orders = new orders();
+            $orders = new Order();
             $orders->user_id = $request->input('user_id');
             $orders->user_name = $request->input('user_name');
             $orders->user_phone = $request->input('user_phone');
@@ -67,7 +72,7 @@ class OrdersController extends Controller
             $product= Product::where('id', '=' , $request->input('product_id'))
                 ->update(array('stock' => $total));
 
-            $name = $order = orders::where('user_id','=',Auth::user()->id)
+            $name = $order = Order::where('user_id','=',Auth::user()->id)
                 ->where('way','=',null)
                 ->sum('product_quantity');
     }
@@ -79,7 +84,7 @@ class OrdersController extends Controller
 
         $quantity0 = $quantity0 + $request->input('product_quantity');
 
-        $order= orders::where('product_id', '=' , $id2)
+        $order= Order::where('product_id', '=' , $id2)
             ->update(array('product_quantity' => $quantity0));
 
         $total=$stock-$request->input('product_quantity');
@@ -91,10 +96,10 @@ class OrdersController extends Controller
 
         $amount = $price * $quantity0;
 
-        $product= orders::where('product_id', '=' , $id2)
+        $product= Order::where('product_id', '=' , $id2)
             ->update(array('total' => $amount));
 
-        $name = $order = orders::where('user_id','=',Auth::user()->id)
+        $name = $order = Order::where('user_id','=',Auth::user()->id)
             ->where('way','=',null)
             ->sum('product_quantity');
 
@@ -105,10 +110,10 @@ class OrdersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\orders  $orders
+     * @param  \App\Order  $orders
      * @return \Illuminate\Http\Response
      */
-    public function show(orders $orders)
+    public function show(Order $orders)
     {
         //
     }
@@ -116,10 +121,10 @@ class OrdersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\orders  $orders
+     * @param  \App\Order  $orders
      * @return \Illuminate\Http\Response
      */
-    public function edit(orders $orders)
+    public function edit(Order $orders)
     {
         //
     }
@@ -128,11 +133,11 @@ class OrdersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\orders  $orders
+     * @param  \App\Order  $orders
      * @return \Illuminate\Http\Response
      */
     //增加購物車物品數量
-    public function update1(Request $request, orders $orders)
+    public function update1(Request $request, Order $orders)
     {
         $id = DB::table('orders')
             ->where('id', '=' , $request->input('id'))
@@ -156,7 +161,7 @@ class OrdersController extends Controller
 
             $product= Product::where('id', '=' , $id)
                 ->update(array('stock' => $total2));
-            $name = $order = orders::where('user_id','=',Auth::user()->id)
+            $name = $order = Order::where('user_id','=',Auth::user()->id)
                 ->where('way','=',null)
                 ->sum('product_quantity');
         }
@@ -171,9 +176,9 @@ class OrdersController extends Controller
 
         $total = $quantity2 * $price ;
 
-        $order= orders::where('id', '=' , $request->input('id'))
+        $order= Order::where('id', '=' , $request->input('id'))
             ->update(array('total' => $total));
-        $name = orders::where('user_id','=',Auth::user()->id)
+        $name = Order::where('user_id','=',Auth::user()->id)
             ->where('way','=',null)
             ->sum('product_quantity');
 
@@ -185,7 +190,7 @@ class OrdersController extends Controller
     }
 
     //減少購物車物品數量
-    public function update2(Request $request, orders $orders)
+    public function update2(Request $request, Order $orders)
     {
         $id = DB::table('orders')
             ->where('id', '=' , $request->input('id'))
@@ -218,20 +223,20 @@ class OrdersController extends Controller
 
         $total = $quantity2 * $price ;
 
-        $order= orders::where('id', '=' , $request->input('id'))
+        $order= Order::where('id', '=' , $request->input('id'))
             ->update(array('total' => $total));
 
         if($quantity2 <= 0){
             DB::table('orders')
                 ->where('id', '=' , $request->input('id'))
                 ->delete();
-            $name = $order = orders::where('user_id','=',Auth::user()->id)
+            $name = Order::where('user_id','=',Auth::user()->id)
                 ->where('way','=',null)
                 ->sum('product_quantity');
             return redirect()->route('shoppingcart')->with('name',$name);
         }
         else{
-            $name = $order = orders::where('user_id','=',Auth::user()->id)
+            $name = Order::where('user_id','=',Auth::user()->id)
                 ->where('way','=',null)
                 ->sum('product_quantity');
             return redirect()->route('shoppingcart')->with('name',$name);
@@ -243,7 +248,7 @@ class OrdersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\orders  $orders
+     * @param  \App\Order  $orders
      * @return \Illuminate\Http\Response
      */
     //刪除購物車物品
@@ -277,7 +282,7 @@ class OrdersController extends Controller
 
     public function ordersearch()
     {
-        $order = orders::where('user_id','=',Auth::user()->id)
+        $order = Order::where('user_id','=',Auth::user()->id)
             ->where('way','!=',null)
             ->get();
 
@@ -287,7 +292,7 @@ class OrdersController extends Controller
 
     public function overtime()
     {
-        $order = orders::where('user_id','=',Auth::user()->id)
+        $order = Order::where('user_id','=',Auth::user()->id)
             ->where('way','!=',null)
             ->get();
 
@@ -309,7 +314,7 @@ class OrdersController extends Controller
         $date=floor((strtotime($datetime)-strtotime($created_at))/86400);
 
         if(0<= $date && $date<= 1){
-            orders::destroy($id);
+            Order::destroy($id);
             return redirect()->route('ordersearch');
         }
         else{

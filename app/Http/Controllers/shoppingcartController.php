@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\orders;
+use App\Order;
 use Illuminate\Support\Facades\Auth;
 use App\products;
 use Illuminate\Support\Facades\DB;
@@ -12,18 +12,18 @@ class shoppingcartController extends Controller
 {
     public function shoppingcart()
     {
-        $order = orders::where('user_id','=',Auth::user()->id)
+        $order = Order::where('user_id','=',Auth::user()->id)
             ->where('way','=',null)
             ->get();
 
         $result = ['orders'=>$order];
 
-        $name = $order = orders::where('user_id','=',Auth::user()->id)
+        $name = Order::where('user_id','=',Auth::user()->id)
             ->where('way','=',null)
             ->sum('product_quantity');
 
 
-        $style= orders::where('user_id','=',Auth::user()->id)
+        $style= Order::where('user_id','=',Auth::user()->id)
             ->where('way','=',null)
             ->count('product_id');
 
