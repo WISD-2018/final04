@@ -118,16 +118,16 @@
           <font face="微軟正黑體"><h4>黃宣毓
           </h4></font>
         </div>
-        <div class="col-lg-3 col-sm-5 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="img/about/4.png" alt="">
-          <font face="微軟正黑體"><h4>顏以晴
-          </h4></font>
-        </div>
-        <div class="col-lg-3 col-sm-5 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="img/about/「IMG_5933」做為智慧型物件-2.png" alt="">
-          <font face="微軟正黑體"><h4>黃子嘉
-          </h4></font>
-        </div>
+        <!--<div class="col-lg-3 col-sm-5 text-center mb-4">-->
+        <!--  <img class="rounded-circle img-fluid d-block mx-auto" src="img/about/4.png" alt="">-->
+        <!--  <font face="微軟正黑體"><h4>顏以晴-->
+        <!--  </h4></font>-->
+        <!--</div>-->
+        <!--<div class="col-lg-3 col-sm-5 text-center mb-4">-->
+        <!--  <img class="rounded-circle img-fluid d-block mx-auto" src="img/about/「IMG_5933」做為智慧型物件-2.png" alt="">-->
+        <!--  <font face="微軟正黑體"><h4>黃子嘉-->
+        <!--  </h4></font>-->
+        <!--</div>-->
 
         </div>
       </div>
