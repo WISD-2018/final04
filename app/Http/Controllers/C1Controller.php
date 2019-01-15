@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+<<<<<<< HEAD
 
 use Illuminate\Http\Request;
 use App\Products;
+=======
+>>>>>>> c00b58a5d3563d799dd3e0dea2dd8db4601c77c0
 use App\Order;
 use App\Product;
 use Illuminate\Support\Facades\Auth;
