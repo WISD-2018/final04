@@ -117,7 +117,7 @@
 
                 <h1><font face="微軟正黑體">現有訂單</font></h1>
 
-
+                <font face="微軟正黑體" color="red">此筆訂單已超過可取消時段，如有疑問請與我們聯繫！</font><br>
 
                 <table style="border:1px #cccccc solid;" cellpadding="10" border='1' width="1650px">
 
@@ -152,9 +152,8 @@
 
                     </tr>
 
-                    @foreach($orders as $order)
 
-                        <font face="微軟正黑體" color="red">訂單編號{{$order->id}}已超過可取消時段，如有疑問請與我們聯繫！</font><br>
+                    @foreach($orders as $order)
 
                         <tr>
                             <td>
@@ -195,8 +194,11 @@
                             </td>
                         </tr>
 
+
                     @endforeach
+
                 </table>
+
                 <br>
 
 
