@@ -41,6 +41,7 @@
     
     composer run-script post-create-project-cmd
 
-## License
+## 系統開發人員
+1. [萬宜旻](https://github.com/3A532051)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+2. [黃宣毓](https://github.com/3A532053)
