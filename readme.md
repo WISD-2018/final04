@@ -5,21 +5,21 @@
 而且若是改為線上系統的話，店家也能大幅減少紙本資料的紀載量，還可以隨時掌握零件庫存、消費者訂單資料，如此一舉兩得的事，我們想藉由此次課程，將這個理念實現，嘗試模擬出此系統。
 
 ## 系統主要功能
-系統主頁面(進行身份辨識)/[萬宜旻](https://github.com/3A532051)
+系統主頁面(進行身份辨識)/萬宜旻
 <p align="center"><img src="https://i.imgur.com/d0kpTWU.png"></p>
-商品分類/[萬宜旻](https://github.com/3A532051)
+商品分類/萬宜旻
 <p align="center"><img src="https://i.imgur.com/PIf2eyY.png"></p>
-商品詳細內頁/[萬宜旻](https://github.com/3A532051)、黃宣毓
+商品詳細內頁/萬宜旻、黃宣毓
 <p align="center"><img src="https://i.imgur.com/INsyBPq.png"></p>
-關鍵字搜尋商品/[萬宜旻](https://github.com/3A532051)
+關鍵字搜尋商品/萬宜旻
 <p align="center"><img src="https://i.imgur.com/glibvjs.png"></p>
 加入購物車及結帳/黃宣毓
 <p align="center"><img src="https://i.imgur.com/3jdQuHT.png"></p>
 購物車商品數量及訂單更改/黃宣毓
 <p align="center"><img src="https://i.imgur.com/bzX8y1k.png"></p>
-後台管理(使用者、商品、訂單新增刪除修改)/[萬宜旻](https://github.com/3A532051)
+後台管理(使用者、商品、訂單新增刪除修改)/萬宜旻
 <p align="center"><img src="https://i.imgur.com/Y6FSH6C.png"></p>
-顧客取消訂單/[萬宜旻](https://github.com/3A532051)
+顧客取消訂單/萬宜旻
 <p align="center"><img src="https://i.imgur.com/hXBxHwj.png"></p>
 
 
