@@ -11,7 +11,7 @@
 <p align="center"><img src="https://i.imgur.com/PIf2eyY.png"></p>
 商品詳細內頁/萬宜旻、黃宣毓
 <p align="center"><img src="https://i.imgur.com/INsyBPq.png"></p>
-關鍵字搜尋商品/萬宜旻
+關鍵字搜尋商品/ [萬宜旻](https://github.com/3A532051)
 <p align="center"><img src="https://i.imgur.com/glibvjs.png"></p>
 加入購物車及結帳/黃宣毓
 <p align="center"><img src="https://i.imgur.com/3jdQuHT.png"></p>
