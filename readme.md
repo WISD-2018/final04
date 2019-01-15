@@ -26,7 +26,8 @@
 
 ## 初始專案與DB負責的同學
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. 初始專案負責人:[萬宜旻](https://github.com/3A532051)
+2. DB建置負責人:
 
 ## Security Vulnerabilities
 
