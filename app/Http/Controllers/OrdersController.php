@@ -2,13 +2,8 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< HEAD
 use App\Order;
-use App\Products;
-=======
-use App\orders;
 use App\Product;
->>>>>>> eee6392215a393045a8c38c7274e8e38c22e7862
 use http\Url;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Auth;

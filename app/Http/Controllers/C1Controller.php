@@ -1,15 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-<<<<<<< HEAD
-use App\Products;
 use App\Order;
-=======
 use App\Product;
-use App\orders;
->>>>>>> eee6392215a393045a8c38c7274e8e38c22e7862
 use Illuminate\Support\Facades\Auth;
 class C1Controller extends Controller
 {
