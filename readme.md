@@ -27,7 +27,7 @@
 ## 初始專案與DB負責的同學
 
 1. 初始專案負責人:[萬宜旻](https://github.com/3A532051)
-2. DB建置負責人:
+2. DB建置負責人:[萬宜旻](https://github.com/3A532051)、[黃宣毓](https://github.com/3A532053)
 
 ## Security Vulnerabilities
 
