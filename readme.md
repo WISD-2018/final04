@@ -30,17 +30,16 @@
 
 
 ## 系統復原步驟
-1. 登入github找到專案clone網址並複製下來
-複製https://github.com/WISD-2018/final04.git
-2.打開sourcetree將專案clone下來
-貼上https://github.com/WISD-2018/final04.git
-3.打開cmd切至專案目錄
-cmd輸入cd final04
-4.繼續利用cmd還原套件
-依序輸入
-composer install
-composer run-script post-root-package-install
-composer run-script post-create-project-cmd
+1. 登入github找到專案clone網址並複製下來，複製https://github.com/WISD-2018/final04.git
+2. 打開sourcetree將專案clone下來，貼上https://github.com/WISD-2018/final04.git
+3. 打開cmd切至專案目錄，cmd輸入cd final04
+4. 繼續利用cmd還原套件，依序輸入：
+
+    composer install
+    
+    composer run-script post-root-package-install
+    
+    composer run-script post-create-project-cmd
 
 ## License
 
